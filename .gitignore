@@ -1,0 +1,7 @@
+# ephemeral session artifacts (hlists, wrapups, scratch)
+tmp/
+.DS_Store
+.env
+.env.*
+node_modules/
+__pycache__/

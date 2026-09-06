@@ -1,0 +1,122 @@
+{
+  "_doc": "Single source of truth for judgment fields. Hand-edit this; PRIORITIES.md, docs/data.json and the dashboard are generated from it by scripts/sync.py. Percent = toward SHIPPED as defined in projects/<repo>.md. eta_days = focused agent working days for the orchestrator's share, excluding waits on the user. Every estimate the orchestrator commits to goes in `estimates` (date, scope, est_days); when finished, fill done + actual_days. The dashboard computes slip from that ledger.",
+  "repos": {
+    "mindshift": {
+      "rank": 1, "hands_off": true,
+      "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally",
+      "target": "App stores (Expo RN) + Cloud Run API", "live": "preview builds / OTA",
+      "percent": 80, "eta_days": null,
+      "remaining": ["Owner runs manual nudge checks, then server deploy + OTA", "Shouting voice-identity miss", "Activation classifier retrain"],
+      "blocked_on_user": ["everything: hands-off"],
+      "estimates": []
+    },
+    "contextflow": {
+      "rank": 2, "hands_off": false,
+      "goal": "Demo-ready for Duke and other companies: annual training on long PDFs, with org results in the cloud and org billing",
+      "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site", "live": "extension built; store listing unconfirmed; Stripe live",
+      "percent": 70, "eta_days": 9,
+      "remaining": [
+        "Fix embedded/intranet PDF failure (Duke LMS URL, VPN only)",
+        "Persist per-user quick results for org customers + minimal org report/CSV",
+        "Distinct Stripe path for orgs: per-seat annual, seat enforcement",
+        "Triage 10+ unmerged feat/* branches",
+        "Bump version and submit to Chrome Web Store"
+      ],
+      "blocked_on_user": ["Console log from the Duke PDF while on VPN", "Confirm whether a Chrome Web Store listing exists"],
+      "estimates": [
+        {"date": "2026-09-06", "scope": "Embedded PDF fix (after user supplies VPN console log)", "est_days": 1.5, "done": null, "actual_days": null},
+        {"date": "2026-09-06", "scope": "Org quick-results storage + report", "est_days": 3, "done": null, "actual_days": null},
+        {"date": "2026-09-06", "scope": "Org Stripe per-seat billing", "est_days": 3, "done": null, "actual_days": null},
+        {"date": "2026-09-06", "scope": "Branch triage + CWS submission", "est_days": 1.5, "done": null, "actual_days": null}
+      ]
+    },
+    "faculty-adequacy": {
+      "rank": 3, "hands_off": true,
+      "goal": "Full draft covering all US med schools + paper stubbed for handoff to a co-author; refresh for a new year of data",
+      "target": "Publication (Academic Medicine) + GitHub Pages dashboard", "live": "dashboard live",
+      "percent": 30, "eta_days": null,
+      "remaining": ["Extraction is the bottleneck: 46 curated schools yield zero Tier A", "12 schools with roster but no curriculum URL", "Fill manuscript placeholders in docs/manuscript.md", "make annual-run for the new data year"],
+      "blocked_on_user": ["everything: hands-off"],
+      "estimates": []
+    },
+    "FitRival": {
+      "rank": 4, "hands_off": false,
+      "goal": "Good enough for the user and their sister to lose weight together: shared weight and %fat curves, gamification, seeing each other",
+      "target": "Google Play production (Android); iOS later", "live": "Play internal track v0.0.66; production stale at v0.0.28",
+      "percent": 65, "eta_days": 8,
+      "remaining": [
+        "Promote to Play production (target-API branch, full test run, release)",
+        "Walk sister onboarding as a new user; fix every developer-only step",
+        "Verify two-user rolling-average weight and %fat curves; add goal lines",
+        "Firebase Auth instead of group secret, if onboarding needs it",
+        "Streak + head-to-head challenge card on home"
+      ],
+      "blocked_on_user": ["Click promote in Play Console", "Sister installs and gives feedback"],
+      "estimates": [
+        {"date": "2026-09-06", "scope": "Production promotion path (merge target-api, tests, release build)", "est_days": 2, "done": null, "actual_days": null},
+        {"date": "2026-09-06", "scope": "Onboarding walk + fixes", "est_days": 2, "done": null, "actual_days": null},
+        {"date": "2026-09-06", "scope": "Two-user curves + gamification card", "est_days": 4, "done": null, "actual_days": null}
+      ]
+    },
+    "openline": {
+      "rank": 5, "hands_off": false,
+      "goal": "Give to 5 friends, have them run nodes, and prove a payment settles in seconds, comparable to a credit card",
+      "target": "Public testnet (Go node, Docker) + Expo mobile app", "live": "local single-process prototype only; no public node",
+      "percent": 40, "eta_days": 12,
+      "remaining": [
+        "Deploy one always-on public seed node (Fly/Cloud Run) with persistence",
+        "Multi-node networking: nodes discover each other and share the ledger (today: single process)",
+        "Friend install path: one-page guide + prebuilt mobile app (Expo EAS) pointing at the seed node",
+        "Measure real end-to-end payment latency across nodes; publish the number",
+        "Personhood: deploy the credential issuer so friends can enroll"
+      ],
+      "blocked_on_user": ["Pick hosting account for seed node", "Recruit the 5 friends", "Decide whether friends run nodes or only wallets for round 1"],
+      "estimates": [
+        {"date": "2026-09-06", "scope": "Public seed node + persistence + friend guide", "est_days": 4, "done": null, "actual_days": null},
+        {"date": "2026-09-06", "scope": "Multi-node gossip/sync + measured latency", "est_days": 6, "done": null, "actual_days": null},
+        {"date": "2026-09-06", "scope": "Personhood issuer deployed", "est_days": 2, "done": null, "actual_days": null}
+      ]
+    },
+    "personhood": {
+      "rank": 5, "hands_off": false,
+      "goal": "Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline",
+      "target": "Fly.io API + Vercel web", "live": "deploy config ready, not deployed",
+      "percent": 45, "eta_days": null,
+      "remaining": ["Deploy issuer (fly.toml, vercel.json exist)", "Merge or drop feat/email-tier, feat/phone-carrier-tier, feat/paid-billing-card"],
+      "blocked_on_user": ["Persona / Plaid / Twilio accounts if those tiers are wanted for round 1"],
+      "estimates": [],
+      "note": "Tracked under openline's ETA; see projects/openline-personhood.md"
+    },
+    "chatnbook": {
+      "rank": 6, "hands_off": false,
+      "goal": "Live and useful enough to sell to small companies with chatbots that can't handle AI",
+      "target": "Hosted API + WordPress plugin + Stripe", "live": "no",
+      "percent": 35, "eta_days": 15,
+      "remaining": [
+        "Reality check: docker-compose up, one booking end to end",
+        "P7-2..P7-4: adapter generator compile, plugin volume mount, e2e WP test",
+        "Host the API",
+        "Stripe Checkout for one plan",
+        "One pilot customer"
+      ],
+      "blocked_on_user": ["Pilot customer", "Hosting + Stripe accounts"],
+      "estimates": [
+        {"date": "2026-09-06", "scope": "Reality check + P7 fixes", "est_days": 5, "done": null, "actual_days": null},
+        {"date": "2026-09-06", "scope": "Hosted API + plugin pointed at it", "est_days": 5, "done": null, "actual_days": null},
+        {"date": "2026-09-06", "scope": "Stripe plan + pilot onboarding", "est_days": 5, "done": null, "actual_days": null}
+      ]
+    },
+    "taskcaster-app": {"rank": null, "hands_off": false, "goal": "Party game app; web MVP live, mobile stores not wired", "target": "Web (live) + app stores", "live": "web", "percent": 70, "eta_days": null, "remaining": ["flutterfire configure for mobile", "Store listings", "Real ads/IAP (mock today)"], "blocked_on_user": [], "estimates": []},
+    "oralhistory_timeline": {"rank": null, "hands_off": false, "goal": "Oral history to interactive shareable timeline", "target": "Firebase Hosting + Play", "live": "partial (Play internal)", "percent": 75, "eta_days": null, "remaining": ["Deploy privacy page", "Release signing keystore", "Play production"], "blocked_on_user": [], "estimates": []},
+    "arborlife-webpage": {"rank": null, "hands_off": false, "goal": "Personal site + AI job-fit matcher", "target": "GitHub Pages + Cloudflare Worker", "live": "yes", "percent": 90, "eta_days": null, "remaining": ["Polish only"], "blocked_on_user": [], "estimates": []},
+    "career-compass": {"rank": null, "hands_off": false, "goal": "Claude Code plugin: job posting to gap analysis + CV", "target": "CC plugin marketplace", "live": "installable", "percent": 85, "eta_days": null, "remaining": ["Stabilize; no tests"], "blocked_on_user": [], "estimates": []},
+    "career-compass-starter": {"rank": null, "hands_off": false, "goal": "Template workspace for career-compass", "target": "GitHub template", "live": "yes", "percent": 100, "eta_days": null, "remaining": [], "blocked_on_user": [], "estimates": []},
+    "neighborhood-poker": {"rank": null, "hands_off": false, "goal": "Google Sheets poker tournament manager", "target": "Shared Google Sheet", "live": "yes", "percent": 90, "eta_days": null, "remaining": ["Hardcoded spreadsheet id"], "blocked_on_user": [], "estimates": []},
+    "megaCity-rotating": {"rank": null, "hands_off": false, "goal": "Three.js rotating megacity visualization", "target": "Cloud Run", "live": "yes", "percent": 70, "eta_days": null, "remaining": ["Rotary union diagram redesign"], "blocked_on_user": [], "estimates": []},
+    "ai-ubi-wellbeing-transition-simulator": {"rank": null, "hands_off": false, "goal": "UBI transition simulator (conference demo)", "target": "Cloud Run", "live": "yes", "percent": 75, "eta_days": null, "remaining": ["Phase 8-9 dynamic models", "Unresolved refactor revert"], "blocked_on_user": [], "estimates": []},
+    "Medschool_ArborTester": {"rank": null, "hands_off": false, "goal": "Med board exam AI tutor", "target": "Render", "live": "no (hosted_url null)", "percent": 60, "eta_days": null, "remaining": ["CORS allow-all shortcut", "Deploy", "Stale 1 year"], "blocked_on_user": [], "estimates": []},
+    "sagearbor.github.io": {"rank": null, "hands_off": false, "goal": "User site root: FitRival landing + privacy policy", "target": "GitHub Pages", "live": "yes", "percent": 100, "eta_days": null, "remaining": [], "blocked_on_user": [], "estimates": []},
+    "contextFlow-upgrade": {"rank": null, "hands_off": false, "goal": "ContextFlow pricing/privacy/support micro-site (satellite of contextflow, not legacy)", "target": "GitHub Pages", "live": "yes", "percent": 95, "eta_days": null, "remaining": ["Add org pricing once contextflow item 3 lands"], "blocked_on_user": [], "estimates": []},
+    "movieScript_firstAI": {"rank": null, "hands_off": false, "goal": "Empty repo, never started", "target": "-", "live": "no", "percent": 0, "eta_days": null, "remaining": [], "blocked_on_user": [], "estimates": []}
+  }
+}

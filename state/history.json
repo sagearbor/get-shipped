@@ -1,0 +1,116 @@
+{
+ "mindshift": [
+  {
+   "date": "2026-09-06",
+   "percent": 80
+  }
+ ],
+ "contextflow": [
+  {
+   "date": "2026-09-06",
+   "percent": 70
+  }
+ ],
+ "faculty-adequacy": [
+  {
+   "date": "2026-09-06",
+   "percent": 30
+  }
+ ],
+ "FitRival": [
+  {
+   "date": "2026-09-06",
+   "percent": 65
+  }
+ ],
+ "openline": [
+  {
+   "date": "2026-09-06",
+   "percent": 40
+  }
+ ],
+ "personhood": [
+  {
+   "date": "2026-09-06",
+   "percent": 45
+  }
+ ],
+ "chatnbook": [
+  {
+   "date": "2026-09-06",
+   "percent": 35
+  }
+ ],
+ "ai-ubi-wellbeing-transition-simulator": [
+  {
+   "date": "2026-09-06",
+   "percent": 75
+  }
+ ],
+ "arborlife-webpage": [
+  {
+   "date": "2026-09-06",
+   "percent": 90
+  }
+ ],
+ "career-compass": [
+  {
+   "date": "2026-09-06",
+   "percent": 85
+  }
+ ],
+ "career-compass-starter": [
+  {
+   "date": "2026-09-06",
+   "percent": 100
+  }
+ ],
+ "contextFlow-upgrade": [
+  {
+   "date": "2026-09-06",
+   "percent": 95
+  }
+ ],
+ "Medschool_ArborTester": [
+  {
+   "date": "2026-09-06",
+   "percent": 60
+  }
+ ],
+ "megaCity-rotating": [
+  {
+   "date": "2026-09-06",
+   "percent": 70
+  }
+ ],
+ "movieScript_firstAI": [
+  {
+   "date": "2026-09-06",
+   "percent": 0
+  }
+ ],
+ "neighborhood-poker": [
+  {
+   "date": "2026-09-06",
+   "percent": 90
+  }
+ ],
+ "oralhistory_timeline": [
+  {
+   "date": "2026-09-06",
+   "percent": 75
+  }
+ ],
+ "sagearbor.github.io": [
+  {
+   "date": "2026-09-06",
+   "percent": 100
+  }
+ ],
+ "taskcaster-app": [
+  {
+   "date": "2026-09-06",
+   "percent": 70
+  }
+ ]
+}
