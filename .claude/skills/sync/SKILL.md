@@ -21,3 +21,11 @@ description: Resume the orchestrator — regenerate STATUS.md from every sibling
    (`chore(sync): YYYY-MM-DD`). Push.
 
 Never edit sibling repos during /sync; it is read-only toward `../`.
+
+## Dashboard bookmark
+GitHub Pages is unavailable while the repo is private (free plan). Until the
+user decides to make it public, republish the standalone dashboard after each
+`--write` with the Artifact tool, passing `url` so the bookmark stays stable:
+`file_path: docs/index.html`, `url: https://claude.ai/code/artifact/0c1e2348-1b2b-479f-9a20-76296760c85c`.
+If the repo goes public, enable Pages (main, /docs) and this step becomes moot:
+https://sagearbor.github.io/get-shipped/
