@@ -25,6 +25,8 @@ PRIORITIES = HERE / "PRIORITIES.md"
 PROJECTS = HERE / "state" / "projects.json"
 HISTORY = HERE / "state" / "history.json"
 DATA = HERE / "docs" / "data.json"
+TEMPLATE = HERE / "docs" / "template.html"
+INDEX = HERE / "docs" / "index.html"
 SELF = HERE.name
 
 
@@ -214,6 +216,8 @@ def write_data(profiles, now, since):
     DATA.parent.mkdir(exist_ok=True)
     DATA.write_text(json.dumps({"generated_at": now, "previous_sync": since, "calibration": calib, "repos": repos}, indent=1) + "\n")
     HISTORY.write_text(json.dumps(hist, indent=1) + "\n")
+    if TEMPLATE.exists():  # standalone dashboard: data inlined so file:// and private hosting work
+        INDEX.write_text(TEMPLATE.read_text().replace("__DATA__", DATA.read_text().replace("</", "<\\/")))
 
 
 def render_priorities(now):
