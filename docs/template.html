@@ -85,7 +85,7 @@ function card(r,slip){const g=r.git||{};const eta=r.eta_days;const cal=eta&&slip
   </div>
   <p class="sub">plan: <code>${esc(r.plan)}</code></p>
  </div></details>`}
-(function(){const el=document.getElementById('inline-data');const txt=el&&el.textContent.trim();if(txt&&txt!=='__DATA__'){try{return Promise.resolve(JSON.parse(txt))}catch(e){}}return fetch('data.json',{cache:'no-store'}).then(r=>r.json())})().then(d=>{
+(function(){const el=document.getElementById('inline-data');const txt=el&&el.textContent.trim();if(txt&&txt!=='__'+'DATA__'){try{return Promise.resolve(JSON.parse(txt))}catch(e){}}return fetch('data.json',{cache:'no-store'}).then(r=>r.json())})().then(d=>{
  const c=d.calibration,slip=c.slip_factor;
  document.getElementById('meta').textContent=`synced ${d.generated_at.replace('T',' ').slice(0,16)} · previous ${d.previous_sync?d.previous_sync.slice(0,16).replace('T',' '):'never'}`;
  const ranked=d.repos.filter(r=>r.rank).sort((a,b)=>a.rank-b.rank||a.name.localeCompare(b.name));

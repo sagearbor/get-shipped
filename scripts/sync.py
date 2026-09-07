@@ -219,7 +219,7 @@ def write_data(profiles, now, since):
     DATA.write_text(json.dumps({"generated_at": now, "previous_sync": since, "calibration": calib, "repos": repos}, indent=1) + "\n")
     HISTORY.write_text(json.dumps(hist, indent=1) + "\n")
     if TEMPLATE.exists():  # standalone dashboard: data inlined so file:// and private hosting work
-        INDEX.write_text(TEMPLATE.read_text().replace("__DATA__", DATA.read_text().replace("</", "<\\/")))
+        INDEX.write_text(TEMPLATE.read_text().replace("__DATA__", DATA.read_text().replace("</", "<\\/"), 1))
 
 
 def render_priorities(now):
