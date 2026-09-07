@@ -12,17 +12,17 @@
     },
     "contextflow": {
       "rank": 2, "hands_off": false,
-      "goal": "Demo-ready for Duke and other companies: annual training on long PDFs, with org results in the cloud and org billing",
+      "goal": "Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing",
       "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site", "live": "extension built; store listing unconfirmed; Stripe live",
       "percent": 70, "eta_days": 9,
       "remaining": [
-        "Fix embedded/intranet PDF failure (Duke LMS URL, VPN only)",
+        "Fix embedded/intranet PDF failure (intranet LMS, VPN only)",
         "Persist per-user quick results for org customers + minimal org report/CSV",
         "Distinct Stripe path for orgs: per-seat annual, seat enforcement",
         "Triage 10+ unmerged feat/* branches",
         "Bump version and submit to Chrome Web Store"
       ],
-      "blocked_on_user": ["Console log from the Duke PDF while on VPN", "Confirm whether a Chrome Web Store listing exists"],
+      "blocked_on_user": ["Console log from the intranet PDF while on VPN", "Confirm whether a Chrome Web Store listing exists"],
       "estimates": [
         {"date": "2026-09-06", "scope": "Embedded PDF fix (after user supplies VPN console log)", "est_days": 1.5, "done": null, "actual_days": null},
         {"date": "2026-09-06", "scope": "Org quick-results storage + report", "est_days": 3, "done": null, "actual_days": null},

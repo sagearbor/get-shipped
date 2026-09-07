@@ -7,11 +7,11 @@ policy, and support page required by the Chrome Web Store. Nothing to migrate;
 keep both.
 
 ## Goal (user's words)
-Present ContextFlow to Duke and to other companies as an option for annual
-training on long, boring PDFs. Two things stand between here and that demo.
+Present ContextFlow to companies as an option for annual training on long,
+boring PDFs. Two things stand between here and that demo.
 
 ## Definition of shipped
-1. The extension works on an intranet-hosted, embedded PDF (the Duke LMS case).
+1. The extension works on an intranet-hosted, embedded PDF (an intranet LMS).
 2. Quick results are stored to the cloud for commercial (org) customers.
 3. Org customers can pay through a distinct Stripe path (per-seat / annual),
    separate from the individual Basic/Pro pricing table.
@@ -55,7 +55,7 @@ results (quiz scores, completion) are persisted for org reporting.
 Per `docs/NEXT_SESSION_HANDOFF.md`, org enrollment works but access is a
 hand-made Firestore doc. Work: define the org "training record" (user, doc URL
 hash, score, completed-at), write it from the extension, read it in a minimal
-org admin view or CSV export. That is the thing Duke would actually buy.
+org admin view or CSV export. That is the thing an org customer would actually buy.
 
 ### 3. Distinct Stripe path for orgs
 Exists: individual Stripe webhook billing (`contextflow-backend/functions/index.js`,
@@ -74,7 +74,7 @@ and submit.
 ## Open questions for the user
 - Is ContextFlow currently listed on the Chrome Web Store? (Support/privacy
   pages were built for review in Feb 2026; no listing URL found in either repo.)
-- For Duke: does the pitch need SSO, or is email-domain enrollment enough?
+- For org customers: does the pitch need SSO, or is email-domain enrollment enough?
 
 ## Env needed (names only)
 `extension/src/config/config.ts` (gitignored): LLM API keys, `LLM_PROXY_URL`,

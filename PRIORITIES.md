@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-07T08:49
+# PRIORITIES — generated from `state/projects.json` at 2026-09-07T08:53
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -11,14 +11,14 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
    - needs user: everything: hands-off
 
 2. **contextflow** — 70%, ETA ~9 agent-days
-   - goal: Demo-ready for Duke and other companies: annual training on long PDFs, with org results in the cloud and org billing
+   - goal: Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing
    - shipped means: see `projects/contextflow.md`
-   - [ ] Fix embedded/intranet PDF failure (Duke LMS URL, VPN only)
+   - [ ] Fix embedded/intranet PDF failure (intranet LMS, VPN only)
    - [ ] Persist per-user quick results for org customers + minimal org report/CSV
    - [ ] Distinct Stripe path for orgs: per-seat annual, seat enforcement
    - [ ] Triage 10+ unmerged feat/* branches
    - [ ] Bump version and submit to Chrome Web Store
-   - needs user: Console log from the Duke PDF while on VPN; Confirm whether a Chrome Web Store listing exists
+   - needs user: Console log from the intranet PDF while on VPN; Confirm whether a Chrome Web Store listing exists
 
 3. **faculty-adequacy** — **HANDS-OFF** (user drives it personally; do not edit from here unless told in-session) — 30%
    - goal: Full draft covering all US med schools + paper stubbed for handoff to a co-author; refresh for a new year of data

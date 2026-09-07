@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-07T08:49:25-04:00",
- "previous_sync": "2026-09-06T16:11:13-04:00",
+ "generated_at": "2026-09-07T08:53:38-04:00",
+ "previous_sync": "2026-09-07T08:49:25-04:00",
  "calibration": {
   "completed": 0,
   "est_days": 0,
@@ -36,12 +36,7 @@
     "unpushed": 0,
     "remote": "sagearbor/mindshift"
    },
-   "new_commits": [
-    "8c2a686 2026-09-07 fix(enroll,haptics): the raised take was too short to enroll, and L1 too weak to feel",
-    "210299a 2026-09-07 feat(speaker-id): a person may have two voiceprints \u2014 calm and raised",
-    "ae1dc9e 2026-09-06 test(speaker-id): measure both answers to \"why two voices per person?\"",
-    "dcc198e 2026-09-06 fix(haptics): a phone has no volume knob \u2014 so rhythm has to carry the meaning"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260906-1900-nudge-vocabulary-shipped.yaml",
     "timestamp": "2026-09-06T19:00:00-04:00"
@@ -62,20 +57,20 @@
    "name": "contextflow",
    "rank": 2,
    "hands_off": false,
-   "goal": "Demo-ready for Duke and other companies: annual training on long PDFs, with org results in the cloud and org billing",
+   "goal": "Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing",
    "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site",
    "live": "extension built; store listing unconfirmed; Stripe live",
    "percent": 70,
    "eta_days": 9,
    "remaining": [
-    "Fix embedded/intranet PDF failure (Duke LMS URL, VPN only)",
+    "Fix embedded/intranet PDF failure (intranet LMS, VPN only)",
     "Persist per-user quick results for org customers + minimal org report/CSV",
     "Distinct Stripe path for orgs: per-seat annual, seat enforcement",
     "Triage 10+ unmerged feat/* branches",
     "Bump version and submit to Chrome Web Store"
    ],
    "blocked_on_user": [
-    "Console log from the Duke PDF while on VPN",
+    "Console log from the intranet PDF while on VPN",
     "Confirm whether a Chrome Web Store listing exists"
    ],
    "estimates": [
@@ -161,23 +156,7 @@
     "unpushed": 1,
     "remote": "sagearbor/faculty-adequacy"
    },
-   "new_commits": [
-    "38d626d 2026-09-07 feat(schools): curate curriculum leadership URLs for george-washington, burrell-new-mexico",
-    "e808635 2026-09-07 db snapshot 2026-09-07T12:35:28Z",
-    "ca55248 2026-09-07 feat(schools): curate curriculum leadership URLs for california-irvine, north-carolina",
-    "ed1e2cf 2026-09-07 feat(schools): curate curriculum leadership URL for eastern-virginia-old",
-    "b3332c3 2026-09-07 chore(extractors): commit validated scrapers from overnight bucket-3/retry run",
-    "9d10ba0 2026-09-07 chore(extractors): commit validated virginia-commonwealth scraper (overnight bucket-3 re-gate)",
-    "af1d4c0 2026-09-07 Merge pull request #129 from sagearbor/fix/phase5-match-curriculum-and-inventory-hang-and-ocr-roster",
-    "890c95e 2026-09-07 Merge pull request #128 from sagearbor/fix/js-shell-false-positive-strong-patterns",
-    "7a3abc4 2026-09-07 Merge pull request #127 from sagearbor/worktree-agent-a4e2bbf8227a31e07",
-    "0b0b3b8 2026-09-07 Merge pull request #126 from sagearbor/worktree-agent-a71fe1abf12c76120",
-    "17da2a6 2026-09-07 fix(curriculum): recover names from OCR'd name-first course-director rosters",
-    "e9015be 2026-09-07 fix(scrapers): clamp unbounded robots.txt Crawl-delay in profile-inventory path",
-    "6341538 2026-09-07 fix(curriculum): re-queue match_curriculum for unmatched evidence",
-    "86d73b8 2026-09-06 fix(phase1): stop misclassifying dense real rosters as JS shells",
-    "5258ed8 2026-09-06 feat(schools): re-curate 5 dead/stale directory URLs + investigate burrell fallback"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260907-0850-extract-missing-and-curriculum-curation.yaml",
     "timestamp": "\"2026-09-07T04:50:00-04:00\""
