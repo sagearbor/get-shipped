@@ -3,11 +3,19 @@
   {
    "date": "2026-09-06",
    "percent": 80
+  },
+  {
+   "date": "2026-09-07",
+   "percent": 80
   }
  ],
  "contextflow": [
   {
    "date": "2026-09-06",
+   "percent": 70
+  },
+  {
+   "date": "2026-09-07",
    "percent": 70
   }
  ],
@@ -15,11 +23,19 @@
   {
    "date": "2026-09-06",
    "percent": 30
+  },
+  {
+   "date": "2026-09-07",
+   "percent": 30
   }
  ],
  "FitRival": [
   {
    "date": "2026-09-06",
+   "percent": 65
+  },
+  {
+   "date": "2026-09-07",
    "percent": 65
   }
  ],
@@ -27,11 +43,19 @@
   {
    "date": "2026-09-06",
    "percent": 40
+  },
+  {
+   "date": "2026-09-07",
+   "percent": 40
   }
  ],
  "personhood": [
   {
    "date": "2026-09-06",
+   "percent": 45
+  },
+  {
+   "date": "2026-09-07",
    "percent": 45
   }
  ],
@@ -39,11 +63,19 @@
   {
    "date": "2026-09-06",
    "percent": 35
+  },
+  {
+   "date": "2026-09-07",
+   "percent": 35
   }
  ],
  "ai-ubi-wellbeing-transition-simulator": [
   {
    "date": "2026-09-06",
+   "percent": 75
+  },
+  {
+   "date": "2026-09-07",
    "percent": 75
   }
  ],
@@ -51,11 +83,19 @@
   {
    "date": "2026-09-06",
    "percent": 90
+  },
+  {
+   "date": "2026-09-07",
+   "percent": 90
   }
  ],
  "career-compass": [
   {
    "date": "2026-09-06",
+   "percent": 85
+  },
+  {
+   "date": "2026-09-07",
    "percent": 85
   }
  ],
@@ -63,11 +103,19 @@
   {
    "date": "2026-09-06",
    "percent": 100
+  },
+  {
+   "date": "2026-09-07",
+   "percent": 100
   }
  ],
  "contextFlow-upgrade": [
   {
    "date": "2026-09-06",
+   "percent": 95
+  },
+  {
+   "date": "2026-09-07",
    "percent": 95
   }
  ],
@@ -75,11 +123,19 @@
   {
    "date": "2026-09-06",
    "percent": 60
+  },
+  {
+   "date": "2026-09-07",
+   "percent": 60
   }
  ],
  "megaCity-rotating": [
   {
    "date": "2026-09-06",
+   "percent": 70
+  },
+  {
+   "date": "2026-09-07",
    "percent": 70
   }
  ],
@@ -87,11 +143,19 @@
   {
    "date": "2026-09-06",
    "percent": 0
+  },
+  {
+   "date": "2026-09-07",
+   "percent": 0
   }
  ],
  "neighborhood-poker": [
   {
    "date": "2026-09-06",
+   "percent": 90
+  },
+  {
+   "date": "2026-09-07",
    "percent": 90
   }
  ],
@@ -99,17 +163,29 @@
   {
    "date": "2026-09-06",
    "percent": 75
+  },
+  {
+   "date": "2026-09-07",
+   "percent": 75
   }
  ],
  "sagearbor.github.io": [
   {
    "date": "2026-09-06",
    "percent": 100
+  },
+  {
+   "date": "2026-09-07",
+   "percent": 100
   }
  ],
  "taskcaster-app": [
   {
    "date": "2026-09-06",
+   "percent": 70
+  },
+  {
+   "date": "2026-09-07",
    "percent": 70
   }
  ]

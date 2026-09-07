@@ -19,8 +19,7 @@ training on long, boring PDFs. Two things stand between here and that demo.
 
 ## Work items (ordered)
 ### 1. Embedded-PDF failure on VPN-only URL
-Repro URL (Duke VPN only):
-`http://internallibrary.dcri.duke.edu/dcrihome/QSDTraining/LMS_QSD_Training/TS/TS-S-010/TS-S-010-V1.0.pdf`
+Repro URL: an intranet-hosted training PDF reachable only on the customer's VPN (exact URL in the local, gitignored `tmp/contextflow-private-notes.md`).
 
 What the code does today (`extension/src/utils/pdfReader.ts:155-166`): detects a
 PDF if the URL ends in `.pdf`, `document.contentType` is `application/pdf`, or an

@@ -3,18 +3,18 @@
 **Repo:** `../FitRival` (Flutter, Android; backend = Google Apps Script + Sheets).
 
 ## Goal (user's words)
-Good enough for the user and their sister to use together to lose weight,
+Good enough for two family members to use together to lose weight,
 socially: interesting average-weight and %-fat curves, gamification, seeing
 each other.
 
 ## Definition of shipped
-1. Two real users (user + sister) on the Play **production** track, not the
+1. Two real users (two family members) on the Play **production** track, not the
    internal track, logging daily without workarounds.
 2. Shared trend view: both users' weight and body-fat curves on one chart,
    with rolling average and goal-normalized ("% of goal") comparison.
 3. At least one running challenge between them with visible scoring/streaks.
 4. Sign-in that doesn't rely on a shared group secret (Firebase Auth), so
-   inviting the sister is a link, not a config step.
+   inviting the second user is a link, not a config step.
 
 ## Current state (from repo profiling, 2026-09-06)
 - v0.0.66 on the Play internal track; production track stale at v0.0.28 (June).

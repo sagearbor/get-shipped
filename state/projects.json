@@ -41,17 +41,17 @@
     },
     "FitRival": {
       "rank": 4, "hands_off": false,
-      "goal": "Good enough for the user and their sister to lose weight together: shared weight and %fat curves, gamification, seeing each other",
+      "goal": "Good enough for two family members to lose weight together: shared weight and %fat curves, gamification, seeing each other",
       "target": "Google Play production (Android); iOS later", "live": "Play internal track v0.0.66; production stale at v0.0.28",
       "percent": 65, "eta_days": 8,
       "remaining": [
         "Promote to Play production (target-API branch, full test run, release)",
-        "Walk sister onboarding as a new user; fix every developer-only step",
+        "Walk second-user onboarding as a new user; fix every developer-only step",
         "Verify two-user rolling-average weight and %fat curves; add goal lines",
         "Firebase Auth instead of group secret, if onboarding needs it",
         "Streak + head-to-head challenge card on home"
       ],
-      "blocked_on_user": ["Click promote in Play Console", "Sister installs and gives feedback"],
+      "blocked_on_user": ["Click promote in Play Console", "Second user installs and gives feedback"],
       "estimates": [
         {"date": "2026-09-06", "scope": "Production promotion path (merge target-api, tests, release build)", "est_days": 2, "done": null, "actual_days": null},
         {"date": "2026-09-06", "scope": "Onboarding walk + fixes", "est_days": 2, "done": null, "actual_days": null},

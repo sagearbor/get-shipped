@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-06T16:11
+# PRIORITIES — generated from `state/projects.json` at 2026-09-07T08:49
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -30,14 +30,14 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
    - needs user: everything: hands-off
 
 4. **FitRival** — 65%, ETA ~8 agent-days
-   - goal: Good enough for the user and their sister to lose weight together: shared weight and %fat curves, gamification, seeing each other
+   - goal: Good enough for two family members to lose weight together: shared weight and %fat curves, gamification, seeing each other
    - shipped means: see `projects/FitRival.md`
    - [ ] Promote to Play production (target-API branch, full test run, release)
-   - [ ] Walk sister onboarding as a new user; fix every developer-only step
+   - [ ] Walk second-user onboarding as a new user; fix every developer-only step
    - [ ] Verify two-user rolling-average weight and %fat curves; add goal lines
    - [ ] Firebase Auth instead of group secret, if onboarding needs it
    - [ ] Streak + head-to-head challenge card on home
-   - needs user: Click promote in Play Console; Sister installs and gives feedback
+   - needs user: Click promote in Play Console; Second user installs and gives feedback
 
 5. **openline** — 40%, ETA ~12 agent-days
    - goal: Give to 5 friends, have them run nodes, and prove a payment settles in seconds, comparable to a credit card
