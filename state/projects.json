@@ -25,7 +25,7 @@
       "goal": "Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing",
       "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site",
       "live": "extension built; store listing unconfirmed; Stripe live",
-      "percent": 70,
+      "percent": 74,
       "eta_days": 9,
       "remaining": [
         "Fix embedded/intranet PDF failure (intranet LMS, VPN only)",
@@ -35,8 +35,9 @@
         "Bump version and submit to Chrome Web Store"
       ],
       "blocked_on_user": [
-        "Console log from the intranet PDF while on VPN",
-        "Confirm whether a Chrome Web Store listing exists"
+        "Run `STRIPE_SECRET=sk_test_xxx PRICE_PER_SEAT_USD=96 npm --prefix contextflow-backend run setup-stripe-org-product` to actually create the test-mode S",
+        "Set STRIPE_ORG_ANNUAL_PRICE_ID as a runtime env var / secret for createOrgCheckoutSession once the price id above exists.",
+        "Set orgs/{domain}.adminKey by hand for any org that wants the getOrgTrainingReport CSV (same manual step as joinCode today)."
       ],
       "estimates": [
         {
@@ -66,6 +67,13 @@
           "est_days": 1.5,
           "done": null,
           "actual_days": null
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 2 agent: Org training records + org per-seat Stripe billing (design + code)",
+          "est_days": 1.28,
+          "done": "2026-09-08",
+          "actual_days": 1.09
         }
       ]
     },
@@ -94,7 +102,7 @@
       "goal": "Good enough for two family members to lose weight together: shared weight and %fat curves, gamification, seeing each other",
       "target": "Google Play production (Android); iOS later",
       "live": "Play internal track v0.0.66; production stale at v0.0.28",
-      "percent": 75,
+      "percent": 76,
       "eta_days": 8,
       "remaining": [
         "Promote to Play production (target-API branch, full test run, release)",
@@ -136,6 +144,13 @@
           "est_days": 1.12,
           "done": "2026-09-08",
           "actual_days": 0.82
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 2 agent: On-device follow-up fixes: last-synced label, local joined-at time, % of goal dot overlap",
+          "est_days": 0.54,
+          "done": "2026-09-08",
+          "actual_days": 0.42
         }
       ]
     },
@@ -145,7 +160,7 @@
       "goal": "Give to 5 friends, have them run nodes, and prove a payment settles in seconds, comparable to a credit card",
       "target": "Public testnet (Go node, Docker) + Expo mobile app",
       "live": "local single-process prototype only; no public node",
-      "percent": 55,
+      "percent": 60,
       "eta_days": 12,
       "remaining": [
         "Deploy one always-on public seed node (Fly/Cloud Run) with persistence",
@@ -187,6 +202,13 @@
           "est_days": 0.94,
           "done": "2026-09-08",
           "actual_days": 0.91
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 2 agent: Node status page, configurable personhood policy, real mobile QR",
+          "est_days": 0.5,
+          "done": "2026-09-08",
+          "actual_days": 0.38
         }
       ]
     },
@@ -196,16 +218,14 @@
       "goal": "Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline",
       "target": "Fly.io API + Vercel web",
       "live": "deploy config ready, not deployed",
-      "percent": 60,
+      "percent": 65,
       "eta_days": null,
       "remaining": [
         "Deploy issuer (fly.toml, vercel.json exist)",
         "Merge or drop feat/email-tier, feat/phone-carrier-tier, feat/paid-billing-card"
       ],
       "blocked_on_user": [
-        "DEPLOY the issuer (Fly.io, free tier): `brew install flyctl && fly auth login` (or `fly auth signup`), then from the repo root: `fly launch --no-deplo",
-        "SENDGRID (free, 100/day): create an API key with Mail Send at https://app.sendgrid.com/settings/api_keys and verify a Single Sender at https://app.sen",
-        "DEPLOY the web app (Vercel, free): `npm i -g vercel && vercel login`, then `cd app/web && vercel link && vercel env add NEXT_PUBLIC_PERSONHOOD_SERVER_"
+        "Deploy is still an owner-only step (unchanged from last night): install flyctl+vercel CLI, fly auth login, vercel login, SendGrid key OR Gmail app pas"
       ],
       "estimates": [
         {
@@ -214,6 +234,13 @@
           "est_days": 1.03,
           "done": "2026-09-08",
           "actual_days": 0.68
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 2 agent: Generic SMTP sender + wire email-tier/phone-carrier-tier into the web app screens",
+          "est_days": 0.44,
+          "done": "2026-09-08",
+          "actual_days": 0.4
         }
       ],
       "note": "Tracked under openline's ETA; see projects/openline-personhood.md"
@@ -224,7 +251,7 @@
       "goal": "Live and useful enough to sell to small companies with chatbots that can't handle AI",
       "target": "Hosted API + WordPress plugin + Stripe",
       "live": "no",
-      "percent": 35,
+      "percent": 40,
       "eta_days": 15,
       "remaining": [
         "Reality check: docker-compose up, one booking end to end",
@@ -258,6 +285,13 @@
           "est_days": 5,
           "done": null,
           "actual_days": null
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 2 agent: Reality check + P7 fixes (adapter-gen compile, plugin volume mount, WP e2e)",
+          "est_days": 0.81,
+          "done": "2026-09-08",
+          "actual_days": 0.78
         }
       ]
     },
@@ -267,7 +301,7 @@
       "goal": "Party game app; web MVP live, mobile stores not wired",
       "target": "Web (live) + app stores",
       "live": "web",
-      "percent": 78,
+      "percent": 82,
       "eta_days": null,
       "remaining": [
         "flutterfire configure for mobile",
@@ -275,9 +309,9 @@
         "Real ads/IAP (mock today)"
       ],
       "blocked_on_user": [
-        "Add a support email to web/privacy/index.html and web/terms/index.html (search TODO(owner)), then `flutter build web && firebase deploy --only hosting",
-        "Account-deletion flow is a Play/App Store blocker for apps with sign-up; not implemented (spec in docs/STORE_LISTING.md 'Blockers' #1). Decide whether",
-        "Upload keystore ~/taskmaster-upload-keystore.jks + android/key.properties are NOT on this machine; find the backup or generate a new one before the fi"
+        "firebase deploy --only hosting -- publishes web/delete-account/index.html (and the updated privacy page) so the Play 'Account deletion URL' is actuall",
+        "Add a support email to web/privacy/index.html, web/terms/index.html, web/delete-account/index.html (TODO(owner) comments)",
+        "Locate/back up ~/taskmaster-upload-keystore.jks + android/key.properties, or generate a new one before the first Play upload"
       ],
       "estimates": [
         {
@@ -286,6 +320,13 @@
           "est_days": 0.78,
           "done": "2026-09-08",
           "actual_days": 0.82
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 2 agent: Account deletion flow (Play/App Store blocker) + targetSdk/compileSdk 36 bump with 16KB pa",
+          "est_days": 0.95,
+          "done": "2026-09-08",
+          "actual_days": 0.91
         }
       ]
     },
@@ -295,7 +336,7 @@
       "goal": "Oral history to interactive shareable timeline",
       "target": "Firebase Hosting + Play",
       "live": "partial (Play internal)",
-      "percent": 80,
+      "percent": 82,
       "eta_days": null,
       "remaining": [
         "Deploy privacy page",
@@ -303,9 +344,9 @@
         "Play production"
       ],
       "blocked_on_user": [
-        "Prodigi sandbox key (free, no card): 1) https://dashboard.prodigi.com/register  2) Settings > Integrations > API > copy the SANDBOX key  3) `firebase ",
-        "Payment provider (not in repo): create a Stripe account, add flutter_stripe + a createPuzzlePaymentIntent callable, and a Stripe webhook that sets pay",
-        "Deploy the web app so the new studio buttons reach the live site: `flutter build web` then `firebase deploy --only hosting` (serially; never parallel "
+        "Stripe: create account at https://dashboard.stripe.com/register, copy sk_test_ key, then: firebase functions:secrets:set STRIPE_SECRET_KEY",
+        "Stripe: create a webhook endpoint (Developers > Webhooks) at https://us-central1-oralhistory-timeline.cloudfunctions.net/stripeWebhook subscribed to p",
+        "After both secrets exist: add secrets: ['STRIPE_SECRET_KEY','STRIPE_WEBHOOK_SECRET'] to createPuzzlePaymentIntent + stripeWebhook in functions/src/ind"
       ],
       "estimates": [
         {
@@ -314,6 +355,13 @@
           "est_days": 1.12,
           "done": "2026-09-08",
           "actual_days": 0.75
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 2 agent: Payments scaffold (Stripe interface + fake/fixtures), image-resolution gate for 1000pc puz",
+          "est_days": 0.81,
+          "done": "2026-09-08",
+          "actual_days": 0.74
         }
       ]
     },
@@ -391,7 +439,7 @@
       "goal": "UBI transition simulator (conference demo)",
       "target": "Cloud Run",
       "live": "yes",
-      "percent": 85,
+      "percent": 88,
       "eta_days": null,
       "remaining": [
         "Phase 8-9 dynamic models",
@@ -409,6 +457,13 @@
           "est_days": 0.69,
           "done": "2026-09-08",
           "actual_days": 0.69
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 2 agent: P8-T9 custom model execution + bundle code-splitting",
+          "est_days": 0.75,
+          "done": "2026-09-08",
+          "actual_days": 0.39
         }
       ]
     },

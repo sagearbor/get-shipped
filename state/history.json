@@ -24,7 +24,7 @@
   },
   {
    "date": "2026-09-08",
-   "percent": 70
+   "percent": 74
   }
  ],
  "faculty-adequacy": [
@@ -52,7 +52,7 @@
   },
   {
    "date": "2026-09-08",
-   "percent": 75
+   "percent": 76
   }
  ],
  "openline": [
@@ -66,7 +66,7 @@
   },
   {
    "date": "2026-09-08",
-   "percent": 55
+   "percent": 60
   }
  ],
  "personhood": [
@@ -80,7 +80,7 @@
   },
   {
    "date": "2026-09-08",
-   "percent": 60
+   "percent": 65
   }
  ],
  "chatnbook": [
@@ -94,7 +94,7 @@
   },
   {
    "date": "2026-09-08",
-   "percent": 35
+   "percent": 40
   }
  ],
  "ai-ubi-wellbeing-transition-simulator": [
@@ -108,7 +108,7 @@
   },
   {
    "date": "2026-09-08",
-   "percent": 85
+   "percent": 88
   }
  ],
  "arborlife-webpage": [
@@ -234,7 +234,7 @@
   },
   {
    "date": "2026-09-08",
-   "percent": 80
+   "percent": 82
   }
  ],
  "sagearbor.github.io": [
@@ -262,7 +262,7 @@
   },
   {
    "date": "2026-09-08",
-   "percent": 78
+   "percent": 82
   }
  ]
 }
