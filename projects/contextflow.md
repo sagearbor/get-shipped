@@ -44,9 +44,9 @@ reach the URL):
 - **No text layer.** If the PDF is scanned, `unpdf` returns nothing. Confirm
   by selecting text in Chrome's viewer.
 
-Diagnostic first step for the user: on VPN, open the URL, open DevTools on the
-page, enable the extension's debug toggle, and paste the console output into
-`../contextflow/tmp/`. Then this orchestrator can implement the fix.
+Diagnostic first step for the user (after PR #90 merges): on VPN, open the
+URL, open DevTools, run `window.__cfDiagnosePDF()` in the console, and paste
+the output into `../contextflow/tmp/`. One run answers all five hypotheses.
 
 ### 2. Cloud storage of quick results for org users
 Exists: shared Firebase cache of page analyses (`extension/src/utils/firebaseCache.ts`,
@@ -65,11 +65,10 @@ duplicated between `popup.js` and `license.ts`. Work: one Stripe Product
 "Org annual per seat", checkout session with `quantity`, webhook sets
 `orgs/{id}.seats`, `validateLicense` enforces seat count.
 
-### 4. Branch hygiene, then Chrome Web Store release
-Ten-plus unmerged `feat/*` branches (`feat/stripe-integration-complete`,
-`feat/progress-bar-curve-pdf-fixes`, `feat/launch-ready-ux-polish`, …). Triage:
-merge, or delete with a note. Then bump `manifest.json` version (0.1.44 now)
-and submit.
+### 4. Chrome Web Store release
+Branch triage done 2026-09-08 (PR #90, `docs/BRANCH_TRIAGE.md`): all twelve
+stale branches were already merged via GitHub PRs; they only need deleting.
+Remaining: bump `manifest.json` version (0.1.44 now) and submit.
 
 ## Open questions for the user
 - Is ContextFlow currently listed on the Chrome Web Store? (Support/privacy
@@ -81,4 +80,5 @@ and submit.
 `ORG_CONFIG.enrollUrl`, `STRIPE_CONFIG.*`. Firebase project `contextflow-ext`.
 
 ## Log
+- 2026-09-08 — Round 2 agent: org training records + per-seat billing, PR #89 (open, owner review). Round 3 agent: branch triage + PDF debug aid, PR #90 (open).
 - 2026-09-06 — plan created from repo profiling; no code touched.

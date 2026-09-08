@@ -28,16 +28,15 @@
       "percent": 74,
       "eta_days": 9,
       "remaining": [
-        "Fix embedded/intranet PDF failure (intranet LMS, VPN only)",
+        "Fix embedded/intranet PDF failure: owner runs __cfDiagnosePDF() on VPN (PR #90)",
         "Persist per-user quick results for org customers + minimal org report/CSV",
         "Distinct Stripe path for orgs: per-seat annual, seat enforcement",
-        "Triage 10+ unmerged feat/* branches",
         "Bump version and submit to Chrome Web Store"
       ],
       "blocked_on_user": [
-        "Run `STRIPE_SECRET=sk_test_xxx PRICE_PER_SEAT_USD=96 npm --prefix contextflow-backend run setup-stripe-org-product` to actually create the test-mode S",
-        "Set STRIPE_ORG_ANNUAL_PRICE_ID as a runtime env var / secret for createOrgCheckoutSession once the price id above exists.",
-        "Set orgs/{domain}.adminKey by hand for any org that wants the getOrgTrainingReport CSV (same manual step as joinCode today)."
+        "Review + merge PR #89 (org billing) and PR #90 (triage + PDF debug aid)",
+        "On VPN run window.__cfDiagnosePDF() on the intranet PDF, paste output to contextflow/tmp/",
+        "Run setup-stripe-org-product with a Stripe TEST key; set STRIPE_ORG_ANNUAL_PRICE_ID"
       ],
       "estimates": [
         {
