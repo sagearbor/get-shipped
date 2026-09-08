@@ -25,7 +25,7 @@
       "goal": "Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing",
       "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site",
       "live": "extension built; store listing unconfirmed; Stripe live",
-      "percent": 74,
+      "percent": 75,
       "eta_days": 9,
       "remaining": [
         "Fix embedded/intranet PDF failure: owner runs __cfDiagnosePDF() on VPN (PR #90)",
@@ -34,9 +34,9 @@
         "Bump version and submit to Chrome Web Store"
       ],
       "blocked_on_user": [
-        "Review + merge PR #89 (org billing) and PR #90 (triage + PDF debug aid)",
-        "On VPN run window.__cfDiagnosePDF() on the intranet PDF, paste output to contextflow/tmp/",
-        "Run setup-stripe-org-product with a Stripe TEST key; set STRIPE_ORG_ANNUAL_PRICE_ID"
+        "On VPN, open the intranet-hosted training PDF, open DevTools console, run `__cfDiagnosePDF()`, and paste the output back so the actual fix (not just d",
+        "Review docs/BRANCH_TRIAGE.md and, if agreed, run: git push origin --delete feat/responses-api-debug-toggle feat/stripe-integration-complete feat/progr",
+        "Continue reviewing PR #89 (org training records + billing) separately \u2014 untouched by this session."
       ],
       "estimates": [
         {
@@ -73,6 +73,13 @@
           "est_days": 1.28,
           "done": "2026-09-08",
           "actual_days": 1.09
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 3 agent: Branch triage doc + PDF-detection debug aid (read-only analysis, one small PR)",
+          "est_days": 0.72,
+          "done": "2026-09-08",
+          "actual_days": 0.6
         }
       ]
     },
@@ -159,7 +166,7 @@
       "goal": "Give to 5 friends, have them run nodes, and prove a payment settles in seconds, comparable to a credit card",
       "target": "Public testnet (Go node, Docker) + Expo mobile app",
       "live": "local single-process prototype only; no public node",
-      "percent": 60,
+      "percent": 68,
       "eta_days": 12,
       "remaining": [
         "Deploy one always-on public seed node (Fly/Cloud Run) with persistence",
@@ -169,9 +176,9 @@
         "Personhood: deploy the credential issuer so friends can enroll"
       ],
       "blocked_on_user": [
-        "Deploy the always-on seed node so friends can reach it. Cheapest: on this Mac, `cd cmd/openline-node && OPENLINE_GENESIS_SEED=<pick-a-secret> OPENLINE",
-        "Docker is not installed on this Mac, so the rebuilt Dockerfile is verified statically only. To verify: `brew install colima docker && colima start`, t",
-        "Remote friends on Expo Go need either the same Wi-Fi as whoever runs `npx expo start`, or `npx expo start --tunnel` (requires a free Expo account logi"
+        "Merge PR 88: gh pr merge 88 --squash --delete-branch (cross-node vote, Docker fix, key backup)",
+        "Deploy the seed node (Tailscale on this Mac or a small VPS) and run friends through FRIENDS.md",
+        "Set OPENLINE_PERSONHOOD_POLICY=round1-email on the seed node once personhood is deployed"
       ],
       "estimates": [
         {
@@ -208,6 +215,13 @@
           "est_days": 0.5,
           "done": "2026-09-08",
           "actual_days": 0.38
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 3 agent: Real cross-node Flurry soft-confirmation (peers vote in the VRF committee), verify the Doc",
+          "est_days": 0.94,
+          "done": "2026-09-08",
+          "actual_days": 0.88
         }
       ]
     },
@@ -217,7 +231,7 @@
       "goal": "Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline",
       "target": "Fly.io API + Vercel web",
       "live": "deploy config ready, not deployed",
-      "percent": 65,
+      "percent": 72,
       "eta_days": null,
       "remaining": [
         "Deploy issuer (fly.toml, vercel.json exist)",
@@ -240,6 +254,13 @@
           "est_days": 0.44,
           "done": "2026-09-08",
           "actual_days": 0.4
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 3 agent: Holder did:key + nullifierBinding on issued credentials; Redis-backed session/token stores",
+          "est_days": 1.49,
+          "done": "2026-09-08",
+          "actual_days": 1.23
         }
       ],
       "note": "Tracked under openline's ETA; see projects/openline-personhood.md"
@@ -250,7 +271,7 @@
       "goal": "Live and useful enough to sell to small companies with chatbots that can't handle AI",
       "target": "Hosted API + WordPress plugin + Stripe",
       "live": "no",
-      "percent": 40,
+      "percent": 48,
       "eta_days": 15,
       "remaining": [
         "Reality check: docker-compose up, one booking end to end",
@@ -291,6 +312,13 @@
           "est_days": 0.81,
           "done": "2026-09-08",
           "actual_days": 0.78
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 3 agent: Fixed pnpm -r build, wired appointment endpoints to real Postgres persistence, added MCP/w",
+          "est_days": 0.72,
+          "done": "2026-09-08",
+          "actual_days": 0.6
         }
       ]
     },
@@ -335,7 +363,7 @@
       "goal": "Oral history to interactive shareable timeline",
       "target": "Firebase Hosting + Play",
       "live": "partial (Play internal)",
-      "percent": 82,
+      "percent": 84,
       "eta_days": null,
       "remaining": [
         "Deploy privacy page",
@@ -361,6 +389,13 @@
           "est_days": 0.81,
           "done": "2026-09-08",
           "actual_days": 0.74
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 3 agent: Fix puzzle-order Playwright e2e + add server-side print upscale for 1000pc puzzles",
+          "est_days": 0.5,
+          "done": "2026-09-08",
+          "actual_days": 0.44
         }
       ]
     },
@@ -438,7 +473,7 @@
       "goal": "UBI transition simulator (conference demo)",
       "target": "Cloud Run",
       "live": "yes",
-      "percent": 88,
+      "percent": 90,
       "eta_days": null,
       "remaining": [
         "Phase 8-9 dynamic models",
@@ -463,6 +498,13 @@
           "est_days": 0.75,
           "done": "2026-09-08",
           "actual_days": 0.39
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 3 agent: Fix App.tsx's AT-6 double-count bug, unify it onto the shared pure.ts engine, and wire anc",
+          "est_days": 0.72,
+          "done": "2026-09-08",
+          "actual_days": 0.53
         }
       ]
     },
