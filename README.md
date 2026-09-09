@@ -1,5 +1,7 @@
 # get-shipped
 
+**Dashboard:** https://sagearbor.github.io/get-shipped/ (progress, ETAs, estimate ledger; updates on every push)
+
 Control tower for finishing the side projects that live beside this repo in
 `../` and getting them into production: app stores, websites, a Chrome
 extension, a payments network, a publication.
