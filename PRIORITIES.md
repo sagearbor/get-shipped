@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-08T03:11
+# PRIORITIES — generated from `state/projects.json` at 2026-09-09T13:24
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -48,14 +48,14 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
    - [ ] Personhood: deploy the credential issuer so friends can enroll
    - needs user: Merge PR 88: gh pr merge 88 --squash --delete-branch (cross-node vote, Docker fix, key backup); Deploy the seed node (Tailscale on this Mac or a small VPS) and run friends through FRIENDS.md; Set OPENLINE_PERSONHOOD_POLICY=round1-email on the seed node once personhood is deployed
 
-5. **personhood** — 72%
+5. **personhood** — 76%
    - goal: Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline
    - shipped means: see `projects/personhood.md`
    - [ ] Deploy issuer (fly.toml, vercel.json exist)
    - [ ] Merge or drop feat/email-tier, feat/phone-carrier-tier, feat/paid-billing-card
    - needs user: Deploy is still an owner-only step (unchanged from last night): install flyctl+vercel CLI, fly auth login, vercel login, SendGrid key OR Gmail app pas
 
-6. **chatnbook** — 48%, ETA ~15 agent-days
+6. **chatnbook** — 58%, ETA ~15 agent-days
    - goal: Live and useful enough to sell to small companies with chatbots that can't handle AI
    - shipped means: see `projects/chatnbook.md`
    - [ ] Reality check: docker-compose up, one booking end to end
@@ -69,7 +69,7 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
 | repo | % | live | goal |
 |---|---|---|---|
 | Medschool_ArborTester | 60 | no (hosted_url null) | Med board exam AI tutor |
-| ai-ubi-wellbeing-transition-simulator | 90 | yes | UBI transition simulator (conference demo) |
+| ai-ubi-wellbeing-transition-simulator | 92 | yes | UBI transition simulator (conference demo) |
 | arborlife-webpage | 90 | yes | Personal site + AI job-fit matcher |
 | career-compass | 85 | installable | Claude Code plugin: job posting to gap analysis + CV |
 | career-compass-starter | 100 | yes | Template workspace for career-compass |
@@ -79,5 +79,5 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
 | neighborhood-poker | 90 | yes | Google Sheets poker tournament manager |
 | oralhistory_timeline | 84 | partial (Play internal) | Oral history to interactive shareable timeline |
 | sagearbor.github.io | 100 | yes | User site root: FitRival landing + privacy policy |
-| taskcaster-app | 82 | web | Party game app; web MVP live, mobile stores not wired |
+| taskcaster-app | 86 | web | Party game app; web MVP live, mobile stores not wired |
 

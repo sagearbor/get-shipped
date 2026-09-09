@@ -231,7 +231,7 @@
       "goal": "Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline",
       "target": "Fly.io API + Vercel web",
       "live": "deploy config ready, not deployed",
-      "percent": 72,
+      "percent": 76,
       "eta_days": null,
       "remaining": [
         "Deploy issuer (fly.toml, vercel.json exist)",
@@ -261,6 +261,13 @@
           "est_days": 1.49,
           "done": "2026-09-08",
           "actual_days": 1.23
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 4 agent: STATUS.md #10a/#10b airdrop-test anchors: fuzzy-extractor-selfie (anchor) + social-vouchin",
+          "est_days": 1.44,
+          "done": "2026-09-09",
+          "actual_days": 1.23
         }
       ],
       "note": "Tracked under openline's ETA; see projects/openline-personhood.md"
@@ -271,7 +278,7 @@
       "goal": "Live and useful enough to sell to small companies with chatbots that can't handle AI",
       "target": "Hosted API + WordPress plugin + Stripe",
       "live": "no",
-      "percent": 48,
+      "percent": 58,
       "eta_days": 15,
       "remaining": [
         "Reality check: docker-compose up, one booking end to end",
@@ -319,6 +326,13 @@
           "est_days": 0.72,
           "done": "2026-09-08",
           "actual_days": 0.6
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 4 agent: Real OAuth (Google/MS) + wire appointment endpoints to Python calendar connectors",
+          "est_days": 1.59,
+          "done": "2026-09-09",
+          "actual_days": 1.19
         }
       ]
     },
@@ -328,7 +342,7 @@
       "goal": "Party game app; web MVP live, mobile stores not wired",
       "target": "Web (live) + app stores",
       "live": "web",
-      "percent": 82,
+      "percent": 86,
       "eta_days": null,
       "remaining": [
         "flutterfire configure for mobile",
@@ -336,9 +350,9 @@
         "Real ads/IAP (mock today)"
       ],
       "blocked_on_user": [
-        "firebase deploy --only hosting -- publishes web/delete-account/index.html (and the updated privacy page) so the Play 'Account deletion URL' is actuall",
-        "Add a support email to web/privacy/index.html, web/terms/index.html, web/delete-account/index.html (TODO(owner) comments)",
-        "Locate/back up ~/taskmaster-upload-keystore.jks + android/key.properties, or generate a new one before the first Play upload"
+        "Play feature graphic (1024x500) and 512x512 Play hi-res icon still need making/exporting -- STORE_LISTING.md Assets checklist.",
+        "Locate/back up the upload keystore (~/taskmaster-upload-keystore.jks) or generate a new one before the first Play upload (unchanged blocker from prior",
+        "Add support email to the three legal web pages and run `firebase deploy --only hosting` to publish web/delete-account + the updated privacy page (unch"
       ],
       "estimates": [
         {
@@ -354,6 +368,13 @@
           "est_days": 0.95,
           "done": "2026-09-08",
           "actual_days": 0.91
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 4 agent: Store screenshots + app icons (Android/iOS) and iOS build/plist/Firebase validation \u2014 done",
+          "est_days": 0.69,
+          "done": "2026-09-09",
+          "actual_days": 0.62
         }
       ]
     },
@@ -473,7 +494,7 @@
       "goal": "UBI transition simulator (conference demo)",
       "target": "Cloud Run",
       "live": "yes",
-      "percent": 90,
+      "percent": 92,
       "eta_days": null,
       "remaining": [
         "Phase 8-9 dynamic models",
@@ -505,6 +526,13 @@
           "est_days": 0.72,
           "done": "2026-09-08",
           "actual_days": 0.53
+        },
+        {
+          "date": "2026-09-08",
+          "scope": "Round 4 agent: P8-T11 equation editor + P9-T8 scenario share/export",
+          "est_days": 0.57,
+          "done": "2026-09-09",
+          "actual_days": 0.44
         }
       ]
     },
