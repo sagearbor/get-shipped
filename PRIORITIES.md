@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-10T23:17
+# PRIORITIES — generated from `state/projects.json` at 2026-09-10T23:20
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -69,7 +69,7 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
 | repo | % | live | goal |
 |---|---|---|---|
 | Medschool_ArborTester | 60 | no (hosted_url null) | Med board exam AI tutor |
-| ai-ubi-wellbeing-transition-simulator | 92 | yes | UBI transition simulator (conference demo) |
+| ai-ubi-wellbeing-transition-simulator | 92 | yes | UBI transition simulator (conference demo); user is driving this personally in their own sessions (2026-09-10) |
 | arborlife-webpage | 90 | yes | Personal site + AI job-fit matcher |
 | career-compass | 85 | installable | Claude Code plugin: job posting to gap analysis + CV |
 | career-compass-starter | 100 | yes | Template workspace for career-compass |

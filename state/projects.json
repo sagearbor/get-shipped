@@ -490,8 +490,8 @@
     },
     "ai-ubi-wellbeing-transition-simulator": {
       "rank": null,
-      "hands_off": false,
-      "goal": "UBI transition simulator (conference demo)",
+      "hands_off": true,
+      "goal": "UBI transition simulator (conference demo); user is driving this personally in their own sessions (2026-09-10)",
       "target": "Cloud Run",
       "live": "yes",
       "percent": 92,

@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-10T23:17:16-04:00",
- "previous_sync": "2026-09-09T13:24:59-04:00",
+ "generated_at": "2026-09-10T23:20:57-04:00",
+ "previous_sync": "2026-09-10T23:17:16-04:00",
  "calibration": {
   "completed": 24,
   "est_days": 21.14,
@@ -618,8 +618,8 @@
   {
    "name": "ai-ubi-wellbeing-transition-simulator",
    "rank": null,
-   "hands_off": false,
-   "goal": "UBI transition simulator (conference demo)",
+   "hands_off": true,
+   "goal": "UBI transition simulator (conference demo); user is driving this personally in their own sessions (2026-09-10)",
    "target": "Cloud Run",
    "live": "yes",
    "percent": 92,
@@ -669,17 +669,11 @@
     "branch": "feat/futures-map",
     "last": "2026-09-10",
     "commits": "47",
-    "dirty": 2,
+    "dirty": 4,
     "unpushed": 0,
     "remote": "sagearbor/ai-ubi-wellbeing-transition-simulator"
    },
-   "new_commits": [
-    "c4dd60b 2026-09-10 fix(nav): make the FUTURES tab reachable on phones",
-    "fe8267f 2026-09-10 feat(futures): v1 voting groundwork behind a Firebase config flag",
-    "537ef13 2026-09-10 feat(engine): macro block, Korinek et al. (2026) reproduction, hindcast that scores",
-    "ab508ab 2026-09-10 feat(futures): AI Futures Map v0 \u2014 graph data, validator, UI, bill extraction, hindcast harness",
-    "5dd9732 2026-09-10 feat(futures): type contracts and pure engine for the AI Futures Map"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260910-2130-futures-map-v0-shipped.yaml",
     "timestamp": "\"2026-09-10T21:30:00-04:00\""
@@ -1280,11 +1274,11 @@
    "note": "",
    "plan": "projects/taskcaster-app.md",
    "git": {
-    "branch": "main",
+    "branch": "fix/overflow-badge-encryption-ios-screenshots",
     "last": "2026-09-09",
     "commits": "223",
-    "dirty": 1,
-    "unpushed": 0,
+    "dirty": 2,
+    "unpushed": null,
     "remote": "sagearbor/taskcaster-app"
    },
    "new_commits": [],
