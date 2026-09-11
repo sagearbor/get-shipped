@@ -231,7 +231,7 @@
       "goal": "Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline",
       "target": "Fly.io API + Vercel web",
       "live": "deploy config ready, not deployed",
-      "percent": 76,
+      "percent": 80,
       "eta_days": null,
       "remaining": [
         "Deploy issuer (fly.toml, vercel.json exist)",
@@ -268,6 +268,13 @@
           "est_days": 1.44,
           "done": "2026-09-09",
           "actual_days": 1.23
+        },
+        {
+          "date": "2026-09-10",
+          "scope": "Round 5 agent: fuzzy-extractor-selfie web wiring + social-vouching candidate identity keyed by holder did",
+          "est_days": 0.62,
+          "done": "2026-09-11",
+          "actual_days": 0.53
         }
       ],
       "note": "Tracked under openline's ETA; see projects/openline-personhood.md"
@@ -278,7 +285,7 @@
       "goal": "Live and useful enough to sell to small companies with chatbots that can't handle AI",
       "target": "Hosted API + WordPress plugin + Stripe",
       "live": "no",
-      "percent": 58,
+      "percent": 62,
       "eta_days": 15,
       "remaining": [
         "Reality check: docker-compose up, one booking end to end",
@@ -333,6 +340,13 @@
           "est_days": 1.59,
           "done": "2026-09-09",
           "actual_days": 1.19
+        },
+        {
+          "date": "2026-09-10",
+          "scope": "Round 5 agent: Real services table + availability wiring, real calendar-delete on cancel, idempotency-key",
+          "est_days": 0.62,
+          "done": "2026-09-11",
+          "actual_days": 0.66
         }
       ]
     },
@@ -342,7 +356,7 @@
       "goal": "Party game app; web MVP live, mobile stores not wired",
       "target": "Web (live) + app stores",
       "live": "web",
-      "percent": 86,
+      "percent": 88,
       "eta_days": null,
       "remaining": [
         "flutterfire configure for mobile",
@@ -375,6 +389,13 @@
           "est_days": 0.69,
           "done": "2026-09-09",
           "actual_days": 0.62
+        },
+        {
+          "date": "2026-09-10",
+          "scope": "Round 5 agent: Round 5 gentle cleanup: play-sheet overflow, offline badge, iOS encryption key, iOS screen",
+          "est_days": 0.56,
+          "done": "2026-09-11",
+          "actual_days": 0.88
         }
       ]
     },
