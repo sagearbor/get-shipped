@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-12T07:02
+# PRIORITIES — generated from `state/projects.json` at 2026-09-12T07:58
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -79,5 +79,5 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
 | neighborhood-poker | 90 | yes | Google Sheets poker tournament manager |
 | oralhistory_timeline | 84 | partial (Play internal) | Oral history to interactive shareable timeline |
 | sagearbor.github.io | 100 | yes | User site root: FitRival landing + privacy policy |
-| taskcaster-app | 89 | https://taskmaster-app-3d480.web.app | Party game app; web MVP live, mobile stores not wired |
+| taskcaster-app | 91 | https://taskmaster-app-3d480.web.app | Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12) |
 

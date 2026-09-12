@@ -370,18 +370,21 @@
     "taskcaster-app": {
       "rank": null,
       "hands_off": false,
-      "goal": "Party game app; web MVP live, mobile stores not wired",
+      "goal": "Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12)",
       "target": "Web (live) + app stores",
       "live": "https://taskmaster-app-3d480.web.app",
-      "percent": 89,
+      "percent": 91,
       "eta_days": null,
       "remaining": [
-        "flutterfire configure for mobile",
-        "Store listings",
-        "Real ads/IAP (mock today)"
+        "Get real players into the Arena (push notifications need a VAPID key)",
+        "Decide Firebase Storage + budget alarm before in-app video",
+        "Surface Arena sharing for friend games; refresh store screenshots for the new first run",
+        "Store blockers unchanged: support email, keystore, feature graphic"
       ],
       "blocked_on_user": [
-        "Merge both PRs (both green on the full suite; production is already running main+#22+#23 from a local integration branch): cd /Users/sagearbor/project"
+        "Optional: delete merged remote branches: cd taskcaster-app && git push origin --delete feat/arena-mechanics feat/arena-ui feat/first-run-ui fix/starte",
+        "Optional: enable web push (VAPID key) if \"you got graded\" notifications are wanted",
+        "Decide on Firebase Storage + budget alarm before any in-app video upload work"
       ],
       "estimates": [
         {
@@ -418,6 +421,13 @@
           "est_days": 0.56,
           "done": "2026-09-12",
           "actual_days": 0.21
+        },
+        {
+          "date": "2026-09-12",
+          "scope": "Round 7 product agent: Make TaskCaster addictively fun: async play loop, 10 killer starter tasks, two-tap first r",
+          "est_days": 1.35,
+          "done": "2026-09-12",
+          "actual_days": 0.62
         }
       ]
     },

@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-09-12T07:02:08-04:00",
- "previous_sync": "2026-09-11T00:49:14-04:00",
+ "generated_at": "2026-09-12T07:58:43-04:00",
+ "previous_sync": "2026-09-12T07:02:08-04:00",
  "calibration": {
-  "completed": 30,
-  "est_days": 26.23,
-  "actual_days": 21.91,
-  "slip_factor": 0.84
+  "completed": 31,
+  "est_days": 27.580000000000002,
+  "actual_days": 22.53,
+  "slip_factor": 0.82
  },
  "repos": [
   {
@@ -36,9 +36,7 @@
     "unpushed": 8,
     "remote": "sagearbor/mindshift"
    },
-   "new_commits": [
-    "75dffc5 2026-09-11 feat(watch): log heart rate during coached sessions, so fusion can be tested"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260911-0400-buzz-dose-and-heat-rubric.yaml",
     "timestamp": "\"2026-09-11T04:00:00-04:00\""
@@ -667,11 +665,7 @@
     "unpushed": 0,
     "remote": "sagearbor/chatnbook"
    },
-   "new_commits": [
-    "325d05d 2026-09-12 fix(widget): actually mount the booking UI in the browser (#24)",
-    "1528529 2026-09-12 fix(widget): actually mount the booking UI in the browser",
-    "7661239 2026-09-12 feat(infra): Dockerfile, compose api profile, Cloud Run deploy script (#22)"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260912-0205-cloudrun-live-widget-fix.yaml",
     "timestamp": "\"2026-09-12T02:05:00-04:00\""
@@ -766,11 +760,7 @@
     "unpushed": 0,
     "remote": "sagearbor/ai-ubi-wellbeing-transition-simulator"
    },
-   "new_commits": [
-    "6408e74 2026-09-11 fix(futures): chart labels state the change explicitly; closed tooltips no longer widen the page",
-    "17afa7f 2026-09-11 feat(futures): explain every field with tap/hover hints; applied cards switch on and show 'before' lines",
-    "762b940 2026-09-11 fix(gemini): move to gemini-3.6-flash; gemini-2.0-flash was retired (404)"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260911-0000-futures-tiers-live.yaml",
     "timestamp": "\"2026-09-11T00:00:00-04:00\""
@@ -1438,18 +1428,21 @@
    "name": "taskcaster-app",
    "rank": null,
    "hands_off": false,
-   "goal": "Party game app; web MVP live, mobile stores not wired",
+   "goal": "Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12)",
    "target": "Web (live) + app stores",
    "live": "https://taskmaster-app-3d480.web.app",
-   "percent": 89,
+   "percent": 91,
    "eta_days": null,
    "remaining": [
-    "flutterfire configure for mobile",
-    "Store listings",
-    "Real ads/IAP (mock today)"
+    "Get real players into the Arena (push notifications need a VAPID key)",
+    "Decide Firebase Storage + budget alarm before in-app video",
+    "Surface Arena sharing for friend games; refresh store screenshots for the new first run",
+    "Store blockers unchanged: support email, keystore, feature graphic"
    ],
    "blocked_on_user": [
-    "Merge both PRs (both green on the full suite; production is already running main+#22+#23 from a local integration branch): cd /Users/sagearbor/project"
+    "Optional: delete merged remote branches: cd taskcaster-app && git push origin --delete feat/arena-mechanics feat/arena-ui feat/first-run-ui fix/starte",
+    "Optional: enable web push (VAPID key) if \"you got graded\" notifications are wanted",
+    "Decide on Firebase Storage + budget alarm before any in-app video upload work"
    ],
    "estimates": [
     {
@@ -1486,6 +1479,13 @@
      "est_days": 0.56,
      "done": "2026-09-12",
      "actual_days": 0.21
+    },
+    {
+     "date": "2026-09-12",
+     "scope": "Round 7 product agent: Make TaskCaster addictively fun: async play loop, 10 killer starter tasks, two-tap first r",
+     "est_days": 1.35,
+     "done": "2026-09-12",
+     "actual_days": 0.62
     }
    ],
    "note": "",
@@ -1493,23 +1493,31 @@
    "git": {
     "branch": "main",
     "last": "2026-09-12",
-    "commits": "227",
+    "commits": "246",
     "dirty": 1,
     "unpushed": 0,
     "remote": "sagearbor/taskcaster-app"
    },
    "new_commits": [
-    "188c31d 2026-09-12 docs: product direction \u2014 async loop, auto-edit, reveal gating, Arena, 10 starter tasks",
-    "4e60fe5 2026-09-12 fix(auth): Privacy/Terms links on login+register, guest-play hint, bottom-anchored footer, password eye icon (#23)",
-    "061754c 2026-09-12 fix(judging): always reveal the scoreboard when judging finishes (#22)",
-    "d19bfd2 2026-09-11 Merge branch 'fix/login-legal-links-guest-copy' into integration/round6",
-    "2c13886 2026-09-11 fix(auth): keep login hero top-anchored; Spacer pushes legal footer to the bottom",
-    "5e64088 2026-09-11 fix(auth): add legal links, guest-play hint, center login layout, fix eye icon",
-    "16289a2 2026-09-11 fix(judging): always reveal the scoreboard when judging finishes"
+    "35b2015 2026-09-12 Merge pull request #27 from sagearbor/fix/started-task-copy-posted-gradient",
+    "7479571 2026-09-12 fix(task): keep title/description visible after Start; Posted gradient fills screen",
+    "4f04221 2026-09-12 Merge pull request #26 from sagearbor/feat/first-run-ui",
+    "bce8310 2026-09-12 feat(home): real ArenaScreen wiring, Your-next-task hero, Watch together",
+    "2995a9c 2026-09-12 Merge origin/main into feat/first-run-ui",
+    "5035a84 2026-09-12 feat(main): cold-open first run replaces onboarding + login for new users",
+    "f728492 2026-09-12 Merge pull request #24 from sagearbor/feat/arena-ui",
+    "03f4a22 2026-09-12 merge main (mechanics final) into feat/arena-ui",
+    "d8212e6 2026-09-12 Merge pull request #25 from sagearbor/feat/arena-mechanics",
+    "05322ef 2026-09-12 Merge origin/feat/arena-mechanics into feat/first-run-ui",
+    "b96fcc0 2026-09-12 feat(task-screen): snap-it/write-it flow, countdown hero, Posted screen",
+    "90e7453 2026-09-12 feat(arena): Firestore feed source, security rules, crowd-score hook, tests",
+    "0faa285 2026-09-12 test(arena): ArenaScreen and WatchTogetherScreen coverage; fix skeleton overflow",
+    "dd961f5 2026-09-12 Merge origin/feat/arena-mechanics into feat/first-run-ui",
+    "f9a28e4 2026-09-12 feat(first-run): cold open, login refactor, home Arena entry, pure task widgets"
    ],
    "wrapup": {
-    "file": "20260911-0140-web-redeploy-judging-race-login-legal.yaml",
-    "timestamp": "\"2026-09-11T01:40:00-04:00\""
+    "file": "20260912-0756-round7-arena-first-run-starter-pack.yaml",
+    "timestamp": "\"2026-09-12T07:56:45-04:00\""
    },
    "prs": [],
    "history": [
@@ -1539,7 +1547,7 @@
     },
     {
      "date": "2026-09-12",
-     "percent": 89
+     "percent": 91
     }
    ]
   }
