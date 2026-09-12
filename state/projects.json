@@ -230,15 +230,17 @@
       "hands_off": false,
       "goal": "Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline",
       "target": "Fly.io API + Vercel web",
-      "live": "deploy config ready, not deployed",
-      "percent": 80,
+      "live": "https://personhood-web.web.app",
+      "percent": 85,
       "eta_days": null,
       "remaining": [
         "Deploy issuer (fly.toml, vercel.json exist)",
         "Merge or drop feat/email-tier, feat/phone-carrier-tier, feat/paid-billing-card"
       ],
       "blocked_on_user": [
-        "Deploy is still an owner-only step (unchanged from last night): install flyctl+vercel CLI, fly auth login, vercel login, SendGrid key OR Gmail app pas"
+        "BACK UP THE ISSUER KEY (root of trust; rotating it invalidates every credential): gcloud secrets versions access latest --secret=personhood-issuer-key",
+        "Give friends the invite code friends-OrXX8NXwFvAK (not committed anywhere; lives only in this status file and the Cloud Run env). Rotate: gcloud run s",
+        "Test mode caveat: with DEV_EXPOSE_CHALLENGE_SECRETS=1 anyone holding the invite code can 'verify' ANY email address. Fine for 5 trusted friends, not f"
       ],
       "estimates": [
         {
@@ -275,6 +277,13 @@
           "est_days": 0.62,
           "done": "2026-09-11",
           "actual_days": 0.53
+        },
+        {
+          "date": "2026-09-11",
+          "scope": "Round 6 planner: First real deploy: issuer on Cloud Run + web app on Firebase Hosting, dev magic-link-on-sc",
+          "est_days": 0.97,
+          "done": "2026-09-12",
+          "actual_days": 0.89
         }
       ],
       "note": "Tracked under openline's ETA; see projects/openline-personhood.md"
@@ -284,8 +293,8 @@
       "hands_off": false,
       "goal": "Live and useful enough to sell to small companies with chatbots that can't handle AI",
       "target": "Hosted API + WordPress plugin + Stripe",
-      "live": "no",
-      "percent": 62,
+      "live": "https://chatnbook-api-664594784582.us-central1.run.app/demo",
+      "percent": 70,
       "eta_days": 15,
       "remaining": [
         "Reality check: docker-compose up, one booking end to end",
@@ -295,8 +304,9 @@
         "One pilot customer"
       ],
       "blocked_on_user": [
-        "Pilot customer",
-        "Hosting + Stripe accounts"
+        "Nothing is required to look at the demo -- it is live and public. The items below are only if you want to keep it.",
+        "Bookings live in memory and Cloud Run scales to zero, so everything resets on a cold start (roughly after ~15 minutes idle). Before showing this to a ",
+        "The deploy generated ephemeral secrets (AGENT_HMAC_SECRET, TOKEN_ENCRYPTION_KEY, ADMIN_API_KEY) and saved them to /Users/sagearbor/projects/githubs/ch"
       ],
       "estimates": [
         {
@@ -347,6 +357,13 @@
           "est_days": 0.62,
           "done": "2026-09-11",
           "actual_days": 0.66
+        },
+        {
+          "date": "2026-09-11",
+          "scope": "Round 6 planner: Get chatnbook on a real HTTPS URL: Dockerfile + Cloud Run deploy, a booking widget that ac",
+          "est_days": 1.76,
+          "done": "2026-09-12",
+          "actual_days": 1.2
         }
       ]
     },
@@ -355,8 +372,8 @@
       "hands_off": false,
       "goal": "Party game app; web MVP live, mobile stores not wired",
       "target": "Web (live) + app stores",
-      "live": "web",
-      "percent": 88,
+      "live": "https://taskmaster-app-3d480.web.app",
+      "percent": 89,
       "eta_days": null,
       "remaining": [
         "flutterfire configure for mobile",
@@ -364,9 +381,7 @@
         "Real ads/IAP (mock today)"
       ],
       "blocked_on_user": [
-        "Play feature graphic (1024x500) and 512x512 Play hi-res icon still need making/exporting -- STORE_LISTING.md Assets checklist.",
-        "Locate/back up the upload keystore (~/taskmaster-upload-keystore.jks) or generate a new one before the first Play upload (unchanged blocker from prior",
-        "Add support email to the three legal web pages and run `firebase deploy --only hosting` to publish web/delete-account + the updated privacy page (unch"
+        "Merge both PRs (both green on the full suite; production is already running main+#22+#23 from a local integration branch): cd /Users/sagearbor/project"
       ],
       "estimates": [
         {
@@ -396,6 +411,13 @@
           "est_days": 0.56,
           "done": "2026-09-11",
           "actual_days": 0.88
+        },
+        {
+          "date": "2026-09-11",
+          "scope": "Round 6 planner: Web app redeployed twice (first since 09-08): judging scoreboard race fixed, pre-auth lega",
+          "est_days": 0.56,
+          "done": "2026-09-12",
+          "actual_days": 0.21
         }
       ]
     },

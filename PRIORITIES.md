@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-11T00:49
+# PRIORITIES — generated from `state/projects.json` at 2026-09-12T07:02
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -48,14 +48,14 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
    - [ ] Personhood: deploy the credential issuer so friends can enroll
    - needs user: Merge PR 88: gh pr merge 88 --squash --delete-branch (cross-node vote, Docker fix, key backup); Deploy the seed node (Tailscale on this Mac or a small VPS) and run friends through FRIENDS.md; Set OPENLINE_PERSONHOOD_POLICY=round1-email on the seed node once personhood is deployed
 
-5. **personhood** — 80%
+5. **personhood** — 85%
    - goal: Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline
    - shipped means: see `projects/personhood.md`
    - [ ] Deploy issuer (fly.toml, vercel.json exist)
    - [ ] Merge or drop feat/email-tier, feat/phone-carrier-tier, feat/paid-billing-card
-   - needs user: Deploy is still an owner-only step (unchanged from last night): install flyctl+vercel CLI, fly auth login, vercel login, SendGrid key OR Gmail app pas
+   - needs user: BACK UP THE ISSUER KEY (root of trust; rotating it invalidates every credential): gcloud secrets versions access latest --secret=personhood-issuer-key; Give friends the invite code friends-OrXX8NXwFvAK (not committed anywhere; lives only in this status file and the Cloud Run env). Rotate: gcloud run s; Test mode caveat: with DEV_EXPOSE_CHALLENGE_SECRETS=1 anyone holding the invite code can 'verify' ANY email address. Fine for 5 trusted friends, not f
 
-6. **chatnbook** — 62%, ETA ~15 agent-days
+6. **chatnbook** — 70%, ETA ~15 agent-days
    - goal: Live and useful enough to sell to small companies with chatbots that can't handle AI
    - shipped means: see `projects/chatnbook.md`
    - [ ] Reality check: docker-compose up, one booking end to end
@@ -63,7 +63,7 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
    - [ ] Host the API
    - [ ] Stripe Checkout for one plan
    - [ ] One pilot customer
-   - needs user: Pilot customer; Hosting + Stripe accounts
+   - needs user: Nothing is required to look at the demo -- it is live and public. The items below are only if you want to keep it.; Bookings live in memory and Cloud Run scales to zero, so everything resets on a cold start (roughly after ~15 minutes idle). Before showing this to a ; The deploy generated ephemeral secrets (AGENT_HMAC_SECRET, TOKEN_ENCRYPTION_KEY, ADMIN_API_KEY) and saved them to /Users/sagearbor/projects/githubs/ch
 
 ## Unranked (live or parked; touch only when asked)
 | repo | % | live | goal |
@@ -79,5 +79,5 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
 | neighborhood-poker | 90 | yes | Google Sheets poker tournament manager |
 | oralhistory_timeline | 84 | partial (Play internal) | Oral history to interactive shareable timeline |
 | sagearbor.github.io | 100 | yes | User site root: FitRival landing + privacy policy |
-| taskcaster-app | 88 | web | Party game app; web MVP live, mobile stores not wired |
+| taskcaster-app | 89 | https://taskmaster-app-3d480.web.app | Party game app; web MVP live, mobile stores not wired |
 
