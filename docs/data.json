@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-12T07:58:43-04:00",
- "previous_sync": "2026-09-12T07:02:08-04:00",
+ "generated_at": "2026-09-12T23:34:27-04:00",
+ "previous_sync": "2026-09-12T07:58:43-04:00",
  "calibration": {
   "completed": 31,
   "est_days": 27.580000000000002,
@@ -753,14 +753,17 @@
    "note": "",
    "plan": "projects/ai-ubi-wellbeing-transition-simulator.md",
    "git": {
-    "branch": "feat/futures-map",
-    "last": "2026-09-11",
-    "commits": "53",
+    "branch": "main",
+    "last": "2026-09-12",
+    "commits": "55",
     "dirty": 1,
     "unpushed": 0,
     "remote": "sagearbor/ai-ubi-wellbeing-transition-simulator"
    },
-   "new_commits": [],
+   "new_commits": [
+    "c304d94 2026-09-12 Merge feat/futures-map: AI Futures Map v0, engine macro block, Korinek reproduction, hindcast, voting tiers",
+    "8d3ac47 2026-09-12 docs: publish the futures-map design record, research reports and core spec v1"
+   ],
    "wrapup": {
     "file": "20260911-0000-futures-tiers-live.yaml",
     "timestamp": "\"2026-09-11T00:00:00-04:00\""
@@ -1493,27 +1496,14 @@
    "git": {
     "branch": "main",
     "last": "2026-09-12",
-    "commits": "246",
+    "commits": "248",
     "dirty": 1,
     "unpushed": 0,
     "remote": "sagearbor/taskcaster-app"
    },
    "new_commits": [
-    "35b2015 2026-09-12 Merge pull request #27 from sagearbor/fix/started-task-copy-posted-gradient",
-    "7479571 2026-09-12 fix(task): keep title/description visible after Start; Posted gradient fills screen",
-    "4f04221 2026-09-12 Merge pull request #26 from sagearbor/feat/first-run-ui",
-    "bce8310 2026-09-12 feat(home): real ArenaScreen wiring, Your-next-task hero, Watch together",
-    "2995a9c 2026-09-12 Merge origin/main into feat/first-run-ui",
-    "5035a84 2026-09-12 feat(main): cold-open first run replaces onboarding + login for new users",
-    "f728492 2026-09-12 Merge pull request #24 from sagearbor/feat/arena-ui",
-    "03f4a22 2026-09-12 merge main (mechanics final) into feat/arena-ui",
-    "d8212e6 2026-09-12 Merge pull request #25 from sagearbor/feat/arena-mechanics",
-    "05322ef 2026-09-12 Merge origin/feat/arena-mechanics into feat/first-run-ui",
-    "b96fcc0 2026-09-12 feat(task-screen): snap-it/write-it flow, countdown hero, Posted screen",
-    "90e7453 2026-09-12 feat(arena): Firestore feed source, security rules, crowd-score hook, tests",
-    "0faa285 2026-09-12 test(arena): ArenaScreen and WatchTogetherScreen coverage; fix skeleton overflow",
-    "dd961f5 2026-09-12 Merge origin/feat/arena-mechanics into feat/first-run-ui",
-    "f9a28e4 2026-09-12 feat(first-run): cold open, login refactor, home Arena entry, pure task widgets"
+    "2c03515 2026-09-12 chore(video): retention indefinite per owner (no lifecycle deletion)",
+    "0591f79 2026-09-12 feat(video): VideoPolicy cost-control constants (clip/size/daily caps, storage path, tap buckets)"
    ],
    "wrapup": {
     "file": "20260912-0756-round7-arena-first-run-starter-pack.yaml",
