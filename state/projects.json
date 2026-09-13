@@ -88,17 +88,16 @@
       "hands_off": true,
       "goal": "Full draft covering all US med schools + paper stubbed for handoff to a co-author; refresh for a new year of data",
       "target": "Publication (Academic Medicine) + GitHub Pages dashboard",
-      "live": "dashboard live",
-      "percent": 30,
+      "live": "dashboard live; manuscript full draft handed to co-author 2026-09-09",
+      "percent": 75,
       "eta_days": null,
       "remaining": [
-        "Extraction is the bottleneck: 46 curated schools yield zero Tier A",
-        "12 schools with roster but no curriculum URL",
-        "Fill manuscript placeholders in docs/manuscript.md",
-        "make annual-run for the new data year"
+        "Rosters for the remaining 34 of 204 schools",
+        "Co-author review of the manuscript draft, then journal submission",
+        "make annual-run for the next data year (rolling 24-month Tier E signal)"
       ],
       "blocked_on_user": [
-        "everything: hands-off"
+        "everything: hands-off (co-author has the draft)"
       ],
       "estimates": []
     },

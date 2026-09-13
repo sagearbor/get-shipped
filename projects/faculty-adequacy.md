@@ -18,4 +18,5 @@ for the new year.
 - Dashboard live: https://sagearbor.github.io/faculty-adequacy-dashboard/
 
 ## Log
+- 2026-09-12 — read-only reassessment: Tier A 224→442, rosters 73→170 of 204, manuscript is a full interim-results draft (0 placeholders), author block set, docx export fixed. Draft handed to co-author 2026-09-09. Percent 30→75.
 - 2026-09-06 — added to inventory as rank 3, hands-off.
