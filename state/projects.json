@@ -372,18 +372,18 @@
       "goal": "Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12)",
       "target": "Web (live) + app stores",
       "live": "https://taskmaster-app-3d480.web.app",
-      "percent": 91,
+      "percent": 93,
       "eta_days": null,
       "remaining": [
-        "Get real players into the Arena (push notifications need a VAPID key)",
-        "Decide Firebase Storage + budget alarm before in-app video",
-        "Surface Arena sharing for friend games; refresh store screenshots for the new first run",
+        "Cloud montages lack burned-in countdown text: ship a freetype-enabled ffmpeg or move rendering to Cloud Run",
+        "Run and verify the mobile builds (camera, mic, video_player) on real devices",
+        "Get real players in; push notifications need a VAPID key",
         "Store blockers unchanged: support email, keystore, feature graphic"
       ],
       "blocked_on_user": [
-        "Optional: delete merged remote branches: cd taskcaster-app && git push origin --delete feat/arena-mechanics feat/arena-ui feat/first-run-ui fix/starte",
-        "Optional: enable web push (VAPID key) if \"you got graded\" notifications are wanted",
-        "Decide on Firebase Storage + budget alarm before any in-app video upload work"
+        "Try it on a phone: Start, Film it, Post it, See theirs",
+        "Optional: add budget alert email recipients (command in status.json)",
+        "Decide on Play upload once mobile builds are verified"
       ],
       "estimates": [
         {
@@ -427,6 +427,13 @@
           "est_days": 1.35,
           "done": "2026-09-12",
           "actual_days": 0.62
+        },
+        {
+          "date": "2026-09-12",
+          "scope": "Round 8 video agent: In-app video as the DEFAULT submission (owner approved Firebase Storage, $100 ceiling): St",
+          "est_days": 1.94,
+          "done": "2026-09-13",
+          "actual_days": 1.62
         }
       ]
     },

@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-09-12T23:37:00-04:00",
- "previous_sync": "2026-09-12T23:35:36-04:00",
+ "generated_at": "2026-09-13T00:34:30-04:00",
+ "previous_sync": "2026-09-12T23:37:00-04:00",
  "calibration": {
-  "completed": 31,
-  "est_days": 27.580000000000002,
-  "actual_days": 22.53,
+  "completed": 32,
+  "est_days": 29.52,
+  "actual_days": 24.15,
   "slip_factor": 0.82
  },
  "repos": [
@@ -30,13 +30,15 @@
    "plan": "projects/mindshift.md",
    "git": {
     "branch": "fix/livecoach-followups",
-    "last": "2026-09-11",
-    "commits": "482",
+    "last": "2026-09-12",
+    "commits": "483",
     "dirty": 0,
-    "unpushed": 8,
+    "unpushed": 9,
     "remote": "sagearbor/mindshift"
    },
-   "new_commits": [],
+   "new_commits": [
+    "864bf72 2026-09-12 fix(watch): name the sideloaded build \"MindShift Dev\" so it can be told apart"
+   ],
    "wrapup": {
     "file": "20260911-0400-buzz-dose-and-heat-rubric.yaml",
     "timestamp": "\"2026-09-11T04:00:00-04:00\""
@@ -69,6 +71,10 @@
     },
     {
      "date": "2026-09-12",
+     "percent": 80
+    },
+    {
+     "date": "2026-09-13",
      "percent": 80
     }
    ]
@@ -181,6 +187,10 @@
     {
      "date": "2026-09-12",
      "percent": 75
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 75
     }
    ]
   },
@@ -245,6 +255,10 @@
     },
     {
      "date": "2026-09-12",
+     "percent": 75
+    },
+    {
+     "date": "2026-09-13",
      "percent": 75
     }
    ]
@@ -350,6 +364,10 @@
     },
     {
      "date": "2026-09-12",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-13",
      "percent": 76
     }
    ]
@@ -463,6 +481,10 @@
     {
      "date": "2026-09-12",
      "percent": 68
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 68
     }
    ]
   },
@@ -571,6 +593,10 @@
     },
     {
      "date": "2026-09-12",
+     "percent": 85
+    },
+    {
+     "date": "2026-09-13",
      "percent": 85
     }
    ]
@@ -698,6 +724,10 @@
     {
      "date": "2026-09-12",
      "percent": 70
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 70
     }
    ]
   },
@@ -793,6 +823,10 @@
     {
      "date": "2026-09-12",
      "percent": 92
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 92
     }
    ]
   },
@@ -850,6 +884,10 @@
     },
     {
      "date": "2026-09-12",
+     "percent": 90
+    },
+    {
+     "date": "2026-09-13",
      "percent": 90
     }
    ]
@@ -909,6 +947,10 @@
     {
      "date": "2026-09-12",
      "percent": 85
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 85
     }
    ]
   },
@@ -964,6 +1006,10 @@
     },
     {
      "date": "2026-09-12",
+     "percent": 100
+    },
+    {
+     "date": "2026-09-13",
      "percent": 100
     }
    ]
@@ -1022,6 +1068,10 @@
     },
     {
      "date": "2026-09-12",
+     "percent": 95
+    },
+    {
+     "date": "2026-09-13",
      "percent": 95
     }
    ]
@@ -1083,6 +1133,10 @@
     {
      "date": "2026-09-12",
      "percent": 60
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 60
     }
    ]
   },
@@ -1141,6 +1195,10 @@
     {
      "date": "2026-09-12",
      "percent": 70
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 70
     }
    ]
   },
@@ -1196,6 +1254,10 @@
     },
     {
      "date": "2026-09-12",
+     "percent": 0
+    },
+    {
+     "date": "2026-09-13",
      "percent": 0
     }
    ]
@@ -1254,6 +1316,10 @@
     },
     {
      "date": "2026-09-12",
+     "percent": 90
+    },
+    {
+     "date": "2026-09-13",
      "percent": 90
     }
    ]
@@ -1344,6 +1410,10 @@
     {
      "date": "2026-09-12",
      "percent": 84
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 84
     }
    ]
   },
@@ -1420,6 +1490,10 @@
     {
      "date": "2026-09-12",
      "percent": 100
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 100
     }
    ]
   },
@@ -1430,18 +1504,18 @@
    "goal": "Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12)",
    "target": "Web (live) + app stores",
    "live": "https://taskmaster-app-3d480.web.app",
-   "percent": 91,
+   "percent": 93,
    "eta_days": null,
    "remaining": [
-    "Get real players into the Arena (push notifications need a VAPID key)",
-    "Decide Firebase Storage + budget alarm before in-app video",
-    "Surface Arena sharing for friend games; refresh store screenshots for the new first run",
+    "Cloud montages lack burned-in countdown text: ship a freetype-enabled ffmpeg or move rendering to Cloud Run",
+    "Run and verify the mobile builds (camera, mic, video_player) on real devices",
+    "Get real players in; push notifications need a VAPID key",
     "Store blockers unchanged: support email, keystore, feature graphic"
    ],
    "blocked_on_user": [
-    "Optional: delete merged remote branches: cd taskcaster-app && git push origin --delete feat/arena-mechanics feat/arena-ui feat/first-run-ui fix/starte",
-    "Optional: enable web push (VAPID key) if \"you got graded\" notifications are wanted",
-    "Decide on Firebase Storage + budget alarm before any in-app video upload work"
+    "Try it on a phone: Start, Film it, Post it, See theirs",
+    "Optional: add budget alert email recipients (command in status.json)",
+    "Decide on Play upload once mobile builds are verified"
    ],
    "estimates": [
     {
@@ -1485,22 +1559,45 @@
      "est_days": 1.35,
      "done": "2026-09-12",
      "actual_days": 0.62
+    },
+    {
+     "date": "2026-09-12",
+     "scope": "Round 8 video agent: In-app video as the DEFAULT submission (owner approved Firebase Storage, $100 ceiling): St",
+     "est_days": 1.94,
+     "done": "2026-09-13",
+     "actual_days": 1.62
     }
    ],
    "note": "",
    "plan": "projects/taskcaster-app.md",
    "git": {
     "branch": "main",
-    "last": "2026-09-12",
-    "commits": "248",
+    "last": "2026-09-13",
+    "commits": "276",
     "dirty": 1,
     "unpushed": 0,
     "remote": "sagearbor/taskcaster-app"
    },
-   "new_commits": [],
+   "new_commits": [
+    "6d61176 2026-09-13 fix(arena): keep showing the last finale while a re-render is pending",
+    "046fa8d 2026-09-13 fix(montage): degrade to no burned-in text when ffmpeg lacks drawtext",
+    "aa92d61 2026-09-13 fix(montage): scope Starter Pack montages across games (starter_<taskId>)",
+    "61ecfa1 2026-09-13 feat(starter-pack): -v2 ids for the six rewritten video tasks",
+    "b768efb 2026-09-13 chore(functions): Node 22 runtime (Node 20 decommissioned 2026-10-30)",
+    "c4a9032 2026-09-13 fix(storage): explicit resource == null overwrite guard; wire functions in firebase.json",
+    "76f131b 2026-09-12 Merge pull request #30 from sagearbor/feat/video-capture-playback",
+    "02462e1 2026-09-12 Merge pull request #29 from sagearbor/feat/video-montage",
+    "27a6045 2026-09-12 test(video): cover capture, upload, playback, taps, montage and the flow",
+    "30c8cd5 2026-09-12 Merge pull request #28 from sagearbor/feat/video-storage-rules",
+    "9416f2b 2026-09-12 docs(video): indefinite retention, versioning writeup, cost model, video-first starter pack",
+    "f76fa77 2026-09-12 test(rules): cover house/ and montages/ prefixes, house re-seed video fields",
+    "1403dc8 2026-09-12 feat(firestore): house video via house/ paths, montages collection",
+    "900147e 2026-09-12 feat(storage): indefinite retention, overwrite protection via versioning, house/montages prefixes",
+    "bee3379 2026-09-12 feat(house): render the six house clips from the starter-task spec"
+   ],
    "wrapup": {
-    "file": "20260912-0756-round7-arena-first-run-starter-pack.yaml",
-    "timestamp": "\"2026-09-12T07:56:45-04:00\""
+    "file": "20260913-0045-round8-video-default-storage-montage.yaml",
+    "timestamp": "\"2026-09-13T00:45:00-04:00\""
    },
    "prs": [],
    "history": [
@@ -1531,6 +1628,10 @@
     {
      "date": "2026-09-12",
      "percent": 91
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 93
     }
    ]
   }
