@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-13T00:34
+# PRIORITIES — generated from `state/projects.json` at 2026-09-13T17:56
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -19,13 +19,15 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
    - [ ] Bump version and submit to Chrome Web Store
    - needs user: On VPN, open the intranet-hosted training PDF, open DevTools console, run `__cfDiagnosePDF()`, and paste the output back so the actual fix (not just d; Review docs/BRANCH_TRIAGE.md and, if agreed, run: git push origin --delete feat/responses-api-debug-toggle feat/stripe-integration-complete feat/progr; Continue reviewing PR #89 (org training records + billing) separately — untouched by this session.
 
-3. **faculty-adequacy** — **HANDS-OFF** (user drives it personally; do not edit from here unless told in-session) — 75%
+3. **faculty-adequacy** — **HANDS-OFF** (user drives it personally; do not edit from here unless told in-session) — 85%
    - goal: Full draft covering all US med schools + paper stubbed for handoff to a co-author; refresh for a new year of data
    - shipped means: see `projects/faculty-adequacy.md`
-   - [ ] Rosters for the remaining 34 of 204 schools
-   - [ ] Co-author review of the manuscript draft, then journal submission
-   - [ ] make annual-run for the next data year (rolling 24-month Tier E signal)
-   - needs user: everything: hands-off (co-author has the draft)
+   - [ ] Co-author review of the manuscript, then journal submission
+   - [ ] Re-gate 38 schools to land +88 validator-recovered records
+   - [ ] UCLA and Hopkins full harvests (labelled floors today)
+   - [ ] Owner policy calls: role-only evidence, Toledo date bug, encrypted PDF, Oklahoma WAF fetch
+   - [ ] make annual-run for the next data year
+   - needs user: Eight decisions listed in faculty-adequacy/tmp/wrapups/20260913-2330-day-summary.yaml; Review two rescue branches holding unmerged URL promotions; Manuscript: refresh results section from the new numbers before submission
 
 4. **FitRival** — 76%, ETA ~8 agent-days
    - goal: Good enough for two family members to lose weight together: shared weight and %fat curves, gamification, seeing each other

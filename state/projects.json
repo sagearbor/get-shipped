@@ -88,18 +88,30 @@
       "hands_off": true,
       "goal": "Full draft covering all US med schools + paper stubbed for handoff to a co-author; refresh for a new year of data",
       "target": "Publication (Academic Medicine) + GitHub Pages dashboard",
-      "live": "dashboard live; manuscript full draft handed to co-author 2026-09-09",
-      "percent": 75,
+      "live": "dashboard live (Tier A 573, rosters 199/204); manuscript draft with co-author",
+      "percent": 85,
       "eta_days": null,
       "remaining": [
-        "Rosters for the remaining 34 of 204 schools",
-        "Co-author review of the manuscript draft, then journal submission",
-        "make annual-run for the next data year (rolling 24-month Tier E signal)"
+        "Co-author review of the manuscript, then journal submission",
+        "Re-gate 38 schools to land +88 validator-recovered records",
+        "UCLA and Hopkins full harvests (labelled floors today)",
+        "Owner policy calls: role-only evidence, Toledo date bug, encrypted PDF, Oklahoma WAF fetch",
+        "make annual-run for the next data year"
       ],
       "blocked_on_user": [
-        "everything: hands-off (co-author has the draft)"
+        "Eight decisions listed in faculty-adequacy/tmp/wrapups/20260913-2330-day-summary.yaml",
+        "Review two rescue branches holding unmerged URL promotions",
+        "Manuscript: refresh results section from the new numbers before submission"
       ],
-      "estimates": []
+      "estimates": [
+        {
+          "date": "2026-09-13",
+          "scope": "Roster + curriculum push: 30 schools, cleanup, 4 curriculum batches, publish (11 agents)",
+          "est_days": 9.56,
+          "done": "2026-09-13",
+          "actual_days": 7.83
+        }
+      ]
     },
     "FitRival": {
       "rank": 4,
