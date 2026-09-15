@@ -31,6 +31,10 @@
   {
    "date": "2026-09-13",
    "percent": 80
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 80
   }
  ],
  "contextflow": [
@@ -65,6 +69,10 @@
   {
    "date": "2026-09-13",
    "percent": 75
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 82
   }
  ],
  "faculty-adequacy": [
@@ -99,6 +107,10 @@
   {
    "date": "2026-09-13",
    "percent": 85
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 88
   }
  ],
  "FitRival": [
@@ -132,6 +144,10 @@
   },
   {
    "date": "2026-09-13",
+   "percent": 76
+  },
+  {
+   "date": "2026-09-15",
    "percent": 76
   }
  ],
@@ -167,6 +183,10 @@
   {
    "date": "2026-09-13",
    "percent": 68
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 80
   }
  ],
  "personhood": [
@@ -201,6 +221,10 @@
   {
    "date": "2026-09-13",
    "percent": 85
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 88
   }
  ],
  "chatnbook": [
@@ -235,6 +259,10 @@
   {
    "date": "2026-09-13",
    "percent": 70
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 74
   }
  ],
  "ai-ubi-wellbeing-transition-simulator": [
@@ -268,6 +296,10 @@
   },
   {
    "date": "2026-09-13",
+   "percent": 92
+  },
+  {
+   "date": "2026-09-15",
    "percent": 92
   }
  ],
@@ -303,6 +335,10 @@
   {
    "date": "2026-09-13",
    "percent": 90
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 90
   }
  ],
  "career-compass": [
@@ -336,6 +372,10 @@
   },
   {
    "date": "2026-09-13",
+   "percent": 85
+  },
+  {
+   "date": "2026-09-15",
    "percent": 85
   }
  ],
@@ -371,6 +411,10 @@
   {
    "date": "2026-09-13",
    "percent": 100
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 100
   }
  ],
  "contextFlow-upgrade": [
@@ -404,6 +448,10 @@
   },
   {
    "date": "2026-09-13",
+   "percent": 95
+  },
+  {
+   "date": "2026-09-15",
    "percent": 95
   }
  ],
@@ -439,6 +487,10 @@
   {
    "date": "2026-09-13",
    "percent": 60
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 60
   }
  ],
  "megaCity-rotating": [
@@ -472,6 +524,10 @@
   },
   {
    "date": "2026-09-13",
+   "percent": 70
+  },
+  {
+   "date": "2026-09-15",
    "percent": 70
   }
  ],
@@ -507,6 +563,10 @@
   {
    "date": "2026-09-13",
    "percent": 0
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 0
   }
  ],
  "neighborhood-poker": [
@@ -540,6 +600,10 @@
   },
   {
    "date": "2026-09-13",
+   "percent": 90
+  },
+  {
+   "date": "2026-09-15",
    "percent": 90
   }
  ],
@@ -575,6 +639,10 @@
   {
    "date": "2026-09-13",
    "percent": 84
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 84
   }
  ],
  "sagearbor.github.io": [
@@ -608,6 +676,10 @@
   },
   {
    "date": "2026-09-13",
+   "percent": 100
+  },
+  {
+   "date": "2026-09-15",
    "percent": 100
   }
  ],
@@ -643,6 +715,10 @@
   {
    "date": "2026-09-13",
    "percent": 93
+  },
+  {
+   "date": "2026-09-15",
+   "percent": 94
   }
  ],
  "personhood-worktrees": []

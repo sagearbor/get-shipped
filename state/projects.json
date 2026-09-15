@@ -25,18 +25,17 @@
       "goal": "Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing",
       "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site",
       "live": "extension built; store listing unconfirmed; Stripe live",
-      "percent": 75,
+      "percent": 82,
       "eta_days": 9,
       "remaining": [
-        "Fix embedded/intranet PDF failure: owner runs __cfDiagnosePDF() on VPN (PR #90)",
-        "Persist per-user quick results for org customers + minimal org report/CSV",
-        "Distinct Stripe path for orgs: per-seat annual, seat enforcement",
-        "Bump version and submit to Chrome Web Store"
+        "Owner uploads v0.1.48 zip to Chrome Web Store",
+        "Set STRIPE_ORG_SECRET (test) + price id; deploy stripeWebhook while watching",
+        "Owner runs __cfDiagnosePDF() on VPN"
       ],
       "blocked_on_user": [
-        "On VPN, open the intranet-hosted training PDF, open DevTools console, run `__cfDiagnosePDF()`, and paste the output back so the actual fix (not just d",
-        "Review docs/BRANCH_TRIAGE.md and, if agreed, run: git push origin --delete feat/responses-api-debug-toggle feat/stripe-integration-complete feat/progr",
-        "Continue reviewing PR #89 (org training records + billing) separately \u2014 untouched by this session."
+        "CHROME WEB STORE UPLOAD (owner-only, I never touch a store account). The zip is already built at /Users/sagearbor/projects/githubs/contextflow/extensi",
+        "ENABLE ORG BILLING IN TEST MODE (3 steps, in order). (1) Create the product/price with a Stripe TEST key: `cd contextflow-backend && STRIPE_SECRET=sk_",
+        "DEPLOY stripeWebhook YOURSELF WHEN YOU CAN WATCH IT. I deliberately did not deploy it: it processes LIVE individual payments, and my change adds event"
       ],
       "estimates": [
         {
@@ -80,6 +79,13 @@
           "est_days": 0.72,
           "done": "2026-09-08",
           "actual_days": 0.6
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "Wrap-up agent: PR #89 reviewed (7 fixes) + merged, #90 merged, 12 stale branches deleted, dependabot clea",
+          "est_days": 0.47,
+          "done": "2026-09-15",
+          "actual_days": 0.51
         }
       ]
     },
@@ -88,20 +94,20 @@
       "hands_off": true,
       "goal": "Full draft covering all US med schools + paper stubbed for handoff to a co-author; refresh for a new year of data",
       "target": "Publication (Academic Medicine) + GitHub Pages dashboard",
-      "live": "dashboard live (Tier A 573, rosters 199/204); manuscript draft with co-author",
-      "percent": 85,
+      "live": "dashboard live (Tier A 584, rosters 199/204); manuscript refreshed 2026-09-15, changes doc for co-author",
+      "percent": 88,
       "eta_days": null,
       "remaining": [
-        "Co-author review of the manuscript, then journal submission",
-        "Re-gate 38 schools to land +88 validator-recovered records",
-        "UCLA and Hopkins full harvests (labelled floors today)",
-        "Owner policy calls: role-only evidence, Toledo date bug, encrypted PDF, Oklahoma WAF fetch",
-        "make annual-run for the next data year"
+        "Co-author reviews docs/manuscript_CHANGES_2026-09-15.md (one conclusion changed: rho -0.44)",
+        "12 external-seeded schools never tier-classified (4,173 records): queue Phase 3",
+        "Policy: role-only evidence toward Tier A",
+        "UCLA/Hopkins full harvests",
+        "Journal submission; annual-run next data year"
       ],
       "blocked_on_user": [
-        "Eight decisions listed in faculty-adequacy/tmp/wrapups/20260913-2330-day-summary.yaml",
-        "Review two rescue branches holding unmerged URL promotions",
-        "Manuscript: refresh results section from the new numbers before submission"
+        "Co-author review: section 6 now reports a NON-NULL negative correlation between teaching-evidenced share and evidence coverage (rho -0.44 [-0.63,-0.19",
+        "Co-author decision: old Table 4's six-class roster-failure taxonomy was dropped (its premise, '34 schools without a roster', is now false -- only 5 ar",
+        "12 schools (4,173 records) still owe a Phase 3 identity pass and are labelled 'pending'; the manuscript rests on 187 of 204 schools until that runs. E"
       ],
       "estimates": [
         {
@@ -110,6 +116,48 @@
           "est_days": 9.56,
           "done": "2026-09-13",
           "actual_days": 7.83
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "FA follow-up agent: date-and-pdf: toledo-life date inference + kansas-kansas encrypted PDF",
+          "est_days": 0.91,
+          "done": "2026-09-15",
+          "actual_days": 0.9
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "FA follow-up agent: phase5-stealth: Phase 1 stealth fetch ladder ported into Phase 5 (oklahoma, oklahoma-state",
+          "est_days": 0.56,
+          "done": "2026-09-15",
+          "actual_days": 0.28
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "FA follow-up agent: publish-manuscript: worktree cleanup, publish, readiness table, manuscript refresh",
+          "est_days": 0.79,
+          "done": "2026-09-15",
+          "actual_days": 0.33
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "FA follow-up agent: rescue-review: review and retire the two 20260913 rescue branches",
+          "est_days": 0.41,
+          "done": "2026-09-15",
+          "actual_days": 0.28
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "FA follow-up agent: validator-regate-b: overflow half of the PR #143 name-validator re-gate (wake-forest)",
+          "est_days": 0.13,
+          "done": "2026-09-15",
+          "actual_days": 0.1
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "FA follow-up agent: validator-regate: 38-school re-gate for PR #143 name-validator fix",
+          "est_days": 0.69,
+          "done": "2026-09-15",
+          "actual_days": 0.4
         }
       ]
     },
@@ -176,8 +224,8 @@
       "hands_off": false,
       "goal": "Give to 5 friends, have them run nodes, and prove a payment settles in seconds, comparable to a credit card",
       "target": "Public seed node (Cloud Run or VPS) + Expo mobile",
-      "live": "local single-process prototype only; no public node",
-      "percent": 68,
+      "live": "seed node https://openline-seed-664594784582.us-central1.run.app + wallet https://openline-wallet.web.app",
+      "percent": 80,
       "eta_days": 12,
       "remaining": [
         "Deploy one always-on public seed node (Fly/Cloud Run) with persistence",
@@ -187,9 +235,9 @@
         "Personhood: deploy the credential issuer so friends can enroll"
       ],
       "blocked_on_user": [
-        "Merge PR 88: gh pr merge 88 --squash --delete-branch (cross-node vote, Docker fix, key backup)",
-        "Deploy the seed node (Tailscale on this Mac or a small VPS) and run friends through FRIENDS.md",
-        "Set OPENLINE_PERSONHOOD_POLICY=round1-email on the seed node once personhood is deployed"
+        "Send a friend the link. They need the Personhood invite code, which is deliberately NOT in the repo: gcloud run services describe personhood-issuer --",
+        "Cosmetic, worth fixing before sharing widely: the wallet's Receive button is clipped at 390px width (Send/Receive row overflows). Seen in the headless",
+        "Cost note: the seed node runs min-instances=0 / max-instances=1, so it idles free and cold-starts in about a second. max-instances MUST stay 1 - two i"
       ],
       "estimates": [
         {
@@ -233,6 +281,13 @@
           "est_days": 0.94,
           "done": "2026-09-08",
           "actual_days": 0.88
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "Wrap-up agent: Seed node + web wallet live; PRs #88/#89 merged; fixed an empty-nullifier dedup bug",
+          "est_days": 0.38,
+          "done": "2026-09-15",
+          "actual_days": 0.38
         }
       ]
     },
@@ -242,7 +297,7 @@
       "goal": "Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline",
       "target": "Cloud Run issuer + Firebase Hosting web",
       "live": "https://personhood-web.web.app",
-      "percent": 85,
+      "percent": 88,
       "eta_days": null,
       "remaining": [
         "Deploy issuer (fly.toml, vercel.json exist)",
@@ -295,6 +350,13 @@
           "est_days": 0.97,
           "done": "2026-09-12",
           "actual_days": 0.89
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "Wrap-up agent: Firestore-backed persistent stores + deploy + verification",
+          "est_days": 0.46,
+          "done": "2026-09-15",
+          "actual_days": 0.42
         }
       ],
       "note": "Tracked under openline's ETA; see projects/openline-personhood.md"
@@ -305,7 +367,7 @@
       "goal": "Live and useful enough to sell to small companies with chatbots that can't handle AI",
       "target": "Cloud Run API + WordPress plugin + Stripe",
       "live": "https://chatnbook-api-664594784582.us-central1.run.app/demo",
-      "percent": 70,
+      "percent": 74,
       "eta_days": 15,
       "remaining": [
         "Reality check: docker-compose up, one booking end to end",
@@ -315,9 +377,8 @@
         "One pilot customer"
       ],
       "blocked_on_user": [
-        "Nothing is required to look at the demo -- it is live and public. The items below are only if you want to keep it.",
-        "Bookings live in memory and Cloud Run scales to zero, so everything resets on a cold start (roughly after ~15 minutes idle). Before showing this to a ",
-        "The deploy generated ephemeral secrets (AGENT_HMAC_SECRET, TOKEN_ENCRYPTION_KEY, ADMIN_API_KEY) and saved them to /Users/sagearbor/projects/githubs/ch"
+        "CI's `test` job ('Full test suite (pytest + TS + adapter-gen)' step in .github/workflows/ci.yml) hangs reproducibly (3/3 attempts) right after package",
+        "tmp/cloudrun-secrets.env (repo-root tmp/, gitignored, chmod 600) now holds the live service's AGENT_HMAC_SECRET/TOKEN_ENCRYPTION_KEY/ADMIN_API_KEY, pu"
       ],
       "estimates": [
         {
@@ -375,6 +436,13 @@
           "est_days": 1.76,
           "done": "2026-09-12",
           "actual_days": 1.2
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "Wrap-up agent: Firestore persistence for cold-start durability + browser E2E test gap",
+          "est_days": 0.47,
+          "done": "2026-09-15",
+          "actual_days": 0.47
         }
       ]
     },
@@ -384,7 +452,7 @@
       "goal": "Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12)",
       "target": "Web (live) + app stores",
       "live": "https://taskmaster-app-3d480.web.app",
-      "percent": 93,
+      "percent": 94,
       "eta_days": null,
       "remaining": [
         "Cloud montages lack burned-in countdown text: ship a freetype-enabled ffmpeg or move rendering to Cloud Run",
@@ -393,9 +461,9 @@
         "Store blockers unchanged: support email, keystore, feature graphic"
       ],
       "blocked_on_user": [
-        "Try it on a phone: Start, Film it, Post it, See theirs",
-        "Optional: add budget alert email recipients (command in status.json)",
-        "Decide on Play upload once mobile builds are verified"
+        "Nothing is blocking. Optional: the VAPID private key is in Secret Manager as VAPID_PRIVATE_KEY (projects/488967944620/secrets/VAPID_PRIVATE_KEY, versi",
+        "iOS web push only works for a site the user has added to their Home Screen (Apple's rule, not ours). Android Chrome and desktop work from a normal tab",
+        "Unchanged store blockers from prior rounds: support email in the legal pages, upload keystore, Play feature graphic, paid Apple developer account."
       ],
       "estimates": [
         {
@@ -446,6 +514,13 @@
           "est_days": 1.94,
           "done": "2026-09-13",
           "actual_days": 1.62
+        },
+        {
+          "date": "2026-09-15",
+          "scope": "Wrap-up agent: Round 9: burned-in montage text, mobile walkthrough on an emulator, web push for grades",
+          "est_days": 0.44,
+          "done": "2026-09-15",
+          "actual_days": 0.49
         }
       ]
     },
