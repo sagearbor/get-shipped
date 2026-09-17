@@ -1,9 +1,9 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-17T07:09
+# PRIORITIES — generated from `state/projects.json` at 2026-09-17T07:16
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
-1. **mindshift** — **HANDS-OFF** (user drives it personally; do not edit from here unless told in-session) — 80%
-   - goal: AI empathy/tone coach with live-call nudges; user is driving this personally
+1. **mindshift** — 80%
+   - goal: AI empathy/tone coach with live-call nudges; user is driving this personally; owner asked 2026-09-17 to complete agentically, too busy to drive personally
    - shipped means: see `projects/mindshift.md`
    - [ ] Owner runs manual nudge checks, then server deploy + OTA
    - [ ] Shouting voice-identity miss

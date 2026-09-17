@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-17T07:09:51-04:00",
- "previous_sync": "2026-09-15T04:58:41-04:00",
+ "generated_at": "2026-09-17T07:16:25-04:00",
+ "previous_sync": "2026-09-17T07:09:51-04:00",
  "calibration": {
   "completed": 44,
   "est_days": 44.79,
@@ -11,8 +11,8 @@
   {
    "name": "mindshift",
    "rank": 1,
-   "hands_off": true,
-   "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally",
+   "hands_off": false,
+   "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally; owner asked 2026-09-17 to complete agentically, too busy to drive personally",
    "target": "App stores (Expo RN) + Cloud Run API",
    "live": "preview builds / OTA",
    "percent": 80,
@@ -33,7 +33,7 @@
     "last": "2026-09-12",
     "commits": "483",
     "dirty": 0,
-    "unpushed": 9,
+    "unpushed": 0,
     "remote": "sagearbor/mindshift"
    },
    "new_commits": [],
@@ -923,23 +923,7 @@
     "unpushed": 0,
     "remote": "sagearbor/ai-ubi-wellbeing-transition-simulator"
    },
-   "new_commits": [
-    "c345efc 2026-09-16 docs: pin Node 22 for the registered research-attempt tests",
-    "453d9e5 2026-09-16 Merge pull request #28 from sagearbor/codex/research-ensemble-20260916",
-    "64bf32b 2026-09-16 Merge pull request #27 from sagearbor/codex/research-health-20260916",
-    "7465098 2026-09-16 Merge pull request #26 from sagearbor/codex/research-changes-20260916",
-    "9aad6ef 2026-09-16 Merge pull request #25 from sagearbor/codex/research-damped-20260916",
-    "0f56282 2026-09-16 Merge pull request #24 from sagearbor/codex/research-offset-20260916",
-    "0319507 2026-09-16 Merge pull request #29 from sagearbor/claude/holdout-offset",
-    "014d90f 2026-09-16 Merge pull request #31 from sagearbor/docs/checklist-catchup",
-    "88b8bd3 2026-09-16 Merge pull request #30 from sagearbor/docs/holdout-comparison",
-    "349a540 2026-09-16 Merge pull request #23 from sagearbor/docs/next-steps-holdout",
-    "322b3e9 2026-09-16 docs(checklist): commit the 2026-09-08 phase 8-9 completions and mark the file's scope",
-    "03dde0e 2026-09-16 docs(review): side-by-side comparison of the seven holdout attempts",
-    "cca606e 2026-09-16 result: country-offset holdout entry beats persistence (single registered run)",
-    "cfe408e 2026-09-16 register: country-offset holdout variant protocol (before any scoring run)",
-    "371e438 2026-09-16 Link all research PRs and clarify report timestamps and shock-year limitation"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260916-0100-shipped-beta-and-next-holdout.yaml",
     "timestamp": "2026-09-16T01:00:00-04:00"

@@ -3,8 +3,8 @@
   "repos": {
     "mindshift": {
       "rank": 1,
-      "hands_off": true,
-      "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally",
+      "hands_off": false,
+      "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally; owner asked 2026-09-17 to complete agentically, too busy to drive personally",
       "target": "App stores (Expo RN) + Cloud Run API",
       "live": "preview builds / OTA",
       "percent": 80,
