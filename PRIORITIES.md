@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-15T04:58
+# PRIORITIES — generated from `state/projects.json` at 2026-09-17T07:09
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
