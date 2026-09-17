@@ -4,20 +4,32 @@
     "mindshift": {
       "rank": 1,
       "hands_off": false,
-      "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally; owner asked 2026-09-17 to complete agentically, too busy to drive personally",
+      "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally",
       "target": "App stores (Expo RN) + Cloud Run API",
       "live": "preview builds / OTA",
-      "percent": 80,
+      "percent": 83,
       "eta_days": null,
       "remaining": [
-        "Owner runs manual nudge checks, then server deploy + OTA",
-        "Shouting voice-identity miss",
-        "Activation classifier retrain"
+        "Install watch APK (needs owner's device IP:port)",
+        "Decide whether to enable the valence veto: shadow-log first with MINDSHIFT_TONE_AUDIO=on, gate off",
+        "PR #185 blocked on a real test-collection bug (two dirs both import as module 'tests'); owner decision on layout",
+        "Merge order still #183 (3wk stale CI) then #185, independent: #184; #173 has conflicts",
+        "gpt-audio labeller needs credits; real-voice validation needs owner's own recordings"
       ],
       "blocked_on_user": [
-        "everything: hands-off"
+        "Install watch APK: apps/watch/wearApp/build/outputs/apk/debug/wearApp-debug.apk",
+        "Re-run PR #183 CI then merge (android changes into a live health app, not done unattended)",
+        "Decide test-layout fix for PR #185's collection failure"
       ],
-      "estimates": []
+      "estimates": [
+        {
+          "date": "2026-09-17",
+          "scope": "Agent takeover: valence veto decided+shipped (PR #186, merged), CI diagnosed, 2 bugs fixed",
+          "est_days": 0.55,
+          "done": "2026-09-17",
+          "actual_days": 0.78
+        }
+      ]
     },
     "contextflow": {
       "rank": 2,

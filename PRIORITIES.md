@@ -1,14 +1,16 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-17T07:16
+# PRIORITIES — generated from `state/projects.json` at 2026-09-17T07:51
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
-1. **mindshift** — 80%
-   - goal: AI empathy/tone coach with live-call nudges; user is driving this personally; owner asked 2026-09-17 to complete agentically, too busy to drive personally
+1. **mindshift** — 83%
+   - goal: AI empathy/tone coach with live-call nudges; user is driving this personally
    - shipped means: see `projects/mindshift.md`
-   - [ ] Owner runs manual nudge checks, then server deploy + OTA
-   - [ ] Shouting voice-identity miss
-   - [ ] Activation classifier retrain
-   - needs user: everything: hands-off
+   - [ ] Install watch APK (needs owner's device IP:port)
+   - [ ] Decide whether to enable the valence veto: shadow-log first with MINDSHIFT_TONE_AUDIO=on, gate off
+   - [ ] PR #185 blocked on a real test-collection bug (two dirs both import as module 'tests'); owner decision on layout
+   - [ ] Merge order still #183 (3wk stale CI) then #185, independent: #184; #173 has conflicts
+   - [ ] gpt-audio labeller needs credits; real-voice validation needs owner's own recordings
+   - needs user: Install watch APK: apps/watch/wearApp/build/outputs/apk/debug/wearApp-debug.apk; Re-run PR #183 CI then merge (android changes into a live health app, not done unattended); Decide test-layout fix for PR #185's collection failure
 
 2. **contextflow** — 82%, ETA ~9 agent-days
    - goal: Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing

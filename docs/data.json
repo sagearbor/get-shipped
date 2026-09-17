@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-09-17T07:16:25-04:00",
- "previous_sync": "2026-09-17T07:09:51-04:00",
+ "generated_at": "2026-09-17T07:51:47-04:00",
+ "previous_sync": "2026-09-17T07:16:25-04:00",
  "calibration": {
-  "completed": 44,
-  "est_days": 44.79,
-  "actual_days": 36.54,
+  "completed": 45,
+  "est_days": 45.34,
+  "actual_days": 37.32,
   "slip_factor": 0.82
  },
  "repos": [
@@ -12,34 +12,51 @@
    "name": "mindshift",
    "rank": 1,
    "hands_off": false,
-   "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally; owner asked 2026-09-17 to complete agentically, too busy to drive personally",
+   "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally",
    "target": "App stores (Expo RN) + Cloud Run API",
    "live": "preview builds / OTA",
-   "percent": 80,
+   "percent": 83,
    "eta_days": null,
    "remaining": [
-    "Owner runs manual nudge checks, then server deploy + OTA",
-    "Shouting voice-identity miss",
-    "Activation classifier retrain"
+    "Install watch APK (needs owner's device IP:port)",
+    "Decide whether to enable the valence veto: shadow-log first with MINDSHIFT_TONE_AUDIO=on, gate off",
+    "PR #185 blocked on a real test-collection bug (two dirs both import as module 'tests'); owner decision on layout",
+    "Merge order still #183 (3wk stale CI) then #185, independent: #184; #173 has conflicts",
+    "gpt-audio labeller needs credits; real-voice validation needs owner's own recordings"
    ],
    "blocked_on_user": [
-    "everything: hands-off"
+    "Install watch APK: apps/watch/wearApp/build/outputs/apk/debug/wearApp-debug.apk",
+    "Re-run PR #183 CI then merge (android changes into a live health app, not done unattended)",
+    "Decide test-layout fix for PR #185's collection failure"
    ],
-   "estimates": [],
+   "estimates": [
+    {
+     "date": "2026-09-17",
+     "scope": "Agent takeover: valence veto decided+shipped (PR #186, merged), CI diagnosed, 2 bugs fixed",
+     "est_days": 0.55,
+     "done": "2026-09-17",
+     "actual_days": 0.78
+    }
+   ],
    "note": "",
    "plan": "projects/mindshift.md",
    "git": {
-    "branch": "fix/livecoach-followups",
-    "last": "2026-09-12",
-    "commits": "483",
-    "dirty": 0,
+    "branch": "main",
+    "last": "2026-09-17",
+    "commits": "384",
+    "dirty": 3,
     "unpushed": 0,
     "remote": "sagearbor/mindshift"
    },
-   "new_commits": [],
+   "new_commits": [
+    "0c4eb1a 2026-09-17 feat(watch): valence vetoes a loudness nudge that sounds PLEASANT (off by default) (#186)",
+    "7c32fcd 2026-09-17 feat(watch): valence vetoes a loudness nudge that sounds PLEASANT (off by default)",
+    "057a0f1 2026-09-17 style: drop two unused imports (ruff F401)",
+    "b8eb79a 2026-09-17 fix(tests): two conftests both named `tests.conftest` \u2014 collapse them into one"
+   ],
    "wrapup": {
-    "file": "20260911-0400-buzz-dose-and-heat-rubric.yaml",
-    "timestamp": "\"2026-09-11T04:00:00-04:00\""
+    "file": "20260917-0747-valence-veto-and-the-ci-that-never-ran.yaml",
+    "timestamp": "\"2026-09-17T07:47:30-04:00\""
    },
    "prs": [],
    "history": [
@@ -81,7 +98,7 @@
     },
     {
      "date": "2026-09-17",
-     "percent": 80
+     "percent": 83
     }
    ]
   },
