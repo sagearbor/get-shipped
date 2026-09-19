@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-17T07:51:47-04:00",
- "previous_sync": "2026-09-17T07:16:25-04:00",
+ "generated_at": "2026-09-18T21:59:51-04:00",
+ "previous_sync": "2026-09-17T07:51:47-04:00",
  "calibration": {
   "completed": 45,
   "est_days": 45.34,
@@ -41,22 +41,32 @@
    "note": "",
    "plan": "projects/mindshift.md",
    "git": {
-    "branch": "main",
-    "last": "2026-09-17",
-    "commits": "384",
-    "dirty": 3,
-    "unpushed": 0,
+    "branch": "eval/real-conversation-audit",
+    "last": "2026-09-18",
+    "commits": "398",
+    "dirty": 1,
+    "unpushed": null,
     "remote": "sagearbor/mindshift"
    },
    "new_commits": [
-    "0c4eb1a 2026-09-17 feat(watch): valence vetoes a loudness nudge that sounds PLEASANT (off by default) (#186)",
-    "7c32fcd 2026-09-17 feat(watch): valence vetoes a loudness nudge that sounds PLEASANT (off by default)",
-    "057a0f1 2026-09-17 style: drop two unused imports (ruff F401)",
-    "b8eb79a 2026-09-17 fix(tests): two conftests both named `tests.conftest` \u2014 collapse them into one"
+    "a466819 2026-09-18 chore(eval): run heat-map rounds at low priority \u2014 the machine is memory-constrained",
+    "6e78f05 2026-09-18 docs: heat-map rounds \u2014 round 1 written up, round 2 sources and exclusions",
+    "b249c67 2026-09-18 feat(eval): human-rated agreement for CONFER, and a validity check on the tone-model reference",
+    "600d7a2 2026-09-18 chore(eval): one-command heat-map round (ingest what landed, score, graph)",
+    "5aa0b53 2026-09-18 feat(eval): CHiME-6 loader; heat map y-axis includes negatives",
+    "c457069 2026-09-18 feat(eval): SBCSAE and VoxConverse loaders for the heat map",
+    "6255d3e 2026-09-18 feat(eval): CONFER ingestion \u2014 real debates with continuous conflict intensity",
+    "42878cf 2026-09-18 feat(eval): heat map harness \u2014 one dot per recording, volatility vs how well we measure",
+    "4740202 2026-09-18 fix(voice): MATCH_THRESHOLD 0.65 -> 0.60, chosen from the confusion ceiling",
+    "c81eed2 2026-09-18 docs: correct a recommendation of my own, and name the real mechanism",
+    "7a0ec73 2026-09-18 docs: bound where the valence veto reaches, before anyone expects it to fix the dose",
+    "c41d4ce 2026-09-18 test: a stale replay dump should not read as a cross-language contract break",
+    "85837f0 2026-09-18 eval: audit the nudge chain against 3.8 h of real conversation, and gate it",
+    "f2c62df 2026-09-18 feat(eval): replay the nudge chain over REAL meetings \u2014 the owner is not the tester"
    ],
    "wrapup": {
-    "file": "20260917-0747-valence-veto-and-the-ci-that-never-ran.yaml",
-    "timestamp": "\"2026-09-17T07:47:30-04:00\""
+    "file": "20260918-1700-real-conversation-audit.yaml",
+    "timestamp": "\"2026-09-18T17:00:00-04:00\""
    },
    "prs": [],
    "history": [
@@ -98,6 +108,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 83
+    },
+    {
+     "date": "2026-09-18",
      "percent": 83
     }
    ]
@@ -227,6 +241,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 82
+    },
+    {
+     "date": "2026-09-18",
      "percent": 82
     }
    ]
@@ -359,6 +377,10 @@
     {
      "date": "2026-09-17",
      "percent": 88
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 88
     }
    ]
   },
@@ -423,17 +445,33 @@
    "note": "",
    "plan": "projects/FitRival.md",
    "git": {
-    "branch": "main",
-    "last": "2026-09-08",
-    "commits": "258",
-    "dirty": 0,
+    "branch": "chore/v0.0.70",
+    "last": "2026-09-18",
+    "commits": "318",
+    "dirty": 3,
     "unpushed": 0,
     "remote": "sagearbor/FitRival"
    },
-   "new_commits": [],
+   "new_commits": [
+    "f2c1c32 2026-09-18 chore: bump to 0.0.70+70",
+    "53f2f71 2026-09-18 feat: progress-only sharing is display-only (real data stored); goals measure from a start date (#71)",
+    "a17e1b5 2026-09-18 feat: progress-only sharing is display-only (real data stored); goals measure from a start date",
+    "58248bf 2026-09-18 feat(privacy): 'Progress only' sharing \u2014 compete without publishing actual weight (#70)",
+    "f4b283d 2026-09-18 feat(privacy): 'Progress only' sharing \u2014 compete without publishing actual weight",
+    "e43de1e 2026-09-18 feat(chart): 'Gap to goal' view \u2014 distance from the goal-pace line, positive = behind (#69)",
+    "05bf5aa 2026-09-18 feat(chart): 'Gap to goal' view \u2014 distance from the goal-pace line, positive = behind",
+    "5267b65 2026-09-18 feat(chart): axis titles, monotone curve, per-series toggles, Set-goal on the weight card (#68)",
+    "e11c936 2026-09-18 feat(chart): axis titles, monotone curve, per-series toggles, Set-goal on the weight card",
+    "1a42bc8 2026-09-18 feat(chart): moving average as a daily-sampled smooth curve; weigh-ins as dots; display toggle (#67)",
+    "ca1590a 2026-09-18 feat(chart): moving average as a daily-sampled smooth curve; weigh-ins as dots; display toggle",
+    "675eaac 2026-09-18 feat(nav): persistent five-destination shell; web chart crash + eager GoogleSignIn fixes; Dashboard back arrow (#66)",
+    "3df8580 2026-09-18 fix(nav): use rail icons present in the 3.22 icon font (Workouts/Stats rendered blank on web)",
+    "0146d6a 2026-09-18 fix(nav): rail icons that exist in the 3.22 icon font; ignore .firebase/ cache",
+    "9967e38 2026-09-18 feat(nav): persistent five-destination shell; fix web chart crash and eager GoogleSignIn"
+   ],
    "wrapup": {
-    "file": "20260908-0220-followup-fixes.yaml",
-    "timestamp": "2026-09-08T02:20:00-04:00"
+    "file": "20260918-1000-firestore-cutover.yaml",
+    "timestamp": "2026-09-18T10:00:00-04:00"
    },
    "prs": [],
    "history": [
@@ -475,6 +513,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-18",
      "percent": 76
     }
    ]
@@ -607,6 +649,10 @@
     {
      "date": "2026-09-17",
      "percent": 80
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 80
     }
    ]
   },
@@ -734,6 +780,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 88
+    },
+    {
+     "date": "2026-09-18",
      "percent": 88
     }
    ]
@@ -879,6 +929,10 @@
     {
      "date": "2026-09-17",
      "percent": 74
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 74
     }
    ]
   },
@@ -986,6 +1040,10 @@
     {
      "date": "2026-09-17",
      "percent": 92
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 92
     }
    ]
   },
@@ -1055,6 +1113,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 90
+    },
+    {
+     "date": "2026-09-18",
      "percent": 90
     }
    ]
@@ -1126,6 +1188,10 @@
     {
      "date": "2026-09-17",
      "percent": 85
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 85
     }
    ]
   },
@@ -1193,6 +1259,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 100
+    },
+    {
+     "date": "2026-09-18",
      "percent": 100
     }
    ]
@@ -1263,6 +1333,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 95
+    },
+    {
+     "date": "2026-09-18",
      "percent": 95
     }
    ]
@@ -1336,6 +1410,10 @@
     {
      "date": "2026-09-17",
      "percent": 60
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 60
     }
    ]
   },
@@ -1406,6 +1484,10 @@
     {
      "date": "2026-09-17",
      "percent": 70
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 70
     }
    ]
   },
@@ -1473,6 +1555,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 0
+    },
+    {
+     "date": "2026-09-18",
      "percent": 0
     }
    ]
@@ -1543,6 +1629,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 90
+    },
+    {
+     "date": "2026-09-18",
      "percent": 90
     }
    ]
@@ -1645,6 +1735,10 @@
     {
      "date": "2026-09-17",
      "percent": 84
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 84
     }
    ]
   },
@@ -1732,6 +1826,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 100
+    },
+    {
+     "date": "2026-09-18",
      "percent": 100
     }
    ]
@@ -1869,6 +1967,10 @@
     },
     {
      "date": "2026-09-17",
+     "percent": 94
+    },
+    {
+     "date": "2026-09-18",
      "percent": 94
     }
    ]
