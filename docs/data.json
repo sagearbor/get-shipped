@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-09-18T21:59:51-04:00",
- "previous_sync": "2026-09-17T07:51:47-04:00",
+ "generated_at": "2026-10-03T07:44:01-04:00",
+ "previous_sync": "2026-09-21T00:22:23-04:00",
  "calibration": {
-  "completed": 45,
-  "est_days": 45.34,
-  "actual_days": 37.32,
-  "slip_factor": 0.82
+  "completed": 46,
+  "est_days": 46.31,
+  "actual_days": 38.56,
+  "slip_factor": 0.83
  },
  "repos": [
   {
@@ -41,32 +41,33 @@
    "note": "",
    "plan": "projects/mindshift.md",
    "git": {
-    "branch": "eval/real-conversation-audit",
-    "last": "2026-09-18",
-    "commits": "398",
-    "dirty": 1,
-    "unpushed": null,
+    "branch": "main",
+    "last": "2026-09-23",
+    "commits": "629",
+    "dirty": 0,
+    "unpushed": 0,
     "remote": "sagearbor/mindshift"
    },
    "new_commits": [
-    "a466819 2026-09-18 chore(eval): run heat-map rounds at low priority \u2014 the machine is memory-constrained",
-    "6e78f05 2026-09-18 docs: heat-map rounds \u2014 round 1 written up, round 2 sources and exclusions",
-    "b249c67 2026-09-18 feat(eval): human-rated agreement for CONFER, and a validity check on the tone-model reference",
-    "600d7a2 2026-09-18 chore(eval): one-command heat-map round (ingest what landed, score, graph)",
-    "5aa0b53 2026-09-18 feat(eval): CHiME-6 loader; heat map y-axis includes negatives",
-    "c457069 2026-09-18 feat(eval): SBCSAE and VoxConverse loaders for the heat map",
-    "6255d3e 2026-09-18 feat(eval): CONFER ingestion \u2014 real debates with continuous conflict intensity",
-    "42878cf 2026-09-18 feat(eval): heat map harness \u2014 one dot per recording, volatility vs how well we measure",
-    "4740202 2026-09-18 fix(voice): MATCH_THRESHOLD 0.65 -> 0.60, chosen from the confusion ceiling",
-    "c81eed2 2026-09-18 docs: correct a recommendation of my own, and name the real mechanism",
-    "7a0ec73 2026-09-18 docs: bound where the valence veto reaches, before anyone expects it to fix the dose",
-    "c41d4ce 2026-09-18 test: a stale replay dump should not read as a cross-language contract break",
-    "85837f0 2026-09-18 eval: audit the nudge chain against 3.8 h of real conversation, and gate it",
-    "f2c62df 2026-09-18 feat(eval): replay the nudge chain over REAL meetings \u2014 the owner is not the tester"
+    "0df02f2 2026-09-25 chore(ios): buildNumber 6 (EAS auto-increment for the watch-icon build)",
+    "50134f1 2026-09-25 fix(watch-ios): give the Apple Watch app an icon so Apple accepts the delivery",
+    "a952eb4 2026-09-25 fix(watch): handle the three server frames both wrist clients dropped",
+    "f60cc10 2026-09-25 chore(release): a parity guard so Android and iOS cannot drift",
+    "5de5841 2026-09-23 Merge pull request #188 from sagearbor/fix/ux-walkthrough-20260923",
+    "a4b1694 2026-09-23 fix(ux): the last four chevron back buttons and two Try-again buttons",
+    "f0b2ce9 2026-09-23 fix(ux): walk the app as a first-time guest and remove what stops them",
+    "e4d42c9 2026-09-23 feat(guest): offer the account at the moment the data is about to be lost",
+    "ed1d616 2026-09-23 merge: guest recording isolation \u2014 a guest's audio is no longer offered to the next guest",
+    "17ca6e0 2026-09-23 Merge branch 'fix/guest-recording-isolation'",
+    "81f0bc4 2026-09-23 feat(guest): send the allowance on connect, so a guest is warned before a limit bites",
+    "932a1e3 2026-09-23 fix(recorder): one guest's recording is no longer offered to the next",
+    "a245dd9 2026-09-23 Merge branch 'fix/guest-honesty'",
+    "6b3f558 2026-09-23 fix(guest): confirm before a guest's irreversible log out, and state the quota up front",
+    "6fd218d 2026-09-23 docs(privacy): say that a therapist can keep a permanent copy of a session"
    ],
    "wrapup": {
-    "file": "20260918-1700-real-conversation-audit.yaml",
-    "timestamp": "\"2026-09-18T17:00:00-04:00\""
+    "file": "20260925-0130-ios-watch-ready.yaml",
+    "timestamp": "\"2026-09-25T01:30:00-04:00\""
    },
    "prs": [],
    "history": [
@@ -113,6 +114,14 @@
     {
      "date": "2026-09-18",
      "percent": 83
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 83
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 83
     }
    ]
   },
@@ -123,17 +132,20 @@
    "goal": "Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing",
    "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site",
    "live": "extension built; store listing unconfirmed; Stripe live",
-   "percent": 82,
+   "percent": 85,
    "eta_days": 9,
    "remaining": [
-    "Owner uploads v0.1.48 zip to Chrome Web Store",
+    "URGENT: purge confirmed-leaked docs via contextflow-backend/functions/scripts/purge-cached-page.js",
+    "Submit v0.1.49 to Chrome Web Store (fixes don't protect installed clients until then)",
+    "Wire the existing background/index.js privacy blacklist into the cache-write gate too (gap found: keep.google.com/messages.google.com were cached despite being on that list)",
+    "Org-level content control (Phase 2, scoped): org registers domain+optional-path rules; only that org's own enrolled employees skip shared cache there",
     "Set STRIPE_ORG_SECRET (test) + price id; deploy stripeWebhook while watching",
     "Owner runs __cfDiagnosePDF() on VPN"
    ],
    "blocked_on_user": [
-    "CHROME WEB STORE UPLOAD (owner-only, I never touch a store account). The zip is already built at /Users/sagearbor/projects/githubs/contextflow/extensi",
-    "ENABLE ORG BILLING IN TEST MODE (3 steps, in order). (1) Create the product/price with a Stripe TEST key: `cd contextflow-backend && STRIPE_SECRET=sk_",
-    "DEPLOY stripeWebhook YOURSELF WHEN YOU CAN WATCH IT. I deliberately did not deploy it: it processes LIVE individual payments, and my change adds event"
+    "Confirm go-ahead to run the purge script now (irreversible delete of leaked docs)",
+    "CHROME WEB STORE UPLOAD of v0.1.49",
+    "Stripe test key + price id"
    ],
    "estimates": [
     {
@@ -184,22 +196,33 @@
      "est_days": 0.47,
      "done": "2026-09-15",
      "actual_days": 0.51
+    },
+    {
+     "date": "2026-10-03",
+     "scope": "Shared-cache privacy fix (PR #100, merged, v0.1.49): positive-evidence gate, confirmed real leak (Duke intranet/HR + others among 238 cached docs)",
+     "est_days": 0.97,
+     "done": "2026-10-03",
+     "actual_days": 1.24
     }
    ],
    "note": "",
    "plan": "projects/contextflow.md",
    "git": {
     "branch": "main",
-    "last": "2026-09-15",
-    "commits": "190",
+    "last": "2026-10-03",
+    "commits": "191",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/contextflow"
    },
-   "new_commits": [],
+   "new_commits": [
+    "8a298bb 2026-10-03 fix(privacy): only write provably-public pages to the shared cache (#100)",
+    "d25b8d6 2026-10-03 fix(privacy): only write provably-public pages to the shared cache",
+    "4260e15 2026-09-29 chore(deps-dev): bump ip-address from 10.4.0 to 10.7.2"
+   ],
    "wrapup": {
-    "file": "20260915-0735-pr-review-merge-deploy-release.yaml",
-    "timestamp": "\"2026-09-15T07:35:00Z\""
+    "file": "20261003-0405-shared-cache-privacy-gate.yaml",
+    "timestamp": "\"2026-10-03T04:05:00-04:00\""
    },
    "prs": [],
    "history": [
@@ -246,6 +269,14 @@
     {
      "date": "2026-09-18",
      "percent": 82
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 82
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 85
     }
    ]
   },
@@ -381,6 +412,14 @@
     {
      "date": "2026-09-18",
      "percent": 88
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 88
     }
    ]
   },
@@ -445,33 +484,33 @@
    "note": "",
    "plan": "projects/FitRival.md",
    "git": {
-    "branch": "chore/v0.0.70",
-    "last": "2026-09-18",
-    "commits": "318",
-    "dirty": 3,
-    "unpushed": 0,
+    "branch": "feat/ios",
+    "last": "2026-10-03",
+    "commits": "365",
+    "dirty": 0,
+    "unpushed": 4,
     "remote": "sagearbor/FitRival"
    },
    "new_commits": [
-    "f2c1c32 2026-09-18 chore: bump to 0.0.70+70",
-    "53f2f71 2026-09-18 feat: progress-only sharing is display-only (real data stored); goals measure from a start date (#71)",
-    "a17e1b5 2026-09-18 feat: progress-only sharing is display-only (real data stored); goals measure from a start date",
-    "58248bf 2026-09-18 feat(privacy): 'Progress only' sharing \u2014 compete without publishing actual weight (#70)",
-    "f4b283d 2026-09-18 feat(privacy): 'Progress only' sharing \u2014 compete without publishing actual weight",
-    "e43de1e 2026-09-18 feat(chart): 'Gap to goal' view \u2014 distance from the goal-pace line, positive = behind (#69)",
-    "05bf5aa 2026-09-18 feat(chart): 'Gap to goal' view \u2014 distance from the goal-pace line, positive = behind",
-    "5267b65 2026-09-18 feat(chart): axis titles, monotone curve, per-series toggles, Set-goal on the weight card (#68)",
-    "e11c936 2026-09-18 feat(chart): axis titles, monotone curve, per-series toggles, Set-goal on the weight card",
-    "1a42bc8 2026-09-18 feat(chart): moving average as a daily-sampled smooth curve; weigh-ins as dots; display toggle (#67)",
-    "ca1590a 2026-09-18 feat(chart): moving average as a daily-sampled smooth curve; weigh-ins as dots; display toggle",
-    "675eaac 2026-09-18 feat(nav): persistent five-destination shell; web chart crash + eager GoogleSignIn fixes; Dashboard back arrow (#66)",
-    "3df8580 2026-09-18 fix(nav): use rail icons present in the 3.22 icon font (Workouts/Stats rendered blank on web)",
-    "0146d6a 2026-09-18 fix(nav): rail icons that exist in the 3.22 icon font; ignore .firebase/ cache",
-    "9967e38 2026-09-18 feat(nav): persistent five-destination shell; fix web chart crash and eager GoogleSignIn"
+    "13c95fa 2026-10-03 feat(samples): one sample shape and one analytics engine for every metric",
+    "1661029 2026-10-03 feat(goal): a Goal can target any registry metric",
+    "2d8e93f 2026-10-03 feat(metrics): one registry behind the body track and the health picker",
+    "7c28f70 2026-10-03 docs(sync): pushHealthSamples is push-only and nothing calls it",
+    "effe310 2026-10-03 fix(nav): the floating \"+\" was back on top of Settings",
+    "328c898 2026-09-24 feat(chart): the body chart reopens on the group you were last viewing",
+    "7ccf9a0 2026-09-24 fix(health): Apple Health import never ran on any iPhone",
+    "ad94861 2026-09-24 fix(health): a 0% body-fat sample is not a measurement",
+    "54b456a 2026-09-24 chore(android): refresh google-services.json after registering the Play key",
+    "a9de4e6 2026-09-24 fix(auth): sign-in failures now say what failed",
+    "874e8d4 2026-09-24 fix(chart): body fat cannot be -3.3%",
+    "71741c1 2026-09-24 docs(ios): the silent build wedge is a keychain prompt nobody can see",
+    "9b3b2b0 2026-09-24 chore: 1.0.2+81 \u2014 carries the invite sign-in fix",
+    "1eb1d5e 2026-09-24 fix(invites): the invite popup could never fire \u2014 onboarding now signs you in",
+    "2cd3fbc 2026-09-24 fix(groups): an invited person's first screen had no way to join"
    ],
    "wrapup": {
-    "file": "20260918-1000-firestore-cutover.yaml",
-    "timestamp": "2026-09-18T10:00:00-04:00"
+    "file": "20260923-1600-ux-restructure.yaml",
+    "timestamp": "\"2026-09-23T16:00:00-04:00\""
    },
    "prs": [],
    "history": [
@@ -517,6 +556,14 @@
     },
     {
      "date": "2026-09-18",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-03",
      "percent": 76
     }
    ]
@@ -653,6 +700,14 @@
     {
      "date": "2026-09-18",
      "percent": 80
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 80
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 80
     }
    ]
   },
@@ -784,6 +839,14 @@
     },
     {
      "date": "2026-09-18",
+     "percent": 88
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-03",
      "percent": 88
     }
    ]
@@ -933,6 +996,14 @@
     {
      "date": "2026-09-18",
      "percent": 74
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 74
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 74
     }
    ]
   },
@@ -1044,6 +1115,14 @@
     {
      "date": "2026-09-18",
      "percent": 92
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 92
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 92
     }
    ]
   },
@@ -1117,6 +1196,14 @@
     },
     {
      "date": "2026-09-18",
+     "percent": 90
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 90
+    },
+    {
+     "date": "2026-10-03",
      "percent": 90
     }
    ]
@@ -1192,6 +1279,14 @@
     {
      "date": "2026-09-18",
      "percent": 85
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 85
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 85
     }
    ]
   },
@@ -1263,6 +1358,14 @@
     },
     {
      "date": "2026-09-18",
+     "percent": 100
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 100
+    },
+    {
+     "date": "2026-10-03",
      "percent": 100
     }
    ]
@@ -1337,6 +1440,14 @@
     },
     {
      "date": "2026-09-18",
+     "percent": 95
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 95
+    },
+    {
+     "date": "2026-10-03",
      "percent": 95
     }
    ]
@@ -1414,6 +1525,14 @@
     {
      "date": "2026-09-18",
      "percent": 60
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 60
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 60
     }
    ]
   },
@@ -1488,6 +1607,14 @@
     {
      "date": "2026-09-18",
      "percent": 70
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 70
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 70
     }
    ]
   },
@@ -1559,6 +1686,14 @@
     },
     {
      "date": "2026-09-18",
+     "percent": 0
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 0
+    },
+    {
+     "date": "2026-10-03",
      "percent": 0
     }
    ]
@@ -1633,6 +1768,14 @@
     },
     {
      "date": "2026-09-18",
+     "percent": 90
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 90
+    },
+    {
+     "date": "2026-10-03",
      "percent": 90
     }
    ]
@@ -1739,6 +1882,14 @@
     {
      "date": "2026-09-18",
      "percent": 84
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 84
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 84
     }
    ]
   },
@@ -1830,6 +1981,14 @@
     },
     {
      "date": "2026-09-18",
+     "percent": 100
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 100
+    },
+    {
+     "date": "2026-10-03",
      "percent": 100
     }
    ]
@@ -1971,6 +2130,14 @@
     },
     {
      "date": "2026-09-18",
+     "percent": 94
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-03",
      "percent": 94
     }
    ]

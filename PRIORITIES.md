@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-09-18T21:59
+# PRIORITIES — generated from `state/projects.json` at 2026-10-03T07:44
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -12,13 +12,15 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
    - [ ] gpt-audio labeller needs credits; real-voice validation needs owner's own recordings
    - needs user: Install watch APK: apps/watch/wearApp/build/outputs/apk/debug/wearApp-debug.apk; Re-run PR #183 CI then merge (android changes into a live health app, not done unattended); Decide test-layout fix for PR #185's collection failure
 
-2. **contextflow** — 82%, ETA ~9 agent-days
+2. **contextflow** — 85%, ETA ~9 agent-days
    - goal: Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing
    - shipped means: see `projects/contextflow.md`
-   - [ ] Owner uploads v0.1.48 zip to Chrome Web Store
+   - [ ] URGENT: purge confirmed-leaked docs via contextflow-backend/functions/scripts/purge-cached-page.js
+   - [ ] Submit v0.1.49 to Chrome Web Store (fixes don't protect installed clients until then)
+   - [ ] Wire the existing background/index.js privacy blacklist into the cache-write gate too (gap found: keep.google.com/messages.google.com were cached despite being on that list)
+   - [ ] Org-level content control (Phase 2, scoped): org registers domain+optional-path rules; only that org's own enrolled employees skip shared cache there
    - [ ] Set STRIPE_ORG_SECRET (test) + price id; deploy stripeWebhook while watching
-   - [ ] Owner runs __cfDiagnosePDF() on VPN
-   - needs user: CHROME WEB STORE UPLOAD (owner-only, I never touch a store account). The zip is already built at /Users/sagearbor/projects/githubs/contextflow/extensi; ENABLE ORG BILLING IN TEST MODE (3 steps, in order). (1) Create the product/price with a Stripe TEST key: `cd contextflow-backend && STRIPE_SECRET=sk_; DEPLOY stripeWebhook YOURSELF WHEN YOU CAN WATCH IT. I deliberately did not deploy it: it processes LIVE individual payments, and my change adds event
+   - needs user: Confirm go-ahead to run the purge script now (irreversible delete of leaked docs); CHROME WEB STORE UPLOAD of v0.1.49; Stripe test key + price id
 
 3. **faculty-adequacy** — **HANDS-OFF** (user drives it personally; do not edit from here unless told in-session) — 88%
    - goal: Full draft covering all US med schools + paper stubbed for handoff to a co-author; refresh for a new year of data

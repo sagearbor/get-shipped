@@ -37,17 +37,20 @@
       "goal": "Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing",
       "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site",
       "live": "extension built; store listing unconfirmed; Stripe live",
-      "percent": 82,
+      "percent": 85,
       "eta_days": 9,
       "remaining": [
-        "Owner uploads v0.1.48 zip to Chrome Web Store",
+        "URGENT: purge confirmed-leaked docs via contextflow-backend/functions/scripts/purge-cached-page.js",
+        "Submit v0.1.49 to Chrome Web Store (fixes don't protect installed clients until then)",
+        "Wire the existing background/index.js privacy blacklist into the cache-write gate too (gap found: keep.google.com/messages.google.com were cached despite being on that list)",
+        "Org-level content control (Phase 2, scoped): org registers domain+optional-path rules; only that org's own enrolled employees skip shared cache there",
         "Set STRIPE_ORG_SECRET (test) + price id; deploy stripeWebhook while watching",
         "Owner runs __cfDiagnosePDF() on VPN"
       ],
       "blocked_on_user": [
-        "CHROME WEB STORE UPLOAD (owner-only, I never touch a store account). The zip is already built at /Users/sagearbor/projects/githubs/contextflow/extensi",
-        "ENABLE ORG BILLING IN TEST MODE (3 steps, in order). (1) Create the product/price with a Stripe TEST key: `cd contextflow-backend && STRIPE_SECRET=sk_",
-        "DEPLOY stripeWebhook YOURSELF WHEN YOU CAN WATCH IT. I deliberately did not deploy it: it processes LIVE individual payments, and my change adds event"
+        "Confirm go-ahead to run the purge script now (irreversible delete of leaked docs)",
+        "CHROME WEB STORE UPLOAD of v0.1.49",
+        "Stripe test key + price id"
       ],
       "estimates": [
         {
@@ -98,6 +101,13 @@
           "est_days": 0.47,
           "done": "2026-09-15",
           "actual_days": 0.51
+        },
+        {
+          "date": "2026-10-03",
+          "scope": "Shared-cache privacy fix (PR #100, merged, v0.1.49): positive-evidence gate, confirmed real leak (Duke intranet/HR + others among 238 cached docs)",
+          "est_days": 0.97,
+          "done": "2026-10-03",
+          "actual_days": 1.24
         }
       ]
     },
