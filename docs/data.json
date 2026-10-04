@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-03T07:44:01-04:00",
- "previous_sync": "2026-09-21T00:22:23-04:00",
+ "generated_at": "2026-10-04T07:43:11-04:00",
+ "previous_sync": "2026-10-03T07:44:01-04:00",
  "calibration": {
   "completed": 46,
   "est_days": 46.31,
@@ -48,23 +48,7 @@
     "unpushed": 0,
     "remote": "sagearbor/mindshift"
    },
-   "new_commits": [
-    "0df02f2 2026-09-25 chore(ios): buildNumber 6 (EAS auto-increment for the watch-icon build)",
-    "50134f1 2026-09-25 fix(watch-ios): give the Apple Watch app an icon so Apple accepts the delivery",
-    "a952eb4 2026-09-25 fix(watch): handle the three server frames both wrist clients dropped",
-    "f60cc10 2026-09-25 chore(release): a parity guard so Android and iOS cannot drift",
-    "5de5841 2026-09-23 Merge pull request #188 from sagearbor/fix/ux-walkthrough-20260923",
-    "a4b1694 2026-09-23 fix(ux): the last four chevron back buttons and two Try-again buttons",
-    "f0b2ce9 2026-09-23 fix(ux): walk the app as a first-time guest and remove what stops them",
-    "e4d42c9 2026-09-23 feat(guest): offer the account at the moment the data is about to be lost",
-    "ed1d616 2026-09-23 merge: guest recording isolation \u2014 a guest's audio is no longer offered to the next guest",
-    "17ca6e0 2026-09-23 Merge branch 'fix/guest-recording-isolation'",
-    "81f0bc4 2026-09-23 feat(guest): send the allowance on connect, so a guest is warned before a limit bites",
-    "932a1e3 2026-09-23 fix(recorder): one guest's recording is no longer offered to the next",
-    "a245dd9 2026-09-23 Merge branch 'fix/guest-honesty'",
-    "6b3f558 2026-09-23 fix(guest): confirm before a guest's irreversible log out, and state the quota up front",
-    "6fd218d 2026-09-23 docs(privacy): say that a therapist can keep a permanent copy of a session"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260925-0130-ios-watch-ready.yaml",
     "timestamp": "\"2026-09-25T01:30:00-04:00\""
@@ -121,6 +105,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 83
+    },
+    {
+     "date": "2026-10-04",
      "percent": 83
     }
    ]
@@ -215,11 +203,7 @@
     "unpushed": 0,
     "remote": "sagearbor/contextflow"
    },
-   "new_commits": [
-    "8a298bb 2026-10-03 fix(privacy): only write provably-public pages to the shared cache (#100)",
-    "d25b8d6 2026-10-03 fix(privacy): only write provably-public pages to the shared cache",
-    "4260e15 2026-09-29 chore(deps-dev): bump ip-address from 10.4.0 to 10.7.2"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20261003-0405-shared-cache-privacy-gate.yaml",
     "timestamp": "\"2026-10-03T04:05:00-04:00\""
@@ -276,6 +260,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 85
+    },
+    {
+     "date": "2026-10-04",
      "percent": 85
     }
    ]
@@ -420,6 +408,10 @@
     {
      "date": "2026-10-03",
      "percent": 88
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 88
     }
    ]
   },
@@ -486,27 +478,27 @@
    "git": {
     "branch": "feat/ios",
     "last": "2026-10-03",
-    "commits": "365",
+    "commits": "395",
     "dirty": 0,
-    "unpushed": 4,
+    "unpushed": 0,
     "remote": "sagearbor/FitRival"
    },
    "new_commits": [
-    "13c95fa 2026-10-03 feat(samples): one sample shape and one analytics engine for every metric",
-    "1661029 2026-10-03 feat(goal): a Goal can target any registry metric",
-    "2d8e93f 2026-10-03 feat(metrics): one registry behind the body track and the health picker",
-    "7c28f70 2026-10-03 docs(sync): pushHealthSamples is push-only and nothing calls it",
-    "effe310 2026-10-03 fix(nav): the floating \"+\" was back on top of Settings",
-    "328c898 2026-09-24 feat(chart): the body chart reopens on the group you were last viewing",
-    "7ccf9a0 2026-09-24 fix(health): Apple Health import never ran on any iPhone",
-    "ad94861 2026-09-24 fix(health): a 0% body-fat sample is not a measurement",
-    "54b456a 2026-09-24 chore(android): refresh google-services.json after registering the Play key",
-    "a9de4e6 2026-09-24 fix(auth): sign-in failures now say what failed",
-    "874e8d4 2026-09-24 fix(chart): body fat cannot be -3.3%",
-    "71741c1 2026-09-24 docs(ios): the silent build wedge is a keychain prompt nobody can see",
-    "9b3b2b0 2026-09-24 chore: 1.0.2+81 \u2014 carries the invite sign-in fix",
-    "1eb1d5e 2026-09-24 fix(invites): the invite popup could never fire \u2014 onboarding now signs you in",
-    "2cd3fbc 2026-09-24 fix(groups): an invited person's first screen had no way to join"
+    "8c6e59e 2026-10-03 feat(exercises): 34 more, each confirmed on a real gym floor",
+    "d90ffd1 2026-10-03 chore: 1.1.1+86 \u2014 the App Store submission build",
+    "8de6456 2026-10-03 feat(exercises): 70 more, covering a commercial gym floor end to end",
+    "8a480f6 2026-10-03 fix(exercises): a how-to for every new movement, caught by the guard test",
+    "e83f9a8 2026-10-03 feat(exercises): the gym floor, and new exercises actually reach old installs",
+    "070d759 2026-10-03 chore(ios): commit the App Store Connect helper instead of keeping it in /tmp",
+    "2b78249 2026-10-03 fix(ios): /tmp ate the signing keychain and the export options",
+    "c99fdf0 2026-10-03 chore: 1.1.0+85 \u2014 one chart on Home, and challenge packs",
+    "0e1adf7 2026-10-03 fix(safety): the weight bound followed the packaging, not the metric",
+    "1e2e552 2026-10-03 feat(packs): start a pack from the FAB, one card per pack, a combined leaderboard",
+    "863cdf9 2026-10-03 fix(home): head-to-head sits under the chart that raises the question",
+    "86dc5b2 2026-10-03 refactor(home): drop drag-to-reorder on progress cards; \"Add chart\" moves to the menu",
+    "8a1df0a 2026-10-03 feat(home): the log card is one weight field and Save; the rest is \"Details\u2026\"",
+    "88bb4a8 2026-10-03 feat(home): recent entries collapse to one row \u2014 the chart is the product",
+    "6c186e9 2026-10-03 fix(models): one birthYear, on User \u2014 the duplicate on UserPreferences is gone"
    ],
    "wrapup": {
     "file": "20260923-1600-ux-restructure.yaml",
@@ -564,6 +556,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-04",
      "percent": 76
     }
    ]
@@ -708,6 +704,10 @@
     {
      "date": "2026-10-03",
      "percent": 80
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 80
     }
    ]
   },
@@ -847,6 +847,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-04",
      "percent": 88
     }
    ]
@@ -1004,6 +1008,10 @@
     {
      "date": "2026-10-03",
      "percent": 74
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 74
     }
    ]
   },
@@ -1123,6 +1131,10 @@
     {
      "date": "2026-10-03",
      "percent": 92
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 92
     }
    ]
   },
@@ -1204,6 +1216,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 90
+    },
+    {
+     "date": "2026-10-04",
      "percent": 90
     }
    ]
@@ -1287,6 +1303,10 @@
     {
      "date": "2026-10-03",
      "percent": 85
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 85
     }
    ]
   },
@@ -1366,6 +1386,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 100
+    },
+    {
+     "date": "2026-10-04",
      "percent": 100
     }
    ]
@@ -1448,6 +1472,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 95
+    },
+    {
+     "date": "2026-10-04",
      "percent": 95
     }
    ]
@@ -1533,6 +1561,10 @@
     {
      "date": "2026-10-03",
      "percent": 60
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 60
     }
    ]
   },
@@ -1615,6 +1647,52 @@
     {
      "date": "2026-10-03",
      "percent": 70
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 70
+    }
+   ]
+  },
+  {
+   "name": "mosaicHighRes",
+   "rank": null,
+   "hands_off": false,
+   "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
+   "target": "App Store + Google Play (Flutter)",
+   "live": "no",
+   "percent": 10,
+   "eta_days": null,
+   "remaining": [
+    "Build the streaming strip renderer (the core technical risk)",
+    "Mosaic matcher with diversity constraint",
+    "Memory/disk preflight UI",
+    "Photo library picker (target + tile pool)",
+    "DPI/print-size picker",
+    "Verify on iOS simulator + Android emulator",
+    "v2 (deferred): Google/Apple Photos album-by-URL import"
+   ],
+   "blocked_on_user": [],
+   "estimates": [],
+   "note": "",
+   "plan": "projects/mosaicHighRes.md",
+   "git": {
+    "branch": "main",
+    "last": "2026-10-04",
+    "commits": "1",
+    "dirty": 0,
+    "unpushed": 0,
+    "remote": "sagearbor/mosaicHighRes"
+   },
+   "new_commits": [
+    "bc84642 2026-10-04 docs: architecture and scope \u2014 streaming strip renderer for print-quality mosaics"
+   ],
+   "wrapup": null,
+   "prs": [],
+   "history": [
+    {
+     "date": "2026-10-04",
+     "percent": 10
     }
    ]
   },
@@ -1694,6 +1772,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 0
+    },
+    {
+     "date": "2026-10-04",
      "percent": 0
     }
    ]
@@ -1776,6 +1858,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 90
+    },
+    {
+     "date": "2026-10-04",
      "percent": 90
     }
    ]
@@ -1890,6 +1976,10 @@
     {
      "date": "2026-10-03",
      "percent": 84
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 84
     }
    ]
   },
@@ -1989,6 +2079,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 100
+    },
+    {
+     "date": "2026-10-04",
      "percent": 100
     }
    ]
@@ -2138,6 +2232,10 @@
     },
     {
      "date": "2026-10-03",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-04",
      "percent": 94
     }
    ]

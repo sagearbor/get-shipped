@@ -757,6 +757,26 @@
       "remaining": [],
       "blocked_on_user": [],
       "estimates": []
+    },
+    "mosaicHighRes": {
+      "rank": null,
+      "hands_off": false,
+      "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
+      "target": "App Store + Google Play (Flutter)",
+      "live": "no",
+      "percent": 10,
+      "eta_days": null,
+      "remaining": [
+        "Build the streaming strip renderer (the core technical risk)",
+        "Mosaic matcher with diversity constraint",
+        "Memory/disk preflight UI",
+        "Photo library picker (target + tile pool)",
+        "DPI/print-size picker",
+        "Verify on iOS simulator + Android emulator",
+        "v2 (deferred): Google/Apple Photos album-by-URL import"
+      ],
+      "blocked_on_user": [],
+      "estimates": []
     }
   }
 }
