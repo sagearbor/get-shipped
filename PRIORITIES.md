@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-10-04T16:53
+# PRIORITIES — generated from `state/projects.json` at 2026-10-04T18:32
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -79,7 +79,7 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
 | career-compass-starter | 100 | yes | Template workspace for career-compass |
 | contextFlow-upgrade | 95 | yes | ContextFlow pricing/privacy/support micro-site (satellite of contextflow, not legacy) |
 | megaCity-rotating | 70 | yes | Three.js rotating megacity visualization |
-| mosaicHighRes | 72 | Android APK v0.3.0 delivered to owner (sideload) + GitHub release; not on any store | Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend |
+| mosaicHighRes | 74 | Android APK v1.2.1 delivered to owner (sideload); not on any store | Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend |
 | movieScript_firstAI | 0 | no | Empty repo, never started |
 | neighborhood-poker | 90 | yes | Google Sheets poker tournament manager |
 | oralhistory_timeline | 84 | partial (Play internal) | Oral history to interactive shareable timeline |
