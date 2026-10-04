@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-04T07:43:11-04:00",
- "previous_sync": "2026-10-03T07:44:01-04:00",
+ "generated_at": "2026-10-04T08:36:32-04:00",
+ "previous_sync": "2026-10-04T07:43:11-04:00",
  "calibration": {
-  "completed": 46,
-  "est_days": 46.31,
-  "actual_days": 38.56,
-  "slip_factor": 0.83
+  "completed": 47,
+  "est_days": 47.87,
+  "actual_days": 39.42,
+  "slip_factor": 0.82
  },
  "repos": [
   {
@@ -483,23 +483,7 @@
     "unpushed": 0,
     "remote": "sagearbor/FitRival"
    },
-   "new_commits": [
-    "8c6e59e 2026-10-03 feat(exercises): 34 more, each confirmed on a real gym floor",
-    "d90ffd1 2026-10-03 chore: 1.1.1+86 \u2014 the App Store submission build",
-    "8de6456 2026-10-03 feat(exercises): 70 more, covering a commercial gym floor end to end",
-    "8a480f6 2026-10-03 fix(exercises): a how-to for every new movement, caught by the guard test",
-    "e83f9a8 2026-10-03 feat(exercises): the gym floor, and new exercises actually reach old installs",
-    "070d759 2026-10-03 chore(ios): commit the App Store Connect helper instead of keeping it in /tmp",
-    "2b78249 2026-10-03 fix(ios): /tmp ate the signing keychain and the export options",
-    "c99fdf0 2026-10-03 chore: 1.1.0+85 \u2014 one chart on Home, and challenge packs",
-    "0e1adf7 2026-10-03 fix(safety): the weight bound followed the packaging, not the metric",
-    "1e2e552 2026-10-03 feat(packs): start a pack from the FAB, one card per pack, a combined leaderboard",
-    "863cdf9 2026-10-03 fix(home): head-to-head sits under the chart that raises the question",
-    "86dc5b2 2026-10-03 refactor(home): drop drag-to-reorder on progress cards; \"Add chart\" moves to the menu",
-    "8a1df0a 2026-10-03 feat(home): the log card is one weight field and Save; the rest is \"Details\u2026\"",
-    "88bb4a8 2026-10-03 feat(home): recent entries collapse to one row \u2014 the chart is the product",
-    "6c186e9 2026-10-03 fix(models): one birthYear, on User \u2014 the duplicate on UserPreferences is gone"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260923-1600-ux-restructure.yaml",
     "timestamp": "\"2026-09-23T16:00:00-04:00\""
@@ -1660,39 +1644,57 @@
    "hands_off": false,
    "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
    "target": "App Store + Google Play (Flutter)",
-   "live": "no",
-   "percent": 10,
+   "live": "Android APK delivered to owner (sideload); not on any store",
+   "percent": 55,
    "eta_days": null,
    "remaining": [
-    "Build the streaming strip renderer (the core technical risk)",
-    "Mosaic matcher with diversity constraint",
-    "Memory/disk preflight UI",
-    "Photo library picker (target + tile pool)",
-    "DPI/print-size picker",
-    "Verify on iOS simulator + Android emulator",
-    "v2 (deferred): Google/Apple Photos album-by-URL import"
+    "iOS: written, never executed \u2014 run on simulator, then real device",
+    "Real physical print test (color management, how 180px tiles read at arm's length)",
+    "Sign with a release keystore + Play listing (owner's accounts)",
+    "Hide/adjust Venmo tip screen before any App Store submission",
+    "v2: Google/Apple Photos album-by-URL import"
    ],
-   "blocked_on_user": [],
-   "estimates": [],
+   "blocked_on_user": [
+    "Install the APK and try it on real photos tonight; report what felt rough",
+    "Decide when to pursue Play/App Store listings (needs your developer accounts)"
+   ],
+   "estimates": [
+    {
+     "date": "2026-10-04",
+     "scope": "v1 from scratch: streaming lossless PNG encoder (36/36 lossless tests, 20k x 20k at 0 MiB RSS growth), matcher + preflight, Android app verified on emulator, release APK (PRs 1-3 merged)",
+     "est_days": 1.56,
+     "done": "2026-10-04",
+     "actual_days": 0.86
+    }
+   ],
    "note": "",
    "plan": "projects/mosaicHighRes.md",
    "git": {
     "branch": "main",
     "last": "2026-10-04",
-    "commits": "1",
+    "commits": "8",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/mosaicHighRes"
    },
    "new_commits": [
-    "bc84642 2026-10-04 docs: architecture and scope \u2014 streaming strip renderer for print-quality mosaics"
+    "c47963b 2026-10-04 Merge pull request #3 from sagearbor/phase3-android-app",
+    "b260746 2026-10-04 Merge pull request #2 from sagearbor/phase2-mosaic-algorithm",
+    "85f3e3d 2026-10-04 Merge pull request #1 from sagearbor/phase1-streaming-png-encoder",
+    "f9b6486 2026-10-04 Phase 3: the app -- device library, strip render loop, export, tip screen",
+    "e1e439d 2026-10-04 Phase 2: colour index, diversity-aware matcher, and memory preflight",
+    "3369670 2026-10-04 Phase 1: streaming lossless PNG encoder, proven byte-for-byte lossless",
+    "bd1ed2e 2026-10-04 assets: owner's Venmo QR for the tip screen"
    ],
-   "wrapup": null,
+   "wrapup": {
+    "file": "20261004-0835-v1-build-phases-1-3.yaml",
+    "timestamp": "2026-10-04T08:35:00-04:00"
+   },
    "prs": [],
    "history": [
     {
      "date": "2026-10-04",
-     "percent": 10
+     "percent": 55
     }
    ]
   },

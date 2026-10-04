@@ -763,20 +763,29 @@
       "hands_off": false,
       "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
       "target": "App Store + Google Play (Flutter)",
-      "live": "no",
-      "percent": 10,
+      "live": "Android APK delivered to owner (sideload); not on any store",
+      "percent": 55,
       "eta_days": null,
       "remaining": [
-        "Build the streaming strip renderer (the core technical risk)",
-        "Mosaic matcher with diversity constraint",
-        "Memory/disk preflight UI",
-        "Photo library picker (target + tile pool)",
-        "DPI/print-size picker",
-        "Verify on iOS simulator + Android emulator",
-        "v2 (deferred): Google/Apple Photos album-by-URL import"
+        "iOS: written, never executed \u2014 run on simulator, then real device",
+        "Real physical print test (color management, how 180px tiles read at arm's length)",
+        "Sign with a release keystore + Play listing (owner's accounts)",
+        "Hide/adjust Venmo tip screen before any App Store submission",
+        "v2: Google/Apple Photos album-by-URL import"
       ],
-      "blocked_on_user": [],
-      "estimates": []
+      "blocked_on_user": [
+        "Install the APK and try it on real photos tonight; report what felt rough",
+        "Decide when to pursue Play/App Store listings (needs your developer accounts)"
+      ],
+      "estimates": [
+        {
+          "date": "2026-10-04",
+          "scope": "v1 from scratch: streaming lossless PNG encoder (36/36 lossless tests, 20k x 20k at 0 MiB RSS growth), matcher + preflight, Android app verified on emulator, release APK (PRs 1-3 merged)",
+          "est_days": 1.56,
+          "done": "2026-10-04",
+          "actual_days": 0.86
+        }
+      ]
     }
   }
 }
