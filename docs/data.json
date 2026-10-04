@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-04T15:36:50-04:00",
- "previous_sync": "2026-10-04T08:36:32-04:00",
+ "generated_at": "2026-10-04T16:53:57-04:00",
+ "previous_sync": "2026-10-04T15:36:50-04:00",
  "calibration": {
-  "completed": 48,
-  "est_days": 49.61,
-  "actual_days": 40.77,
+  "completed": 49,
+  "est_days": 50.67,
+  "actual_days": 41.77,
   "slip_factor": 0.82
  },
  "repos": [
@@ -483,10 +483,7 @@
     "unpushed": 0,
     "remote": "sagearbor/FitRival"
    },
-   "new_commits": [
-    "0d02b17 2026-10-04 fix(rules): a member could rewrite anyone else's weigh-ins",
-    "0e9979c 2026-10-04 fix(exercises): a name nobody can find is the same as a name that is not there"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260923-1600-ux-restructure.yaml",
     "timestamp": "\"2026-09-23T16:00:00-04:00\""
@@ -1647,19 +1644,18 @@
    "hands_off": false,
    "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
    "target": "App Store + Google Play (Flutter)",
-   "live": "Android APK delivered to owner (sideload); not on any store",
-   "percent": 65,
+   "live": "Android APK v0.3.0 delivered to owner (sideload) + GitHub release; not on any store",
+   "percent": 72,
    "eta_days": null,
    "remaining": [
-    "v1.2 in progress: tile-pool picker, date range, repeat-factor readout, palette-gap suggestions scoped to a date window",
+    "Owner tests v1.2 on real photos; fix what feels rough",
     "iOS: written, never executed",
     "Real physical print test",
-    "Release keystore + store listings (owner accounts); hide tip screen for App Store",
+    "Release keystore + Play listing; App Store needs tip screen hidden",
     "v2: Google/Apple Photos album-by-URL import"
    ],
    "blocked_on_user": [
-    "Install the APK and try it on real photos tonight; report what felt rough",
-    "Decide when to pursue Play/App Store listings (needs your developer accounts)"
+    "Install v0.3.0 APK and try it on a real trip's photos; report what felt rough"
    ],
    "estimates": [
     {
@@ -1675,6 +1671,13 @@
      "est_days": 1.74,
      "done": "2026-10-04",
      "actual_days": 1.35
+    },
+    {
+     "date": "2026-10-04",
+     "scope": "v1.2: tile-pool picker (favourites, albums, date range), repeat-factor readout, Lab palette-gap suggestions scoped to a date window; 5 on-device bugs fixed (PRs 7-8, 390 tests)",
+     "est_days": 1.06,
+     "done": "2026-10-04",
+     "actual_days": 1.0
     }
    ],
    "note": "",
@@ -1682,28 +1685,27 @@
    "git": {
     "branch": "main",
     "last": "2026-10-04",
-    "commits": "11",
+    "commits": "16",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/mosaicHighRes"
    },
    "new_commits": [
-    "f6c373f 2026-10-04 Fix: share the target's decoded pixels between preview and export (#6)",
-    "06059ac 2026-10-04 Fix: share the target's decoded pixels between preview and export",
-    "792b2a2 2026-10-04 Phase 5: projects and the slider, in the app (#5)",
-    "37c3348 2026-10-04 Phase 5: projects and the slider, in the app",
-    "b27220b 2026-10-04 Phase 4: the sacrifice slider's core -- variants, curve, projects (pure Dart) (#4)",
-    "89e650f 2026-10-04 Phase 4: the sacrifice slider's core -- variants, curve, projects (pure Dart)"
+    "2395b7f 2026-10-04 Merge pull request #8 from sagearbor/phase8-pool-picker-app",
+    "79db37b 2026-10-04 Phase 8b: three gesture bugs the emulator found, plus the seeding tool and docs",
+    "13a50ca 2026-10-04 Phase 8: the tile-pool picker, the pool readout and the colour-gap panel",
+    "70cdb28 2026-10-04 Merge pull request #7 from sagearbor/phase7-pool-picker-core",
+    "d127731 2026-10-04 Phase 7: v1.2's core -- pool filters, the pool-size readout, palette gaps (pure Dart)"
    ],
    "wrapup": {
-    "file": "20261004-1540-v1.1-projects-and-sacrifice-slider.yaml",
-    "timestamp": "2026-10-04T15:40:00-04:00"
+    "file": "20261004-1650-v1.2-tile-pool-picker.yaml",
+    "timestamp": "2026-10-04T16:50:00-04:00"
    },
    "prs": [],
    "history": [
     {
      "date": "2026-10-04",
-     "percent": 65
+     "percent": 72
     }
    ]
   },
