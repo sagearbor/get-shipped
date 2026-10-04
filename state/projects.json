@@ -764,13 +764,13 @@
       "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
       "target": "App Store + Google Play (Flutter)",
       "live": "Android APK delivered to owner (sideload); not on any store",
-      "percent": 55,
+      "percent": 65,
       "eta_days": null,
       "remaining": [
-        "iOS: written, never executed \u2014 run on simulator, then real device",
-        "Real physical print test (color management, how 180px tiles read at arm's length)",
-        "Sign with a release keystore + Play listing (owner's accounts)",
-        "Hide/adjust Venmo tip screen before any App Store submission",
+        "v1.2 in progress: tile-pool picker, date range, repeat-factor readout, palette-gap suggestions scoped to a date window",
+        "iOS: written, never executed",
+        "Real physical print test",
+        "Release keystore + store listings (owner accounts); hide tip screen for App Store",
         "v2: Google/Apple Photos album-by-URL import"
       ],
       "blocked_on_user": [
@@ -784,6 +784,13 @@
           "est_days": 1.56,
           "done": "2026-10-04",
           "actual_days": 0.86
+        },
+        {
+          "date": "2026-10-04",
+          "scope": "v1.1: saved projects + sacrifice slider with isolate preview proven identical to export; fixed a real 2-tile divergence found only on device (PRs 4-6, 214 tests)",
+          "est_days": 1.74,
+          "done": "2026-10-04",
+          "actual_days": 1.35
         }
       ]
     }

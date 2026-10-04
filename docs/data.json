@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-04T08:36:32-04:00",
- "previous_sync": "2026-10-04T07:43:11-04:00",
+ "generated_at": "2026-10-04T15:36:50-04:00",
+ "previous_sync": "2026-10-04T08:36:32-04:00",
  "calibration": {
-  "completed": 47,
-  "est_days": 47.87,
-  "actual_days": 39.42,
+  "completed": 48,
+  "est_days": 49.61,
+  "actual_days": 40.77,
   "slip_factor": 0.82
  },
  "repos": [
@@ -477,13 +477,16 @@
    "plan": "projects/FitRival.md",
    "git": {
     "branch": "feat/ios",
-    "last": "2026-10-03",
-    "commits": "395",
+    "last": "2026-10-04",
+    "commits": "397",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/FitRival"
    },
-   "new_commits": [],
+   "new_commits": [
+    "0d02b17 2026-10-04 fix(rules): a member could rewrite anyone else's weigh-ins",
+    "0e9979c 2026-10-04 fix(exercises): a name nobody can find is the same as a name that is not there"
+   ],
    "wrapup": {
     "file": "20260923-1600-ux-restructure.yaml",
     "timestamp": "\"2026-09-23T16:00:00-04:00\""
@@ -1645,13 +1648,13 @@
    "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
    "target": "App Store + Google Play (Flutter)",
    "live": "Android APK delivered to owner (sideload); not on any store",
-   "percent": 55,
+   "percent": 65,
    "eta_days": null,
    "remaining": [
-    "iOS: written, never executed \u2014 run on simulator, then real device",
-    "Real physical print test (color management, how 180px tiles read at arm's length)",
-    "Sign with a release keystore + Play listing (owner's accounts)",
-    "Hide/adjust Venmo tip screen before any App Store submission",
+    "v1.2 in progress: tile-pool picker, date range, repeat-factor readout, palette-gap suggestions scoped to a date window",
+    "iOS: written, never executed",
+    "Real physical print test",
+    "Release keystore + store listings (owner accounts); hide tip screen for App Store",
     "v2: Google/Apple Photos album-by-URL import"
    ],
    "blocked_on_user": [
@@ -1665,6 +1668,13 @@
      "est_days": 1.56,
      "done": "2026-10-04",
      "actual_days": 0.86
+    },
+    {
+     "date": "2026-10-04",
+     "scope": "v1.1: saved projects + sacrifice slider with isolate preview proven identical to export; fixed a real 2-tile divergence found only on device (PRs 4-6, 214 tests)",
+     "est_days": 1.74,
+     "done": "2026-10-04",
+     "actual_days": 1.35
     }
    ],
    "note": "",
@@ -1672,29 +1682,28 @@
    "git": {
     "branch": "main",
     "last": "2026-10-04",
-    "commits": "8",
+    "commits": "11",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/mosaicHighRes"
    },
    "new_commits": [
-    "c47963b 2026-10-04 Merge pull request #3 from sagearbor/phase3-android-app",
-    "b260746 2026-10-04 Merge pull request #2 from sagearbor/phase2-mosaic-algorithm",
-    "85f3e3d 2026-10-04 Merge pull request #1 from sagearbor/phase1-streaming-png-encoder",
-    "f9b6486 2026-10-04 Phase 3: the app -- device library, strip render loop, export, tip screen",
-    "e1e439d 2026-10-04 Phase 2: colour index, diversity-aware matcher, and memory preflight",
-    "3369670 2026-10-04 Phase 1: streaming lossless PNG encoder, proven byte-for-byte lossless",
-    "bd1ed2e 2026-10-04 assets: owner's Venmo QR for the tip screen"
+    "f6c373f 2026-10-04 Fix: share the target's decoded pixels between preview and export (#6)",
+    "06059ac 2026-10-04 Fix: share the target's decoded pixels between preview and export",
+    "792b2a2 2026-10-04 Phase 5: projects and the slider, in the app (#5)",
+    "37c3348 2026-10-04 Phase 5: projects and the slider, in the app",
+    "b27220b 2026-10-04 Phase 4: the sacrifice slider's core -- variants, curve, projects (pure Dart) (#4)",
+    "89e650f 2026-10-04 Phase 4: the sacrifice slider's core -- variants, curve, projects (pure Dart)"
    ],
    "wrapup": {
-    "file": "20261004-0835-v1-build-phases-1-3.yaml",
-    "timestamp": "2026-10-04T08:35:00-04:00"
+    "file": "20261004-1540-v1.1-projects-and-sacrifice-slider.yaml",
+    "timestamp": "2026-10-04T15:40:00-04:00"
    },
    "prs": [],
    "history": [
     {
      "date": "2026-10-04",
-     "percent": 55
+     "percent": 65
     }
    ]
   },
