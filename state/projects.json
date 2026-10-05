@@ -764,15 +764,16 @@
       "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
       "target": "App Store + Google Play (Flutter)",
       "live": "Android APK v1.2.2 delivered to owner (sideload); not on any store",
-      "percent": 76,
+      "percent": 78,
       "eta_days": null,
       "remaining": [
-        "Owner retest on real photos",
-        "Tap through share sheet / Save to Photos on a device (unverified since v1)",
-        "iOS: written, never executed",
-        "Real physical print test",
-        "Release keystore + Play listing; App Store needs tip screen hidden",
-        "v2: album-by-URL import"
+        "v1.2.4 in progress: tune screen scroll regression (size card unreachable)",
+        "Plan not bit-stable across a result-screen round trip (logged)",
+        "Android foreground service for OS-kill resilience",
+        "Tap through share sheet / Save to Photos on a device",
+        "iOS: never executed",
+        "Physical print test",
+        "Release keystore + store listings"
       ],
       "blocked_on_user": [
         "Install v0.3.0 APK and try it on a real trip's photos; report what felt rough"
@@ -812,6 +813,13 @@
           "est_days": 0.6,
           "done": "2026-10-04",
           "actual_days": 0.7
+        },
+        {
+          "date": "2026-10-04",
+          "scope": "v1.2.3: non-genuine Image crash root-caused (StripRenderer tile cache disposing an in-flight image; 5 strip failures to 0 at 2,609-photo scale), LRU+pinning, backgrounding survives (PR 12, 515 tests); UX PR 11 merged but broke scrolling",
+          "est_days": 0.5,
+          "done": "2026-10-04",
+          "actual_days": 0.6
         }
       ]
     }
