@@ -763,20 +763,20 @@
       "hands_off": false,
       "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
       "target": "App Store + Google Play (Flutter)",
-      "live": "Signed v1.2.6 APK delivered; Play-ready; v1.3 Google Photos album import in progress",
-      "percent": 90,
+      "live": "v1.3.0 (versionCode 10300) on Play internal track; listing + all 10 App content declarations done; owner must select countries, create production release, Send for review",
+      "percent": 96,
       "eta_days": null,
       "remaining": [
-        "v1.3 in progress: Google Photos Picker album import (OAuth clients + API already set up)",
-        "Play Console session with the owner",
-        "Owner: back up the upload keystore off-machine",
+        "Owner: Play production \u2014 countries, create release from bundle 10300, Send for review (Google review 1-7 days)",
+        "Owner: test Google Photos import on the Pixel with the v1.3.0 APK (real sign-in never verified)",
+        "Owner: back up ~/.config/mosaichighres/ keystore off-machine",
         "iOS: never executed",
         "Physical print test"
       ],
       "blocked_on_user": [
-        "Morning: uninstall old app, install signed v1.2.5, retest",
-        "Back up ~/.config/mosaichighres/ keystore off-machine",
-        "Play Console session together when at a computer"
+        "Play Console \u2192 Production \u2192 Countries/regions \u2192 select all \u2192 Save; Create new release \u2192 add bundle 10300 \u2192 Save \u2192 Review \u2192 then Publishing overview \u2192 Send app for review",
+        "Install v1.3.0 APK, try Import a Google Photos album, report whether sign-in + download works",
+        "Back up ~/.config/mosaichighres/ off-machine"
       ],
       "estimates": [
         {
@@ -848,6 +848,20 @@
           "est_days": 0.7,
           "done": "2026-10-05",
           "actual_days": 0.75
+        },
+        {
+          "date": "2026-10-05",
+          "scope": "v1.3.0 Google Photos album import via Picker API (PR 19, 746 tests), INTERNET-in-release-manifest bug",
+          "est_days": 0.6,
+          "done": "2026-10-05",
+          "actual_days": 0.5
+        },
+        {
+          "date": "2026-10-05",
+          "scope": "Play submission driven agentically: 10 App content declarations in Chrome, AAB 10300 to internal via API, listing text/graphics/6 screenshots via API, category, Play app-signing SHAs registered on Firebase, privacy policy updated for v1.3.0",
+          "est_days": 0.2,
+          "done": "2026-10-05",
+          "actual_days": 0.15
         }
       ]
     }
