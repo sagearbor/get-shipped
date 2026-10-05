@@ -763,16 +763,15 @@
       "hands_off": false,
       "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
       "target": "App Store + Google Play (Flutter)",
-      "live": "Signed v1.2.5 APK delivered (sideload); privacy policy live; one Play Console session from submission",
-      "percent": 88,
+      "live": "Signed v1.2.6 APK delivered; Play-ready; v1.3 Google Photos album import in progress",
+      "percent": 90,
       "eta_days": null,
       "remaining": [
-        "Play Console session with the owner (~24h): create app, upload AAB, listing, Data safety, submit; Google review 1-7 days",
-        "Owner: back up the upload keystore + key.properties OFF this Mac (irreplaceable)",
-        "A real on-device render screenshot for the listing",
+        "v1.3 in progress: Google Photos Picker album import (OAuth clients + API already set up)",
+        "Play Console session with the owner",
+        "Owner: back up the upload keystore off-machine",
         "iOS: never executed",
-        "Physical print test",
-        "Android foreground service for OS-kill resilience"
+        "Physical print test"
       ],
       "blocked_on_user": [
         "Morning: uninstall old app, install signed v1.2.5, retest",
@@ -842,6 +841,13 @@
           "est_days": 0.4,
           "done": "2026-10-05",
           "actual_days": 0.4
+        },
+        {
+          "date": "2026-10-05",
+          "scope": "v1.2.6: review/prune screen with sweep-select, OS-picker import (content-addressed, deduped, persisted), honest album chip; 4 bugs found on device (PR 17, 675 tests)",
+          "est_days": 0.7,
+          "done": "2026-10-05",
+          "actual_days": 0.75
         }
       ]
     }
