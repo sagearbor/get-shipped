@@ -763,11 +763,11 @@
       "hands_off": false,
       "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
       "target": "App Store + Google Play (Flutter)",
-      "live": "Android APK v1.2.2 delivered to owner (sideload); not on any store",
-      "percent": 78,
+      "live": "Android APK v1.2.4 delivered to owner (sideload); not on any store",
+      "percent": 80,
       "eta_days": null,
       "remaining": [
-        "v1.2.4 in progress: tune screen scroll regression (size card unreachable)",
+        "Owner retest: narrow date range, render, share",
         "Plan not bit-stable across a result-screen round trip (logged)",
         "Android foreground service for OS-kill resilience",
         "Tap through share sheet / Save to Photos on a device",
@@ -820,6 +820,13 @@
           "est_days": 0.5,
           "done": "2026-10-04",
           "actual_days": 0.6
+        },
+        {
+          "date": "2026-10-04",
+          "scope": "v1.2.4: tune-screen scroll regression fixed (header capped at 50%), phone-viewport regression test; squash-merge dropped a commit, recovered via PR 14 (PRs 13-14, 516 tests)",
+          "est_days": 0.25,
+          "done": "2026-10-04",
+          "actual_days": 0.3
         }
       ]
     }
