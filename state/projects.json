@@ -763,18 +763,18 @@
       "hands_off": false,
       "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
       "target": "App Store + Google Play (Flutter)",
-      "live": "v1.3.0 (versionCode 10300) on Play internal track; listing + all 10 App content declarations done; owner must select countries, create production release, Send for review",
+      "live": "v1.3.0 (versionCode 10300) on Play internal; listing, 10 declarations, all countries done; owner must create production release + Send for review",
       "percent": 96,
       "eta_days": null,
       "remaining": [
-        "Owner: Play production \u2014 countries, create release from bundle 10300, Send for review (Google review 1-7 days)",
+        "Owner: Play production release from bundle 10300 + Send for review (Google review 1-7 days)",
         "Owner: test Google Photos import on the Pixel with the v1.3.0 APK (real sign-in never verified)",
         "Owner: back up ~/.config/mosaichighres/ keystore off-machine",
         "iOS: never executed",
         "Physical print test"
       ],
       "blocked_on_user": [
-        "Play Console \u2192 Production \u2192 Countries/regions \u2192 select all \u2192 Save; Create new release \u2192 add bundle 10300 \u2192 Save \u2192 Review \u2192 then Publishing overview \u2192 Send app for review",
+        "Play Console \u2192 Production \u2192 Create new release \u2192 Add from library \u2192 bundle 10300 \u2192 Save \u2192 Review release; then Publishing overview \u2192 Send app for review",
         "Install v1.3.0 APK, try Import a Google Photos album, report whether sign-in + download works",
         "Back up ~/.config/mosaichighres/ off-machine"
       ],
