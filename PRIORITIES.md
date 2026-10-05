@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-10-05T08:39
+# PRIORITIES — generated from `state/projects.json` at 2026-10-05T14:21
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -79,7 +79,7 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
 | career-compass-starter | 100 | yes | Template workspace for career-compass |
 | contextFlow-upgrade | 95 | yes | ContextFlow pricing/privacy/support micro-site (satellite of contextflow, not legacy) |
 | megaCity-rotating | 70 | yes | Three.js rotating megacity visualization |
-| mosaicHighRes | 96 | v1.3.0 (versionCode 10300) on Play internal; listing, 10 declarations, all countries done; owner must create production release + Send for review | Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend |
+| mosaicHighRes | 97 | Android: v1.3.0 submitted to Play review 2026-10-05. iOS: first build/run done (PR 21, 753 tests), signed archive built; .ipa export + ASC app record + TestFlight wait for owner login on the Mac tonight | Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend |
 | movieScript_firstAI | 0 | no | Empty repo, never started |
 | neighborhood-poker | 90 | yes | Google Sheets poker tournament manager |
 | oralhistory_timeline | 84 | partial (Play internal) | Oral history to interactive shareable timeline |

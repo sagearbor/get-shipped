@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-05T08:39:09-04:00",
- "previous_sync": "2026-10-05T08:33:20-04:00",
+ "generated_at": "2026-10-05T14:21:07-04:00",
+ "previous_sync": "2026-10-05T08:39:09-04:00",
  "calibration": {
-  "completed": 58,
-  "est_days": 54.92,
-  "actual_days": 46.27,
+  "completed": 59,
+  "est_days": 55.92,
+  "actual_days": 46.87,
   "slip_factor": 0.84
  },
  "repos": [
@@ -490,12 +490,14 @@
    "git": {
     "branch": "feat/ios",
     "last": "2026-10-05",
-    "commits": "399",
+    "commits": "400",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/FitRival"
    },
-   "new_commits": [],
+   "new_commits": [
+    "31b4244 2026-10-05 fix(auth): say the page is about to leave, before it leaves"
+   ],
    "wrapup": {
     "file": "20260923-1600-ux-restructure.yaml",
     "timestamp": "\"2026-09-23T16:00:00-04:00\""
@@ -1700,19 +1702,22 @@
    "hands_off": false,
    "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
    "target": "App Store + Google Play (Flutter)",
-   "live": "v1.3.0 (versionCode 10300) on Play internal; listing, 10 declarations, all countries done; owner must create production release + Send for review",
-   "percent": 96,
+   "live": "Android: v1.3.0 submitted to Play review 2026-10-05. iOS: first build/run done (PR 21, 753 tests), signed archive built; .ipa export + ASC app record + TestFlight wait for owner login on the Mac tonight",
+   "percent": 97,
    "eta_days": null,
    "remaining": [
-    "Owner: Play production release from bundle 10300 + Send for review (Google review 1-7 days)",
-    "Owner: test Google Photos import on the Pixel with the v1.3.0 APK (real sign-in never verified)",
+    "Google Play review (1-7 days)",
+    "Owner tonight on the Mac: sign in to App Store Connect in Chrome; click Always Allow on the codesign keychain dialog",
+    "Then Claude: create ASC app record, export .ipa, upload to TestFlight, fill listing/privacy labels, submit",
+    "Owner: test Google Photos import on the Pixel (v1.3.0 APK)",
     "Owner: back up ~/.config/mosaichighres/ keystore off-machine",
-    "iOS: never executed",
+    "iPad: untested (share_plus popover anchor); decide iPhone-only or fix",
     "Physical print test"
    ],
    "blocked_on_user": [
-    "Play Console \u2192 Production \u2192 Create new release \u2192 Add from library \u2192 bundle 10300 \u2192 Save \u2192 Review release; then Publishing overview \u2192 Send app for review",
-    "Install v1.3.0 APK, try Import a Google Photos album, report whether sign-in + download works",
+    "Tonight at the laptop: open https://appstoreconnect.apple.com/apps in Chrome and sign in (Apple ID + 2FA), then say \"signed in\"",
+    "Tonight: when the macOS dialog \"codesign wants to use the private key iPhone Distribution: Sage Arbor\" appears, click Always Allow (once per machine)",
+    "Install v1.3.0 APK, try Import a Google Photos album, report result",
     "Back up ~/.config/mosaichighres/ off-machine"
    ],
    "estimates": [
@@ -1799,6 +1804,13 @@
      "est_days": 0.2,
      "done": "2026-10-05",
      "actual_days": 0.15
+    },
+    {
+     "date": "2026-10-05",
+     "scope": "iOS round 1: first simulator build+run, 4 iOS-only bugs, tip jar hidden on Apple, APP_STORE_SUBMISSION.md, 7 screenshots, signed xcarchive via API key (PR 21, 753 tests); .ipa export blocked on keychain click, upload blocked on app record",
+     "est_days": 1.0,
+     "done": "2026-10-05",
+     "actual_days": 0.6
     }
    ],
    "note": "",
@@ -1806,18 +1818,18 @@
    "git": {
     "branch": "main",
     "last": "2026-10-05",
-    "commits": "30",
+    "commits": "31",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/mosaicHighRes"
    },
    "new_commits": [
-    "9101bde 2026-10-05 docs: Play submission status + Data safety rationale for the v1.3.0 Google Photos import (#20)",
-    "3392fa1 2026-10-05 docs: Play submission status + Data safety rationale for the v1.3.0 Google Photos import"
+    "1c5808f 2026-10-05 iOS round 1: first build, first run, first signed archive (#21)",
+    "fb661be 2026-10-05 iOS round 1: first build, first run, first signed archive"
    ],
    "wrapup": {
-    "file": "20261005-0830-v1.3.0-google-photos-album.yaml",
-    "timestamp": "2026-10-05T08:30:00-04:00"
+    "file": "20261005-1405-ios-first-run.yaml",
+    "timestamp": "2026-10-05T14:05:00-04:00"
    },
    "prs": [],
    "history": [
@@ -1827,7 +1839,7 @@
     },
     {
      "date": "2026-10-05",
-     "percent": 96
+     "percent": 97
     }
    ]
   },
