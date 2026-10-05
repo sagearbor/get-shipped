@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-04T23:32:03-04:00",
- "previous_sync": "2026-10-04T23:11:14-04:00",
+ "generated_at": "2026-10-05T00:51:11-04:00",
+ "previous_sync": "2026-10-04T23:32:03-04:00",
  "calibration": {
-  "completed": 53,
-  "est_days": 52.42,
-  "actual_days": 43.77,
-  "slip_factor": 0.83
+  "completed": 54,
+  "est_days": 53.02,
+  "actual_days": 44.47,
+  "slip_factor": 0.84
  },
  "repos": [
   {
@@ -109,6 +109,10 @@
     },
     {
      "date": "2026-10-04",
+     "percent": 83
+    },
+    {
+     "date": "2026-10-05",
      "percent": 83
     }
    ]
@@ -265,6 +269,10 @@
     {
      "date": "2026-10-04",
      "percent": 85
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 85
     }
    ]
   },
@@ -412,6 +420,10 @@
     {
      "date": "2026-10-04",
      "percent": 88
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 88
     }
    ]
   },
@@ -544,6 +556,10 @@
     },
     {
      "date": "2026-10-04",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-05",
      "percent": 76
     }
    ]
@@ -692,6 +708,10 @@
     {
      "date": "2026-10-04",
      "percent": 80
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 80
     }
    ]
   },
@@ -835,6 +855,10 @@
     },
     {
      "date": "2026-10-04",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-05",
      "percent": 88
     }
    ]
@@ -996,6 +1020,10 @@
     {
      "date": "2026-10-04",
      "percent": 74
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 74
     }
    ]
   },
@@ -1119,6 +1147,10 @@
     {
      "date": "2026-10-04",
      "percent": 92
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 92
     }
    ]
   },
@@ -1204,6 +1236,10 @@
     },
     {
      "date": "2026-10-04",
+     "percent": 90
+    },
+    {
+     "date": "2026-10-05",
      "percent": 90
     }
    ]
@@ -1291,6 +1327,10 @@
     {
      "date": "2026-10-04",
      "percent": 85
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 85
     }
    ]
   },
@@ -1374,6 +1414,10 @@
     },
     {
      "date": "2026-10-04",
+     "percent": 100
+    },
+    {
+     "date": "2026-10-05",
      "percent": 100
     }
    ]
@@ -1460,6 +1504,10 @@
     },
     {
      "date": "2026-10-04",
+     "percent": 95
+    },
+    {
+     "date": "2026-10-05",
      "percent": 95
     }
    ]
@@ -1549,6 +1597,10 @@
     {
      "date": "2026-10-04",
      "percent": 60
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 60
     }
    ]
   },
@@ -1635,6 +1687,10 @@
     {
      "date": "2026-10-04",
      "percent": 70
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 70
     }
    ]
   },
@@ -1645,19 +1701,19 @@
    "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
    "target": "App Store + Google Play (Flutter)",
    "live": "Android APK v1.2.4 delivered to owner (sideload); not on any store",
-   "percent": 80,
+   "percent": 83,
    "eta_days": null,
    "remaining": [
-    "Owner retest: narrow date range, render, share",
-    "Plan not bit-stable across a result-screen round trip (logged)",
-    "Android foreground service for OS-kill resilience",
-    "Tap through share sheet / Save to Photos on a device",
+    "Store readiness in progress: package rename, signing, AAB, listing assets, privacy policy",
+    "Play submission WITH the owner at their computer (~24h): create app, upload, submit; Google review 1-7 days",
+    "Two-range pools and hand edits: tested, never rendered on device",
     "iOS: never executed",
     "Physical print test",
-    "Release keystore + store listings"
+    "Android foreground service for OS-kill resilience"
    ],
    "blocked_on_user": [
-    "Install v0.3.0 APK and try it on a real trip's photos; report what felt rough"
+    "Morning: install the signed APK (uninstall the old sideload first, package name changed) and retest",
+    "In ~24h at a computer: Play Console session together"
    ],
    "estimates": [
     {
@@ -1708,33 +1764,78 @@
      "est_days": 0.25,
      "done": "2026-10-04",
      "actual_days": 0.3
+    },
+    {
+     "date": "2026-10-05",
+     "scope": "v1.2.5: filters define the pool (Remove-these trap gone), tappable date pickers, tune-screen open 5.3s cold to 1.1s warm via device-wide colour cache, version 1.2.5+10205 (PR 15, 592 tests)",
+     "est_days": 0.6,
+     "done": "2026-10-05",
+     "actual_days": 0.7
     }
    ],
    "note": "",
    "plan": "projects/mosaicHighRes.md",
    "git": {
     "branch": "main",
-    "last": "2026-10-04",
-    "commits": "24",
+    "last": "2026-10-05",
+    "commits": "25",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/mosaicHighRes"
    },
    "new_commits": [
-    "3313195 2026-10-04 Calibrate header cap and preview image fraction from a real device (#14)",
-    "a3d0afc 2026-10-04 v1.2.4: fix tune screen's unscrollable sticky header (#13)"
+    "652b5f5 2026-10-05 v1.2.5: the pool IS the filter, a device-wide colour cache, and real version numbers (#15)",
+    "03d6e3c 2026-10-05 Verify the build number convention against the built APK",
+    "8d5a282 2026-10-05 v1.2.5: the pool IS the filter, a device-wide colour cache, and real versions",
+    "7448ffb 2026-10-05 Play Store readiness: release docs, listing assets, submission checklist"
    ],
    "wrapup": {
-    "file": "20261004-2335-v1.2.4-tune-header-scroll-regression.yaml",
-    "timestamp": "2026-10-04T23:35:00-04:00"
+    "file": "20261005-0050-v1.2.5-pool-semantics-and-indexing.yaml",
+    "timestamp": "2026-10-05T00:50:00-04:00"
    },
    "prs": [],
    "history": [
     {
      "date": "2026-10-04",
      "percent": 80
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 83
     }
    ]
+  },
+  {
+   "name": "mosaicHighRes-store",
+   "rank": null,
+   "hands_off": false,
+   "goal": "",
+   "target": "",
+   "live": "",
+   "percent": null,
+   "eta_days": null,
+   "remaining": [],
+   "blocked_on_user": [],
+   "estimates": [],
+   "note": "",
+   "plan": "projects/mosaicHighRes-store.md",
+   "git": {
+    "branch": "store/play-readiness",
+    "last": "2026-10-05",
+    "commits": "25",
+    "dirty": 0,
+    "unpushed": 0,
+    "remote": "sagearbor/mosaicHighRes"
+   },
+   "new_commits": [
+    "652b5f5 2026-10-05 v1.2.5: the pool IS the filter, a device-wide colour cache, and real version numbers (#15)",
+    "03d6e3c 2026-10-05 Verify the build number convention against the built APK",
+    "8d5a282 2026-10-05 v1.2.5: the pool IS the filter, a device-wide colour cache, and real versions",
+    "7448ffb 2026-10-05 Play Store readiness: release docs, listing assets, submission checklist"
+   ],
+   "wrapup": null,
+   "prs": [],
+   "history": []
   },
   {
    "name": "movieScript_firstAI",
@@ -1816,6 +1917,10 @@
     },
     {
      "date": "2026-10-04",
+     "percent": 0
+    },
+    {
+     "date": "2026-10-05",
      "percent": 0
     }
    ]
@@ -1902,6 +2007,10 @@
     },
     {
      "date": "2026-10-04",
+     "percent": 90
+    },
+    {
+     "date": "2026-10-05",
      "percent": 90
     }
    ]
@@ -2020,6 +2129,10 @@
     {
      "date": "2026-10-04",
      "percent": 84
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 84
     }
    ]
   },
@@ -2059,13 +2172,15 @@
    "plan": "projects/sagearbor.github.io.md",
    "git": {
     "branch": "main",
-    "last": "2026-06-11",
-    "commits": "2",
+    "last": "2026-10-05",
+    "commits": "3",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/sagearbor.github.io"
    },
-   "new_commits": [],
+   "new_commits": [
+    "c533a07 2026-10-05 mosaichighres: landing page + privacy policy, linked from the index"
+   ],
    "wrapup": null,
    "prs": [],
    "history": [
@@ -2123,6 +2238,10 @@
     },
     {
      "date": "2026-10-04",
+     "percent": 100
+    },
+    {
+     "date": "2026-10-05",
      "percent": 100
     }
    ]
@@ -2276,6 +2395,10 @@
     },
     {
      "date": "2026-10-04",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-05",
      "percent": 94
     }
    ]
