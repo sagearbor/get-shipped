@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-05T00:51:11-04:00",
- "previous_sync": "2026-10-04T23:32:03-04:00",
+ "generated_at": "2026-10-05T01:01:56-04:00",
+ "previous_sync": "2026-10-05T00:51:11-04:00",
  "calibration": {
-  "completed": 54,
-  "est_days": 53.02,
-  "actual_days": 44.47,
+  "completed": 55,
+  "est_days": 53.42,
+  "actual_days": 44.87,
   "slip_factor": 0.84
  },
  "repos": [
@@ -1700,20 +1700,21 @@
    "hands_off": false,
    "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
    "target": "App Store + Google Play (Flutter)",
-   "live": "Android APK v1.2.4 delivered to owner (sideload); not on any store",
-   "percent": 83,
+   "live": "Signed v1.2.5 APK delivered (sideload); privacy policy live; one Play Console session from submission",
+   "percent": 88,
    "eta_days": null,
    "remaining": [
-    "Store readiness in progress: package rename, signing, AAB, listing assets, privacy policy",
-    "Play submission WITH the owner at their computer (~24h): create app, upload, submit; Google review 1-7 days",
-    "Two-range pools and hand edits: tested, never rendered on device",
+    "Play Console session with the owner (~24h): create app, upload AAB, listing, Data safety, submit; Google review 1-7 days",
+    "Owner: back up the upload keystore + key.properties OFF this Mac (irreplaceable)",
+    "A real on-device render screenshot for the listing",
     "iOS: never executed",
     "Physical print test",
     "Android foreground service for OS-kill resilience"
    ],
    "blocked_on_user": [
-    "Morning: install the signed APK (uninstall the old sideload first, package name changed) and retest",
-    "In ~24h at a computer: Play Console session together"
+    "Morning: uninstall old app, install signed v1.2.5, retest",
+    "Back up ~/.config/mosaichighres/ keystore off-machine",
+    "Play Console session together when at a computer"
    ],
    "estimates": [
     {
@@ -1771,6 +1772,13 @@
      "est_days": 0.6,
      "done": "2026-10-05",
      "actual_days": 0.7
+    },
+    {
+     "date": "2026-10-05",
+     "scope": "Play readiness: package renamed to com.sagearbor.mosaichighres.app, upload keystore, signed AAB+APK verified, privacy policy live, listing assets, Data safety + submission checklist (PR 16)",
+     "est_days": 0.4,
+     "done": "2026-10-05",
+     "actual_days": 0.4
     }
    ],
    "note": "",
@@ -1784,14 +1792,11 @@
     "remote": "sagearbor/mosaicHighRes"
    },
    "new_commits": [
-    "652b5f5 2026-10-05 v1.2.5: the pool IS the filter, a device-wide colour cache, and real version numbers (#15)",
-    "03d6e3c 2026-10-05 Verify the build number convention against the built APK",
-    "8d5a282 2026-10-05 v1.2.5: the pool IS the filter, a device-wide colour cache, and real versions",
-    "7448ffb 2026-10-05 Play Store readiness: release docs, listing assets, submission checklist"
+    "450ece6 2026-10-05 Play Store readiness: package rename, signing, store listing, submission docs (#16)"
    ],
    "wrapup": {
-    "file": "20261005-0050-v1.2.5-pool-semantics-and-indexing.yaml",
-    "timestamp": "2026-10-05T00:50:00-04:00"
+    "file": "20261005-0100-store-play-readiness.yaml",
+    "timestamp": "2026-10-05T01:00:00-04:00"
    },
    "prs": [],
    "history": [
@@ -1801,7 +1806,7 @@
     },
     {
      "date": "2026-10-05",
-     "percent": 83
+     "percent": 88
     }
    ]
   },
@@ -1822,16 +1827,13 @@
    "git": {
     "branch": "store/play-readiness",
     "last": "2026-10-05",
-    "commits": "25",
+    "commits": "26",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/mosaicHighRes"
    },
    "new_commits": [
-    "652b5f5 2026-10-05 v1.2.5: the pool IS the filter, a device-wide colour cache, and real version numbers (#15)",
-    "03d6e3c 2026-10-05 Verify the build number convention against the built APK",
-    "8d5a282 2026-10-05 v1.2.5: the pool IS the filter, a device-wide colour cache, and real versions",
-    "7448ffb 2026-10-05 Play Store readiness: release docs, listing assets, submission checklist"
+    "450ece6 2026-10-05 Play Store readiness: package rename, signing, store listing, submission docs (#16)"
    ],
    "wrapup": null,
    "prs": [],
@@ -2178,9 +2180,7 @@
     "unpushed": 0,
     "remote": "sagearbor/sagearbor.github.io"
    },
-   "new_commits": [
-    "c533a07 2026-10-05 mosaichighres: landing page + privacy policy, linked from the index"
-   ],
+   "new_commits": [],
    "wrapup": null,
    "prs": [],
    "history": [

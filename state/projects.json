@@ -763,20 +763,21 @@
       "hands_off": false,
       "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
       "target": "App Store + Google Play (Flutter)",
-      "live": "Android APK v1.2.4 delivered to owner (sideload); not on any store",
-      "percent": 83,
+      "live": "Signed v1.2.5 APK delivered (sideload); privacy policy live; one Play Console session from submission",
+      "percent": 88,
       "eta_days": null,
       "remaining": [
-        "Store readiness in progress: package rename, signing, AAB, listing assets, privacy policy",
-        "Play submission WITH the owner at their computer (~24h): create app, upload, submit; Google review 1-7 days",
-        "Two-range pools and hand edits: tested, never rendered on device",
+        "Play Console session with the owner (~24h): create app, upload AAB, listing, Data safety, submit; Google review 1-7 days",
+        "Owner: back up the upload keystore + key.properties OFF this Mac (irreplaceable)",
+        "A real on-device render screenshot for the listing",
         "iOS: never executed",
         "Physical print test",
         "Android foreground service for OS-kill resilience"
       ],
       "blocked_on_user": [
-        "Morning: install the signed APK (uninstall the old sideload first, package name changed) and retest",
-        "In ~24h at a computer: Play Console session together"
+        "Morning: uninstall old app, install signed v1.2.5, retest",
+        "Back up ~/.config/mosaichighres/ keystore off-machine",
+        "Play Console session together when at a computer"
       ],
       "estimates": [
         {
@@ -834,6 +835,13 @@
           "est_days": 0.6,
           "done": "2026-10-05",
           "actual_days": 0.7
+        },
+        {
+          "date": "2026-10-05",
+          "scope": "Play readiness: package renamed to com.sagearbor.mosaichighres.app, upload keystore, signed AAB+APK verified, privacy policy live, listing assets, Data safety + submission checklist (PR 16)",
+          "est_days": 0.4,
+          "done": "2026-10-05",
+          "actual_days": 0.4
         }
       ]
     }
