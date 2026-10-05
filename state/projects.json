@@ -763,15 +763,16 @@
       "hands_off": false,
       "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
       "target": "App Store + Google Play (Flutter)",
-      "live": "Android APK v1.2.1 delivered to owner (sideload); not on any store",
-      "percent": 74,
+      "live": "Android APK v1.2.2 delivered to owner (sideload); not on any store",
+      "percent": 76,
       "eta_days": null,
       "remaining": [
-        "Owner tests v1.2 on real photos; fix what feels rough",
+        "Owner retest on real photos",
+        "Tap through share sheet / Save to Photos on a device (unverified since v1)",
         "iOS: written, never executed",
         "Real physical print test",
         "Release keystore + Play listing; App Store needs tip screen hidden",
-        "v2: Google/Apple Photos album-by-URL import"
+        "v2: album-by-URL import"
       ],
       "blocked_on_user": [
         "Install v0.3.0 APK and try it on a real trip's photos; report what felt rough"
@@ -804,6 +805,13 @@
           "est_days": 0.4,
           "done": "2026-10-04",
           "actual_days": 0.4
+        },
+        {
+          "date": "2026-10-04",
+          "scope": "v1.2.2: first-render bugs \u2014 blank tiles root-caused on device (renderer gray fill + diversity radius collapsing to 0), hard adjacency floor, measured readout, result screen, editable date range (PR 10, 503 tests)",
+          "est_days": 0.6,
+          "done": "2026-10-04",
+          "actual_days": 0.7
         }
       ]
     }
