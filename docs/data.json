@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-06T21:05:15-04:00",
- "previous_sync": "2026-10-05T22:19:40-04:00",
+ "generated_at": "2026-10-07T09:01:25-04:00",
+ "previous_sync": "2026-10-06T21:05:15-04:00",
  "calibration": {
   "completed": 60,
   "est_days": 56.22,
@@ -50,8 +50,8 @@
    },
    "new_commits": [],
    "wrapup": {
-    "file": "20260925-0130-ios-watch-ready.yaml",
-    "timestamp": "\"2026-10-05T23:30:00-04:00\""
+    "file": "20261006-2200-ios-submitted-storestatus.yaml",
+    "timestamp": "\"2026-10-06T22:00:00-04:00\""
    },
    "prs": [],
    "history": [
@@ -117,6 +117,10 @@
     },
     {
      "date": "2026-10-06",
+     "percent": 83
+    },
+    {
+     "date": "2026-10-07",
      "percent": 83
     }
    ]
@@ -281,6 +285,10 @@
     {
      "date": "2026-10-06",
      "percent": 85
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 85
     }
    ]
   },
@@ -436,6 +444,10 @@
     {
      "date": "2026-10-06",
      "percent": 88
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 88
     }
    ]
   },
@@ -507,11 +519,7 @@
     "unpushed": 0,
     "remote": "sagearbor/FitRival"
    },
-   "new_commits": [
-    "a0d655a 2026-10-06 fix(invites): the Groups banner queried a stale address; pin the tab count",
-    "69245b6 2026-10-06 fix(sync): a third copy of the challenge mapping was corrupting the cloud",
-    "bc7db30 2026-10-06 fix(health): steps, sleep and heart data had never imported on iPhone either"
-   ],
+   "new_commits": [],
    "wrapup": {
     "file": "20260923-1600-ux-restructure.yaml",
     "timestamp": "\"2026-09-23T16:00:00-04:00\""
@@ -580,6 +588,10 @@
     },
     {
      "date": "2026-10-06",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-07",
      "percent": 76
     }
    ]
@@ -736,6 +748,10 @@
     {
      "date": "2026-10-06",
      "percent": 80
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 80
     }
    ]
   },
@@ -887,6 +903,10 @@
     },
     {
      "date": "2026-10-06",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-07",
      "percent": 88
     }
    ]
@@ -1056,6 +1076,10 @@
     {
      "date": "2026-10-06",
      "percent": 74
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 74
     }
    ]
   },
@@ -1187,6 +1211,10 @@
     {
      "date": "2026-10-06",
      "percent": 92
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 92
     }
    ]
   },
@@ -1280,6 +1308,10 @@
     },
     {
      "date": "2026-10-06",
+     "percent": 90
+    },
+    {
+     "date": "2026-10-07",
      "percent": 90
     }
    ]
@@ -1375,6 +1407,10 @@
     {
      "date": "2026-10-06",
      "percent": 85
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 85
     }
    ]
   },
@@ -1466,6 +1502,10 @@
     },
     {
      "date": "2026-10-06",
+     "percent": 100
+    },
+    {
+     "date": "2026-10-07",
      "percent": 100
     }
    ]
@@ -1560,6 +1600,10 @@
     },
     {
      "date": "2026-10-06",
+     "percent": 95
+    },
+    {
+     "date": "2026-10-07",
      "percent": 95
     }
    ]
@@ -1657,6 +1701,10 @@
     {
      "date": "2026-10-06",
      "percent": 60
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 60
     }
    ]
   },
@@ -1680,12 +1728,15 @@
     "branch": "main",
     "last": "2026-03-23",
     "commits": "17",
-    "dirty": 0,
+    "dirty": 1,
     "unpushed": 0,
     "remote": "sagearbor/megaCity-rotating"
    },
    "new_commits": [],
-   "wrapup": null,
+   "wrapup": {
+    "file": "20261006-2146-astra-handoff-status.yaml",
+    "timestamp": "\"2026-10-06T21:46:00-04:00\""
+   },
    "prs": [],
    "history": [
     {
@@ -1751,6 +1802,10 @@
     {
      "date": "2026-10-06",
      "percent": 70
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 70
     }
    ]
   },
@@ -1760,22 +1815,20 @@
    "hands_off": false,
    "goal": "Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend",
    "target": "App Store + Google Play (Flutter)",
-   "live": "Android: v1.3.0 in Google Play review (submitted 2026-10-05). iOS: 1.3.0 build 10301 submitted to App Review 2026-10-06 (WAITING_FOR_REVIEW); TestFlight internal build live",
+   "live": "LIVE on Google Play (approved 2026-10-07, https://play.google.com/store/apps/details?id=com.sagearbor.mosaichighres.app). iOS 1.3.0 Waiting for Review at Apple since 2026-10-06 9:05 PM EDT",
    "percent": 99,
    "eta_days": null,
    "remaining": [
-    "Google Play review (1-7 days) \u2192 app goes live automatically",
-    "Apple App Review (1-2 days) \u2192 releases automatically on approval",
+    "Apple App Review (1-2 days) \u2192 auto-release",
     "Owner: TestFlight test on iPhone incl. Google Photos import",
-    "Owner: Google Photos import test on the Pixel (v1.3.0 APK)",
+    "Owner: Google Photos import test on the Pixel (install from Play now)",
     "Owner: back up ~/.config/mosaichighres/ keystore off-machine",
-    "Later: iPad support, physical print test, public listing emails (currently sophie.arborbot@gmail.com on both stores)"
+    "Later: iPad support, physical print test, public contact email"
    ],
    "blocked_on_user": [
-    "iPhone: TestFlight invite at sagearbor@gmail.com \u2192 install, try the app and the Google Photos import",
-    "Pixel: v1.3.0 APK \u2192 try Import a Google Photos album",
-    "Back up ~/.config/mosaichighres/ off-machine",
-    "Watch email for App Review / Play review results"
+    "Install Mosaic HighRes from Google Play on the Pixel, try Import a Google Photos album",
+    "iPhone: TestFlight invite \u2192 test",
+    "Back up ~/.config/mosaichighres/ off-machine"
    ],
    "estimates": [
     {
@@ -1905,6 +1958,10 @@
     {
      "date": "2026-10-06",
      "percent": 99
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 99
     }
    ]
   },
@@ -1996,6 +2053,10 @@
     },
     {
      "date": "2026-10-06",
+     "percent": 0
+    },
+    {
+     "date": "2026-10-07",
      "percent": 0
     }
    ]
@@ -2090,6 +2151,10 @@
     },
     {
      "date": "2026-10-06",
+     "percent": 90
+    },
+    {
+     "date": "2026-10-07",
      "percent": 90
     }
    ]
@@ -2216,6 +2281,10 @@
     {
      "date": "2026-10-06",
      "percent": 84
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 84
     }
    ]
   },
@@ -2327,6 +2396,10 @@
     },
     {
      "date": "2026-10-06",
+     "percent": 100
+    },
+    {
+     "date": "2026-10-07",
      "percent": 100
     }
    ]
@@ -2488,6 +2561,10 @@
     },
     {
      "date": "2026-10-06",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-07",
      "percent": 94
     }
    ]
