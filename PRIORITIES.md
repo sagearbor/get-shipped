@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-10-07T09:01
+# PRIORITIES — generated from `state/projects.json` at 2026-10-10T01:14
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -79,7 +79,7 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
 | career-compass-starter | 100 | yes | Template workspace for career-compass |
 | contextFlow-upgrade | 95 | yes | ContextFlow pricing/privacy/support micro-site (satellite of contextflow, not legacy) |
 | megaCity-rotating | 70 | yes | Three.js rotating megacity visualization |
-| mosaicHighRes | 99 | LIVE on Google Play (approved 2026-10-07, https://play.google.com/store/apps/details?id=com.sagearbor.mosaichighres.app). iOS 1.3.0 Waiting for Review at Apple since 2026-10-06 9:05 PM EDT | Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend |
+| mosaicHighRes | 99 | LIVE on Google Play (2026-10-07). iOS 1.3.0: rejected 10-08 (Guideline 2.1 info request, new-account check); replied with simulator recording + answers and resubmitted 10-10, Waiting for Review | Print-quality (up to 1200 DPI, lossless) photo mosaic app for iOS/Android, fully on-device so it ships free, no backend |
 | movieScript_firstAI | 0 | no | Empty repo, never started |
 | neighborhood-poker | 90 | yes | Google Sheets poker tournament manager |
 | oralhistory_timeline | 84 | partial (Play internal) | Oral history to interactive shareable timeline |
