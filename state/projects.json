@@ -3,7 +3,7 @@
   "repos": {
     "mindshift": {
       "rank": 1,
-      "hands_off": false,
+      "hands_off": true,
       "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally",
       "target": "App stores (Expo RN) + Cloud Run API",
       "live": "preview builds / OTA",
@@ -32,7 +32,7 @@
       ]
     },
     "contextflow": {
-      "rank": 2,
+      "rank": 4,
       "hands_off": false,
       "goal": "Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing",
       "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site",
@@ -112,7 +112,7 @@
       ]
     },
     "faculty-adequacy": {
-      "rank": 3,
+      "rank": 9,
       "hands_off": true,
       "goal": "Full draft covering all US med schools + paper stubbed for handoff to a co-author; refresh for a new year of data",
       "target": "Publication (Academic Medicine) + GitHub Pages dashboard",
@@ -184,8 +184,8 @@
       ]
     },
     "FitRival": {
-      "rank": 4,
-      "hands_off": false,
+      "rank": 2,
+      "hands_off": true,
       "goal": "Good enough for two family members to lose weight together: shared weight and %fat curves, gamification, seeing each other",
       "target": "Google Play production (Android); iOS later",
       "live": "Play internal track v0.0.66; production stale at v0.0.28",
@@ -200,8 +200,8 @@
       ],
       "blocked_on_user": [
         "PLAY UPLOAD + PRODUCTION PROMOTION (blocked here, your click): restore ~/fitrival-upload-keystore.jks + app/android/key.properties and ~/.config/play/",
-        "CLEANUP: delete test rows from the production Sheet \u2014 group OVERNIGHT-TEST-0907 (id 675c3043-ee42-4781-b43d-1cb0d77accaf), users Sophie/Sis/Bro with *",
-        "PR #53 (Firebase backend, your PR) left untouched \u2014 not needed for promotion; decide separately."
+        "CLEANUP: delete test rows from the production Sheet — group OVERNIGHT-TEST-0907 (id 675c3043-ee42-4781-b43d-1cb0d77accaf), users Sophie/Sis/Bro with *",
+        "PR #53 (Firebase backend, your PR) left untouched — not needed for promotion; decide separately."
       ],
       "estimates": [
         {
@@ -242,7 +242,7 @@
       ]
     },
     "openline": {
-      "rank": 5,
+      "rank": 7,
       "hands_off": false,
       "goal": "Give to 5 friends, have them run nodes, and prove a payment settles in seconds, comparable to a credit card",
       "target": "Public seed node (Cloud Run or VPS) + Expo mobile",
@@ -314,7 +314,7 @@
       ]
     },
     "personhood": {
-      "rank": 5,
+      "rank": 7,
       "hands_off": false,
       "goal": "Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline",
       "target": "Cloud Run issuer + Firebase Hosting web",
@@ -384,7 +384,7 @@
       "note": "Tracked under openline's ETA; see projects/openline-personhood.md"
     },
     "chatnbook": {
-      "rank": 6,
+      "rank": 8,
       "hands_off": false,
       "goal": "Live and useful enough to sell to small companies with chatbots that can't handle AI",
       "target": "Cloud Run API + WordPress plugin + Stripe",
@@ -469,7 +469,7 @@
       ]
     },
     "taskcaster-app": {
-      "rank": null,
+      "rank": 5,
       "hands_off": false,
       "goal": "Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12)",
       "target": "Web (live) + app stores",
@@ -504,7 +504,7 @@
         },
         {
           "date": "2026-09-08",
-          "scope": "Round 4 agent: Store screenshots + app icons (Android/iOS) and iOS build/plist/Firebase validation \u2014 done",
+          "scope": "Round 4 agent: Store screenshots + app icons (Android/iOS) and iOS build/plist/Firebase validation — done",
           "est_days": 0.69,
           "done": "2026-09-09",
           "actual_days": 0.62
@@ -547,8 +547,8 @@
       ]
     },
     "oralhistory_timeline": {
-      "rank": null,
-      "hands_off": false,
+      "rank": 3,
+      "hands_off": true,
       "goal": "Oral history to interactive shareable timeline",
       "target": "Firebase Hosting + Play",
       "live": "partial (Play internal)",
@@ -603,7 +603,7 @@
       "estimates": []
     },
     "career-compass": {
-      "rank": null,
+      "rank": 6,
       "hands_off": false,
       "goal": "Claude Code plugin: job posting to gap analysis + CV",
       "target": "CC plugin marketplace",
@@ -775,7 +775,7 @@
       ],
       "blocked_on_user": [
         "Install Mosaic HighRes from Google Play on the Pixel, try Import a Google Photos album",
-        "iPhone: TestFlight invite \u2192 test",
+        "iPhone: TestFlight invite → test",
         "Back up ~/.config/mosaichighres/ off-machine"
       ],
       "estimates": [
@@ -809,7 +809,7 @@
         },
         {
           "date": "2026-10-04",
-          "scope": "v1.2.2: first-render bugs \u2014 blank tiles root-caused on device (renderer gray fill + diversity radius collapsing to 0), hard adjacency floor, measured readout, result screen, editable date range (PR 10, 503 tests)",
+          "scope": "v1.2.2: first-render bugs — blank tiles root-caused on device (renderer gray fill + diversity radius collapsing to 0), hard adjacency floor, measured readout, result screen, editable date range (PR 10, 503 tests)",
           "est_days": 0.6,
           "done": "2026-10-04",
           "actual_days": 0.7

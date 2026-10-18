@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-10T01:14:50-04:00",
- "previous_sync": "2026-10-07T09:01:25-04:00",
+ "generated_at": "2026-10-17T21:26:23-04:00",
+ "previous_sync": "2026-10-17T20:15:37-04:00",
  "calibration": {
   "completed": 60,
   "est_days": 56.22,
@@ -11,7 +11,7 @@
   {
    "name": "mindshift",
    "rank": 1,
-   "hands_off": false,
+   "hands_off": true,
    "goal": "AI empathy/tone coach with live-call nudges; user is driving this personally",
    "target": "App stores (Expo RN) + Cloud Run API",
    "live": "preview builds / OTA",
@@ -41,33 +41,17 @@
    "note": "",
    "plan": "projects/mindshift.md",
    "git": {
-    "branch": "feat/library-room-1190",
-    "last": "2026-10-07",
-    "commits": "679",
+    "branch": "main",
+    "last": "2026-10-17",
+    "commits": "681",
     "dirty": 0,
     "unpushed": 0,
     "remote": "sagearbor/mindshift"
    },
-   "new_commits": [
-    "58c1374 2026-10-10 feat(open-audio): require measured heat, count annotator-marked overlap",
-    "cd70192 2026-10-10 fix(annotator): spend ledger safe for concurrent runs; flag wrong time scales; HTML validation report",
-    "5806c8b 2026-10-10 fix(annotator): survive real replies \u2014 clock timestamps, restarted continuations, 429s, thinking budget",
-    "7d2dabd 2026-10-10 feat(recordings): corpus summary \u2014 phone alert buzzes, dropped speech, label leaks, judged ranking",
-    "aac4aa7 2026-10-10 feat(recordings): corpus summary \u2014 chance baseline, fragment coaching, template collapse",
-    "01852fb 2026-10-10 feat(annotator): validation harness + open-audio fetcher",
-    "439e98c 2026-10-09 feat(recordings): corpus summary shows what a raised interject slider would do",
-    "ad6fccc 2026-10-09 feat(annotator): scripts/annotate_audio.py \u2014 Gemini on Vertex AI annotates audio",
-    "3a98c9e 2026-10-09 feat(recordings): corpus-summary.html (heated/calm/open-web apart) + corpus fixture tests",
-    "24ee90e 2026-10-09 feat(recordings): Deepgram language from the annotation (CONFER is Greek); CONFER calm controls",
-    "1911439 2026-10-09 feat(recordings): replay keeps human-timed ground truth, per-item held-out voiceprint",
-    "4e7340a 2026-10-09 feat(recordings): corpus_to_inbox \u2014 SBCSAE/AMI/CHiME-6/CONFER ground truth as replay inbox items",
-    "5e2fe3c 2026-10-09 feat(annotator): pure core for the Gemini audio annotator",
-    "c7b96d3 2026-10-08 fix(recordings): app pull works with project-less ADC (bucket reads need no project)",
-    "c921f5e 2026-10-08 feat(recordings): scripts/recording_replay.py CLI, regression fixtures, app-recording pull"
-   ],
+   "new_commits": [],
    "wrapup": {
-    "file": "20261008-0030-dinner-fixes-library-room-1190.yaml",
-    "timestamp": "\"2026-10-08T00:30:00-04:00\""
+    "file": "20261010-2130-fast-signals-night.yaml",
+    "timestamp": "\"2026-10-10T21:30:00-04:00\""
    },
    "prs": [],
    "history": [
@@ -142,12 +126,322 @@
     {
      "date": "2026-10-10",
      "percent": 83
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 83
+    }
+   ]
+  },
+  {
+   "name": "FitRival",
+   "rank": 2,
+   "hands_off": true,
+   "goal": "Good enough for two family members to lose weight together: shared weight and %fat curves, gamification, seeing each other",
+   "target": "Google Play production (Android); iOS later",
+   "live": "Play internal track v0.0.66; production stale at v0.0.28",
+   "percent": 76,
+   "eta_days": 8,
+   "remaining": [
+    "Promote to Play production (target-API branch, full test run, release)",
+    "Walk second-user onboarding as a new user; fix every developer-only step",
+    "Verify two-user rolling-average weight and %fat curves; add goal lines",
+    "Firebase Auth instead of group secret, if onboarding needs it",
+    "Streak + head-to-head challenge card on home"
+   ],
+   "blocked_on_user": [
+    "PLAY UPLOAD + PRODUCTION PROMOTION (blocked here, your click): restore ~/fitrival-upload-keystore.jks + app/android/key.properties and ~/.config/play/",
+    "CLEANUP: delete test rows from the production Sheet \u2014 group OVERNIGHT-TEST-0907 (id 675c3043-ee42-4781-b43d-1cb0d77accaf), users Sophie/Sis/Bro with *",
+    "PR #53 (Firebase backend, your PR) left untouched \u2014 not needed for promotion; decide separately."
+   ],
+   "estimates": [
+    {
+     "date": "2026-09-06",
+     "scope": "Production promotion path (merge target-api, tests, release build)",
+     "est_days": 2,
+     "done": null,
+     "actual_days": null
+    },
+    {
+     "date": "2026-09-06",
+     "scope": "Onboarding walk + fixes",
+     "est_days": 2,
+     "done": null,
+     "actual_days": null
+    },
+    {
+     "date": "2026-09-06",
+     "scope": "Two-user curves + gamification card",
+     "est_days": 4,
+     "done": null,
+     "actual_days": null
+    },
+    {
+     "date": "2026-09-07",
+     "scope": "Overnight agent run: Make main release-ready for the API-36 Play gate (merge target-API-36, full tests, release",
+     "est_days": 1.12,
+     "done": "2026-09-08",
+     "actual_days": 0.82
+    },
+    {
+     "date": "2026-09-08",
+     "scope": "Round 2 agent: On-device follow-up fixes: last-synced label, local joined-at time, % of goal dot overlap",
+     "est_days": 0.54,
+     "done": "2026-09-08",
+     "actual_days": 0.42
+    }
+   ],
+   "note": "",
+   "plan": "projects/FitRival.md",
+   "git": {
+    "branch": "feat/ios",
+    "last": "2026-10-17",
+    "commits": "454",
+    "dirty": 0,
+    "unpushed": 0,
+    "remote": "sagearbor/FitRival"
+   },
+   "new_commits": [],
+   "wrapup": {
+    "file": "20261017-0030-ship-115.yaml",
+    "timestamp": "\"2026-10-17T00:30:00-04:00\""
+   },
+   "prs": [],
+   "history": [
+    {
+     "date": "2026-09-06",
+     "percent": 65
+    },
+    {
+     "date": "2026-09-07",
+     "percent": 65
+    },
+    {
+     "date": "2026-09-08",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-09",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-10",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-11",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-12",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-15",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-17",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 76
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-06",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-10",
+     "percent": 76
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 76
+    }
+   ]
+  },
+  {
+   "name": "oralhistory_timeline",
+   "rank": 3,
+   "hands_off": true,
+   "goal": "Oral history to interactive shareable timeline",
+   "target": "Firebase Hosting + Play",
+   "live": "partial (Play internal)",
+   "percent": 84,
+   "eta_days": null,
+   "remaining": [
+    "Deploy privacy page",
+    "Release signing keystore",
+    "Play production"
+   ],
+   "blocked_on_user": [
+    "Stripe: create account at https://dashboard.stripe.com/register, copy sk_test_ key, then: firebase functions:secrets:set STRIPE_SECRET_KEY",
+    "Stripe: create a webhook endpoint (Developers > Webhooks) at https://us-central1-oralhistory-timeline.cloudfunctions.net/stripeWebhook subscribed to p",
+    "After both secrets exist: add secrets: ['STRIPE_SECRET_KEY','STRIPE_WEBHOOK_SECRET'] to createPuzzlePaymentIntent + stripeWebhook in functions/src/ind"
+   ],
+   "estimates": [
+    {
+     "date": "2026-09-07",
+     "scope": "Overnight agent run: Keepsake-art jigsaw ordering end to end via Prodigi Print API (sandbox/fixture only, no pa",
+     "est_days": 1.12,
+     "done": "2026-09-08",
+     "actual_days": 0.75
+    },
+    {
+     "date": "2026-09-08",
+     "scope": "Round 2 agent: Payments scaffold (Stripe interface + fake/fixtures), image-resolution gate for 1000pc puz",
+     "est_days": 0.81,
+     "done": "2026-09-08",
+     "actual_days": 0.74
+    },
+    {
+     "date": "2026-09-08",
+     "scope": "Round 3 agent: Fix puzzle-order Playwright e2e + add server-side print upscale for 1000pc puzzles",
+     "est_days": 0.5,
+     "done": "2026-09-08",
+     "actual_days": 0.44
+    }
+   ],
+   "note": "",
+   "plan": "projects/oralhistory_timeline.md",
+   "git": {
+    "branch": "main",
+    "last": "2026-10-17",
+    "commits": "185",
+    "dirty": 0,
+    "unpushed": 0,
+    "remote": "sagearbor/oralhistory_timeline"
+   },
+   "new_commits": [
+    "cfff01b 2026-10-17 feat(ux): suggest a story title after analysis (#18)",
+    "c144292 2026-10-17 feat: person-first Home - compact collection rows, Record FAB (#72)",
+    "56227a5 2026-10-17 refactor: Home uses the shared group share dialog from #68",
+    "f487dc4 2026-10-17 Merge origin/main into ux/gift-flow-light",
+    "74f8e7e 2026-10-17 fix: Notifications switch writes only emailNotifications (#71)",
+    "e8665b1 2026-10-17 fix: Notifications switch writes only emailNotifications",
+    "efb8be6 2026-10-17 feat: Make a gift as 4 steps (product, moments, look, preview & order)",
+    "b478f38 2026-10-17 feat(ux): simpler share sheet, limit sheet usage + archive, working notifications, Google-first sign-in (#69)",
+    "1457efd 2026-10-17 Merge remote-tracking branch 'origin/main' into ux/home-person-first",
+    "8d414c9 2026-10-17 feat: person-first Home - one compact row per collection, Record FAB",
+    "aab479f 2026-10-17 feat: record into a folder, folder story list + share, calmer record screens (#68)",
+    "ee6f6ad 2026-10-17 feat(ux): simpler share sheet, limit sheet usage + archive, working notifications, Google-first sign-in",
+    "7c5152c 2026-10-17 feat: simpler timeline view \u2014 4 tabs, plain menu, Add photo on moments (#67)",
+    "ab010f2 2026-10-17 feat: record into a folder, folder story list + share, calmer record screens",
+    "be82c4f 2026-10-17 feat: simpler timeline view \u2014 4 tabs, plain menu, Add photo on moments"
+   ],
+   "wrapup": {
+    "file": "20261017-0150-store-ready.yaml",
+    "timestamp": "2026-10-17T01:50:00-04:00"
+   },
+   "prs": [],
+   "history": [
+    {
+     "date": "2026-09-06",
+     "percent": 75
+    },
+    {
+     "date": "2026-09-07",
+     "percent": 75
+    },
+    {
+     "date": "2026-09-08",
+     "percent": 84
+    },
+    {
+     "date": "2026-09-09",
+     "percent": 84
+    },
+    {
+     "date": "2026-09-10",
+     "percent": 84
+    },
+    {
+     "date": "2026-09-11",
+     "percent": 84
+    },
+    {
+     "date": "2026-09-12",
+     "percent": 84
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 84
+    },
+    {
+     "date": "2026-09-15",
+     "percent": 84
+    },
+    {
+     "date": "2026-09-17",
+     "percent": 84
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 84
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 84
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 84
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 84
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 84
+    },
+    {
+     "date": "2026-10-06",
+     "percent": 84
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 84
+    },
+    {
+     "date": "2026-10-10",
+     "percent": 84
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 84
     }
    ]
   },
   {
    "name": "contextflow",
-   "rank": 2,
+   "rank": 4,
    "hands_off": false,
    "goal": "Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing",
    "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site",
@@ -313,125 +607,241 @@
     {
      "date": "2026-10-10",
      "percent": 85
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 85
     }
    ]
   },
   {
-   "name": "faculty-adequacy",
-   "rank": 3,
-   "hands_off": true,
-   "goal": "Full draft covering all US med schools + paper stubbed for handoff to a co-author; refresh for a new year of data",
-   "target": "Publication (Academic Medicine) + GitHub Pages dashboard",
-   "live": "dashboard live (Tier A 584, rosters 199/204); manuscript refreshed 2026-09-15, changes doc for co-author",
-   "percent": 88,
+   "name": "taskcaster-app",
+   "rank": 5,
+   "hands_off": false,
+   "goal": "Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12)",
+   "target": "Web (live) + app stores",
+   "live": "https://taskmaster-app-3d480.web.app",
+   "percent": 94,
    "eta_days": null,
    "remaining": [
-    "Co-author reviews docs/manuscript_CHANGES_2026-09-15.md (one conclusion changed: rho -0.44)",
-    "12 external-seeded schools never tier-classified (4,173 records): queue Phase 3",
-    "Policy: role-only evidence toward Tier A",
-    "UCLA/Hopkins full harvests",
-    "Journal submission; annual-run next data year"
+    "Cloud montages lack burned-in countdown text: ship a freetype-enabled ffmpeg or move rendering to Cloud Run",
+    "Run and verify the mobile builds (camera, mic, video_player) on real devices",
+    "Get real players in; push notifications need a VAPID key",
+    "Store blockers unchanged: support email, keystore, feature graphic"
    ],
    "blocked_on_user": [
-    "Co-author review: section 6 now reports a NON-NULL negative correlation between teaching-evidenced share and evidence coverage (rho -0.44 [-0.63,-0.19",
-    "Co-author decision: old Table 4's six-class roster-failure taxonomy was dropped (its premise, '34 schools without a roster', is now false -- only 5 ar",
-    "12 schools (4,173 records) still owe a Phase 3 identity pass and are labelled 'pending'; the manuscript rests on 187 of 204 schools until that runs. E"
+    "Nothing is blocking. Optional: the VAPID private key is in Secret Manager as VAPID_PRIVATE_KEY (projects/488967944620/secrets/VAPID_PRIVATE_KEY, versi",
+    "iOS web push only works for a site the user has added to their Home Screen (Apple's rule, not ours). Android Chrome and desktop work from a normal tab",
+    "Unchanged store blockers from prior rounds: support email in the legal pages, upload keystore, Play feature graphic, paid Apple developer account."
    ],
    "estimates": [
     {
-     "date": "2026-09-13",
-     "scope": "Roster + curriculum push: 30 schools, cleanup, 4 curriculum batches, publish (11 agents)",
-     "est_days": 9.56,
-     "done": "2026-09-13",
-     "actual_days": 7.83
+     "date": "2026-09-07",
+     "scope": "Overnight agent run: Store readiness: Android build fixed for fresh clones and proven on the emulator, live-web",
+     "est_days": 0.78,
+     "done": "2026-09-08",
+     "actual_days": 0.82
     },
     {
-     "date": "2026-09-15",
-     "scope": "FA follow-up agent: date-and-pdf: toledo-life date inference + kansas-kansas encrypted PDF",
-     "est_days": 0.91,
-     "done": "2026-09-15",
-     "actual_days": 0.9
+     "date": "2026-09-08",
+     "scope": "Round 2 agent: Account deletion flow (Play/App Store blocker) + targetSdk/compileSdk 36 bump with 16KB pa",
+     "est_days": 0.95,
+     "done": "2026-09-08",
+     "actual_days": 0.91
     },
     {
-     "date": "2026-09-15",
-     "scope": "FA follow-up agent: phase5-stealth: Phase 1 stealth fetch ladder ported into Phase 5 (oklahoma, oklahoma-state",
-     "est_days": 0.56,
-     "done": "2026-09-15",
-     "actual_days": 0.28
-    },
-    {
-     "date": "2026-09-15",
-     "scope": "FA follow-up agent: publish-manuscript: worktree cleanup, publish, readiness table, manuscript refresh",
-     "est_days": 0.79,
-     "done": "2026-09-15",
-     "actual_days": 0.33
-    },
-    {
-     "date": "2026-09-15",
-     "scope": "FA follow-up agent: rescue-review: review and retire the two 20260913 rescue branches",
-     "est_days": 0.41,
-     "done": "2026-09-15",
-     "actual_days": 0.28
-    },
-    {
-     "date": "2026-09-15",
-     "scope": "FA follow-up agent: validator-regate-b: overflow half of the PR #143 name-validator re-gate (wake-forest)",
-     "est_days": 0.13,
-     "done": "2026-09-15",
-     "actual_days": 0.1
-    },
-    {
-     "date": "2026-09-15",
-     "scope": "FA follow-up agent: validator-regate: 38-school re-gate for PR #143 name-validator fix",
+     "date": "2026-09-08",
+     "scope": "Round 4 agent: Store screenshots + app icons (Android/iOS) and iOS build/plist/Firebase validation \u2014 done",
      "est_days": 0.69,
+     "done": "2026-09-09",
+     "actual_days": 0.62
+    },
+    {
+     "date": "2026-09-10",
+     "scope": "Round 5 agent: Round 5 gentle cleanup: play-sheet overflow, offline badge, iOS encryption key, iOS screen",
+     "est_days": 0.56,
+     "done": "2026-09-11",
+     "actual_days": 0.88
+    },
+    {
+     "date": "2026-09-11",
+     "scope": "Round 6 planner: Web app redeployed twice (first since 09-08): judging scoreboard race fixed, pre-auth lega",
+     "est_days": 0.56,
+     "done": "2026-09-12",
+     "actual_days": 0.21
+    },
+    {
+     "date": "2026-09-12",
+     "scope": "Round 7 product agent: Make TaskCaster addictively fun: async play loop, 10 killer starter tasks, two-tap first r",
+     "est_days": 1.35,
+     "done": "2026-09-12",
+     "actual_days": 0.62
+    },
+    {
+     "date": "2026-09-12",
+     "scope": "Round 8 video agent: In-app video as the DEFAULT submission (owner approved Firebase Storage, $100 ceiling): St",
+     "est_days": 1.94,
+     "done": "2026-09-13",
+     "actual_days": 1.62
+    },
+    {
+     "date": "2026-09-15",
+     "scope": "Wrap-up agent: Round 9: burned-in montage text, mobile walkthrough on an emulator, web push for grades",
+     "est_days": 0.44,
      "done": "2026-09-15",
-     "actual_days": 0.4
+     "actual_days": 0.49
     }
    ],
    "note": "",
-   "plan": "projects/faculty-adequacy.md",
+   "plan": "projects/taskcaster-app.md",
    "git": {
     "branch": "main",
     "last": "2026-09-15",
-    "commits": "627",
+    "commits": "279",
     "dirty": 1,
     "unpushed": 0,
-    "remote": "sagearbor/faculty-adequacy"
+    "remote": "sagearbor/taskcaster-app"
    },
    "new_commits": [],
    "wrapup": {
-    "file": "20260915-0709-rescue-review.yaml",
-    "timestamp": "\"2026-09-15T07:09:22Z\""
+    "file": "20260915-0400-round9-montage-text-mobile-webpush.yaml",
+    "timestamp": "\"2026-09-15T04:05:00-04:00\""
    },
    "prs": [],
    "history": [
     {
      "date": "2026-09-06",
-     "percent": 30
+     "percent": 70
     },
     {
      "date": "2026-09-07",
-     "percent": 30
+     "percent": 70
     },
     {
      "date": "2026-09-08",
-     "percent": 30
+     "percent": 82
     },
     {
      "date": "2026-09-09",
-     "percent": 30
+     "percent": 86
     },
     {
      "date": "2026-09-10",
-     "percent": 30
+     "percent": 86
     },
     {
      "date": "2026-09-11",
-     "percent": 30
+     "percent": 88
     },
     {
      "date": "2026-09-12",
-     "percent": 75
+     "percent": 91
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 93
+    },
+    {
+     "date": "2026-09-15",
+     "percent": 94
+    },
+    {
+     "date": "2026-09-17",
+     "percent": 94
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 94
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-06",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-10",
+     "percent": 94
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 94
+    }
+   ]
+  },
+  {
+   "name": "career-compass",
+   "rank": 6,
+   "hands_off": false,
+   "goal": "Claude Code plugin: job posting to gap analysis + CV",
+   "target": "CC plugin marketplace",
+   "live": "installable",
+   "percent": 85,
+   "eta_days": null,
+   "remaining": [
+    "Stabilize; no tests"
+   ],
+   "blocked_on_user": [],
+   "estimates": [],
+   "note": "",
+   "plan": "projects/career-compass.md",
+   "git": {
+    "branch": "main",
+    "last": "2026-07-20",
+    "commits": "3",
+    "dirty": 0,
+    "unpushed": 0,
+    "remote": "sagearbor/career-compass"
+   },
+   "new_commits": [],
+   "wrapup": null,
+   "prs": [],
+   "history": [
+    {
+     "date": "2026-09-06",
+     "percent": 85
+    },
+    {
+     "date": "2026-09-07",
+     "percent": 85
+    },
+    {
+     "date": "2026-09-08",
+     "percent": 85
+    },
+    {
+     "date": "2026-09-09",
+     "percent": 85
+    },
+    {
+     "date": "2026-09-10",
+     "percent": 85
+    },
+    {
+     "date": "2026-09-11",
+     "percent": 85
+    },
+    {
+     "date": "2026-09-12",
+     "percent": 85
     },
     {
      "date": "2026-09-13",
@@ -439,212 +849,53 @@
     },
     {
      "date": "2026-09-15",
-     "percent": 88
+     "percent": 85
     },
     {
      "date": "2026-09-17",
-     "percent": 88
+     "percent": 85
     },
     {
      "date": "2026-09-18",
-     "percent": 88
+     "percent": 85
     },
     {
      "date": "2026-09-21",
-     "percent": 88
+     "percent": 85
     },
     {
      "date": "2026-10-03",
-     "percent": 88
+     "percent": 85
     },
     {
      "date": "2026-10-04",
-     "percent": 88
+     "percent": 85
     },
     {
      "date": "2026-10-05",
-     "percent": 88
+     "percent": 85
     },
     {
      "date": "2026-10-06",
-     "percent": 88
+     "percent": 85
     },
     {
      "date": "2026-10-07",
-     "percent": 88
+     "percent": 85
     },
     {
      "date": "2026-10-10",
-     "percent": 88
-    }
-   ]
-  },
-  {
-   "name": "FitRival",
-   "rank": 4,
-   "hands_off": false,
-   "goal": "Good enough for two family members to lose weight together: shared weight and %fat curves, gamification, seeing each other",
-   "target": "Google Play production (Android); iOS later",
-   "live": "Play internal track v0.0.66; production stale at v0.0.28",
-   "percent": 76,
-   "eta_days": 8,
-   "remaining": [
-    "Promote to Play production (target-API branch, full test run, release)",
-    "Walk second-user onboarding as a new user; fix every developer-only step",
-    "Verify two-user rolling-average weight and %fat curves; add goal lines",
-    "Firebase Auth instead of group secret, if onboarding needs it",
-    "Streak + head-to-head challenge card on home"
-   ],
-   "blocked_on_user": [
-    "PLAY UPLOAD + PRODUCTION PROMOTION (blocked here, your click): restore ~/fitrival-upload-keystore.jks + app/android/key.properties and ~/.config/play/",
-    "CLEANUP: delete test rows from the production Sheet \u2014 group OVERNIGHT-TEST-0907 (id 675c3043-ee42-4781-b43d-1cb0d77accaf), users Sophie/Sis/Bro with *",
-    "PR #53 (Firebase backend, your PR) left untouched \u2014 not needed for promotion; decide separately."
-   ],
-   "estimates": [
-    {
-     "date": "2026-09-06",
-     "scope": "Production promotion path (merge target-api, tests, release build)",
-     "est_days": 2,
-     "done": null,
-     "actual_days": null
+     "percent": 85
     },
     {
-     "date": "2026-09-06",
-     "scope": "Onboarding walk + fixes",
-     "est_days": 2,
-     "done": null,
-     "actual_days": null
-    },
-    {
-     "date": "2026-09-06",
-     "scope": "Two-user curves + gamification card",
-     "est_days": 4,
-     "done": null,
-     "actual_days": null
-    },
-    {
-     "date": "2026-09-07",
-     "scope": "Overnight agent run: Make main release-ready for the API-36 Play gate (merge target-API-36, full tests, release",
-     "est_days": 1.12,
-     "done": "2026-09-08",
-     "actual_days": 0.82
-    },
-    {
-     "date": "2026-09-08",
-     "scope": "Round 2 agent: On-device follow-up fixes: last-synced label, local joined-at time, % of goal dot overlap",
-     "est_days": 0.54,
-     "done": "2026-09-08",
-     "actual_days": 0.42
-    }
-   ],
-   "note": "",
-   "plan": "projects/FitRival.md",
-   "git": {
-    "branch": "feat/ios",
-    "last": "2026-10-10",
-    "commits": "417",
-    "dirty": 0,
-    "unpushed": 0,
-    "remote": "sagearbor/FitRival"
-   },
-   "new_commits": [
-    "26952c8 2026-10-10 feat(home): one challenge card with a selector, like the Weight card",
-    "d59f9f1 2026-10-09 fix(home): challenge cards say which challenge they are",
-    "b4a1abe 2026-10-09 fix(challenges): a challenge you schedule no longer vanishes",
-    "5925490 2026-10-09 feat(challenges): pick what you compete on, not how it is tracked",
-    "884ee7e 2026-10-09 chore: 1.1.3+90 \u2014 Universal Links entitlement now in a shipped build",
-    "9a75551 2026-10-09 chore: 1.1.3+89 to TestFlight; Universal Links unblocked for the next build",
-    "da31abb 2026-10-09 docs: stop the repo telling future sessions to use a dead backend",
-    "4b98f59 2026-10-09 feat(invites): real Universal Links, hosted on Firebase",
-    "674f278 2026-10-09 feat(invites): tap the text, land in the group",
-    "f8a4c68 2026-10-09 feat(invites): pick a person, not a delivery mechanism",
-    "5b90db1 2026-10-09 fix(invites): the app told people to do the one thing that cannot work",
-    "90103ee 2026-10-09 docs: approved 1.1.3 release notes, ready to paste",
-    "5b491c7 2026-10-08 chore: 1.1.3+88 \u2014 first iOS build carrying the health-import fix"
-   ],
-   "wrapup": {
-    "file": "20260923-1600-ux-restructure.yaml",
-    "timestamp": "\"2026-09-23T16:00:00-04:00\""
-   },
-   "prs": [],
-   "history": [
-    {
-     "date": "2026-09-06",
-     "percent": 65
-    },
-    {
-     "date": "2026-09-07",
-     "percent": 65
-    },
-    {
-     "date": "2026-09-08",
-     "percent": 76
-    },
-    {
-     "date": "2026-09-09",
-     "percent": 76
-    },
-    {
-     "date": "2026-09-10",
-     "percent": 76
-    },
-    {
-     "date": "2026-09-11",
-     "percent": 76
-    },
-    {
-     "date": "2026-09-12",
-     "percent": 76
-    },
-    {
-     "date": "2026-09-13",
-     "percent": 76
-    },
-    {
-     "date": "2026-09-15",
-     "percent": 76
-    },
-    {
-     "date": "2026-09-17",
-     "percent": 76
-    },
-    {
-     "date": "2026-09-18",
-     "percent": 76
-    },
-    {
-     "date": "2026-09-21",
-     "percent": 76
-    },
-    {
-     "date": "2026-10-03",
-     "percent": 76
-    },
-    {
-     "date": "2026-10-04",
-     "percent": 76
-    },
-    {
-     "date": "2026-10-05",
-     "percent": 76
-    },
-    {
-     "date": "2026-10-06",
-     "percent": 76
-    },
-    {
-     "date": "2026-10-07",
-     "percent": 76
-    },
-    {
-     "date": "2026-10-10",
-     "percent": 76
+     "date": "2026-10-17",
+     "percent": 85
     }
    ]
   },
   {
    "name": "openline",
-   "rank": 5,
+   "rank": 7,
    "hands_off": false,
    "goal": "Give to 5 friends, have them run nodes, and prove a payment settles in seconds, comparable to a credit card",
    "target": "Public seed node (Cloud Run or VPS) + Expo mobile",
@@ -802,12 +1053,16 @@
     {
      "date": "2026-10-10",
      "percent": 80
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 80
     }
    ]
   },
   {
    "name": "personhood",
-   "rank": 5,
+   "rank": 7,
    "hands_off": false,
    "goal": "Proof-of-personhood credential issuer that OpenLine consumes; shipped together with openline",
    "target": "Cloud Run issuer + Firebase Hosting web",
@@ -962,12 +1217,16 @@
     {
      "date": "2026-10-10",
      "percent": 88
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 88
     }
    ]
   },
   {
    "name": "chatnbook",
-   "rank": 6,
+   "rank": 8,
    "hands_off": false,
    "goal": "Live and useful enough to sell to small companies with chatbots that can't handle AI",
    "target": "Cloud Run API + WordPress plugin + Stripe",
@@ -1138,6 +1397,177 @@
     {
      "date": "2026-10-10",
      "percent": 74
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 74
+    }
+   ]
+  },
+  {
+   "name": "faculty-adequacy",
+   "rank": 9,
+   "hands_off": true,
+   "goal": "Full draft covering all US med schools + paper stubbed for handoff to a co-author; refresh for a new year of data",
+   "target": "Publication (Academic Medicine) + GitHub Pages dashboard",
+   "live": "dashboard live (Tier A 584, rosters 199/204); manuscript refreshed 2026-09-15, changes doc for co-author",
+   "percent": 88,
+   "eta_days": null,
+   "remaining": [
+    "Co-author reviews docs/manuscript_CHANGES_2026-09-15.md (one conclusion changed: rho -0.44)",
+    "12 external-seeded schools never tier-classified (4,173 records): queue Phase 3",
+    "Policy: role-only evidence toward Tier A",
+    "UCLA/Hopkins full harvests",
+    "Journal submission; annual-run next data year"
+   ],
+   "blocked_on_user": [
+    "Co-author review: section 6 now reports a NON-NULL negative correlation between teaching-evidenced share and evidence coverage (rho -0.44 [-0.63,-0.19",
+    "Co-author decision: old Table 4's six-class roster-failure taxonomy was dropped (its premise, '34 schools without a roster', is now false -- only 5 ar",
+    "12 schools (4,173 records) still owe a Phase 3 identity pass and are labelled 'pending'; the manuscript rests on 187 of 204 schools until that runs. E"
+   ],
+   "estimates": [
+    {
+     "date": "2026-09-13",
+     "scope": "Roster + curriculum push: 30 schools, cleanup, 4 curriculum batches, publish (11 agents)",
+     "est_days": 9.56,
+     "done": "2026-09-13",
+     "actual_days": 7.83
+    },
+    {
+     "date": "2026-09-15",
+     "scope": "FA follow-up agent: date-and-pdf: toledo-life date inference + kansas-kansas encrypted PDF",
+     "est_days": 0.91,
+     "done": "2026-09-15",
+     "actual_days": 0.9
+    },
+    {
+     "date": "2026-09-15",
+     "scope": "FA follow-up agent: phase5-stealth: Phase 1 stealth fetch ladder ported into Phase 5 (oklahoma, oklahoma-state",
+     "est_days": 0.56,
+     "done": "2026-09-15",
+     "actual_days": 0.28
+    },
+    {
+     "date": "2026-09-15",
+     "scope": "FA follow-up agent: publish-manuscript: worktree cleanup, publish, readiness table, manuscript refresh",
+     "est_days": 0.79,
+     "done": "2026-09-15",
+     "actual_days": 0.33
+    },
+    {
+     "date": "2026-09-15",
+     "scope": "FA follow-up agent: rescue-review: review and retire the two 20260913 rescue branches",
+     "est_days": 0.41,
+     "done": "2026-09-15",
+     "actual_days": 0.28
+    },
+    {
+     "date": "2026-09-15",
+     "scope": "FA follow-up agent: validator-regate-b: overflow half of the PR #143 name-validator re-gate (wake-forest)",
+     "est_days": 0.13,
+     "done": "2026-09-15",
+     "actual_days": 0.1
+    },
+    {
+     "date": "2026-09-15",
+     "scope": "FA follow-up agent: validator-regate: 38-school re-gate for PR #143 name-validator fix",
+     "est_days": 0.69,
+     "done": "2026-09-15",
+     "actual_days": 0.4
+    }
+   ],
+   "note": "",
+   "plan": "projects/faculty-adequacy.md",
+   "git": {
+    "branch": "main",
+    "last": "2026-09-15",
+    "commits": "627",
+    "dirty": 1,
+    "unpushed": 0,
+    "remote": "sagearbor/faculty-adequacy"
+   },
+   "new_commits": [],
+   "wrapup": {
+    "file": "20260915-0709-rescue-review.yaml",
+    "timestamp": "\"2026-09-15T07:09:22Z\""
+   },
+   "prs": [],
+   "history": [
+    {
+     "date": "2026-09-06",
+     "percent": 30
+    },
+    {
+     "date": "2026-09-07",
+     "percent": 30
+    },
+    {
+     "date": "2026-09-08",
+     "percent": 30
+    },
+    {
+     "date": "2026-09-09",
+     "percent": 30
+    },
+    {
+     "date": "2026-09-10",
+     "percent": 30
+    },
+    {
+     "date": "2026-09-11",
+     "percent": 30
+    },
+    {
+     "date": "2026-09-12",
+     "percent": 75
+    },
+    {
+     "date": "2026-09-13",
+     "percent": 85
+    },
+    {
+     "date": "2026-09-15",
+     "percent": 88
+    },
+    {
+     "date": "2026-09-17",
+     "percent": 88
+    },
+    {
+     "date": "2026-09-18",
+     "percent": 88
+    },
+    {
+     "date": "2026-09-21",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-03",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-04",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-05",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-06",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-07",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-10",
+     "percent": 88
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 88
     }
    ]
   },
@@ -1277,6 +1707,10 @@
     {
      "date": "2026-10-10",
      "percent": 92
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 92
     }
    ]
   },
@@ -1379,108 +1813,10 @@
     {
      "date": "2026-10-10",
      "percent": 90
-    }
-   ]
-  },
-  {
-   "name": "career-compass",
-   "rank": null,
-   "hands_off": false,
-   "goal": "Claude Code plugin: job posting to gap analysis + CV",
-   "target": "CC plugin marketplace",
-   "live": "installable",
-   "percent": 85,
-   "eta_days": null,
-   "remaining": [
-    "Stabilize; no tests"
-   ],
-   "blocked_on_user": [],
-   "estimates": [],
-   "note": "",
-   "plan": "projects/career-compass.md",
-   "git": {
-    "branch": "main",
-    "last": "2026-07-20",
-    "commits": "3",
-    "dirty": 0,
-    "unpushed": 0,
-    "remote": "sagearbor/career-compass"
-   },
-   "new_commits": [],
-   "wrapup": null,
-   "prs": [],
-   "history": [
-    {
-     "date": "2026-09-06",
-     "percent": 85
     },
     {
-     "date": "2026-09-07",
-     "percent": 85
-    },
-    {
-     "date": "2026-09-08",
-     "percent": 85
-    },
-    {
-     "date": "2026-09-09",
-     "percent": 85
-    },
-    {
-     "date": "2026-09-10",
-     "percent": 85
-    },
-    {
-     "date": "2026-09-11",
-     "percent": 85
-    },
-    {
-     "date": "2026-09-12",
-     "percent": 85
-    },
-    {
-     "date": "2026-09-13",
-     "percent": 85
-    },
-    {
-     "date": "2026-09-15",
-     "percent": 85
-    },
-    {
-     "date": "2026-09-17",
-     "percent": 85
-    },
-    {
-     "date": "2026-09-18",
-     "percent": 85
-    },
-    {
-     "date": "2026-09-21",
-     "percent": 85
-    },
-    {
-     "date": "2026-10-03",
-     "percent": 85
-    },
-    {
-     "date": "2026-10-04",
-     "percent": 85
-    },
-    {
-     "date": "2026-10-05",
-     "percent": 85
-    },
-    {
-     "date": "2026-10-06",
-     "percent": 85
-    },
-    {
-     "date": "2026-10-07",
-     "percent": 85
-    },
-    {
-     "date": "2026-10-10",
-     "percent": 85
+     "date": "2026-10-17",
+     "percent": 90
     }
    ]
   },
@@ -1580,6 +1916,10 @@
     },
     {
      "date": "2026-10-10",
+     "percent": 100
+    },
+    {
+     "date": "2026-10-17",
      "percent": 100
     }
    ]
@@ -1682,6 +2022,10 @@
     },
     {
      "date": "2026-10-10",
+     "percent": 95
+    },
+    {
+     "date": "2026-10-17",
      "percent": 95
     }
    ]
@@ -1786,6 +2130,10 @@
     },
     {
      "date": "2026-10-10",
+     "percent": 60
+    },
+    {
+     "date": "2026-10-17",
      "percent": 60
     }
    ]
@@ -1892,8 +2240,39 @@
     {
      "date": "2026-10-10",
      "percent": 70
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 70
     }
    ]
+  },
+  {
+   "name": "mindshift-speedtest",
+   "rank": null,
+   "hands_off": false,
+   "goal": "",
+   "target": "",
+   "live": "",
+   "percent": null,
+   "eta_days": null,
+   "remaining": [],
+   "blocked_on_user": [],
+   "estimates": [],
+   "note": "",
+   "plan": "projects/mindshift-speedtest.md",
+   "git": {
+    "branch": "feat/speed-test-preview",
+    "last": "2026-10-11",
+    "commits": "681",
+    "dirty": 0,
+    "unpushed": 0,
+    "remote": "sagearbor/mindshift"
+   },
+   "new_commits": [],
+   "wrapup": null,
+   "prs": [],
+   "history": []
   },
   {
    "name": "mosaicHighRes",
@@ -2052,6 +2431,10 @@
     {
      "date": "2026-10-10",
      "percent": 99
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 99
     }
    ]
   },
@@ -2071,10 +2454,10 @@
    "plan": "projects/movieScript_firstAI.md",
    "git": {
     "branch": "main",
-    "last": "2026-09-07",
-    "commits": "16",
+    "last": "2026-10-12",
+    "commits": "19",
     "dirty": 0,
-    "unpushed": 0,
+    "unpushed": 3,
     "remote": "sagearbor/movieScript_firstAI"
    },
    "new_commits": [],
@@ -2152,8 +2535,32 @@
     {
      "date": "2026-10-10",
      "percent": 0
+    },
+    {
+     "date": "2026-10-17",
+     "percent": 0
     }
    ]
+  },
+  {
+   "name": "musicVideos",
+   "rank": null,
+   "hands_off": false,
+   "goal": "",
+   "target": "",
+   "live": "",
+   "percent": null,
+   "eta_days": null,
+   "remaining": [],
+   "blocked_on_user": [],
+   "estimates": [],
+   "note": "",
+   "plan": "projects/musicVideos.md",
+   "git": null,
+   "new_commits": [],
+   "wrapup": null,
+   "prs": [],
+   "history": []
   },
   {
    "name": "neighborhood-poker",
@@ -2254,155 +2661,10 @@
     {
      "date": "2026-10-10",
      "percent": 90
-    }
-   ]
-  },
-  {
-   "name": "oralhistory_timeline",
-   "rank": null,
-   "hands_off": false,
-   "goal": "Oral history to interactive shareable timeline",
-   "target": "Firebase Hosting + Play",
-   "live": "partial (Play internal)",
-   "percent": 84,
-   "eta_days": null,
-   "remaining": [
-    "Deploy privacy page",
-    "Release signing keystore",
-    "Play production"
-   ],
-   "blocked_on_user": [
-    "Stripe: create account at https://dashboard.stripe.com/register, copy sk_test_ key, then: firebase functions:secrets:set STRIPE_SECRET_KEY",
-    "Stripe: create a webhook endpoint (Developers > Webhooks) at https://us-central1-oralhistory-timeline.cloudfunctions.net/stripeWebhook subscribed to p",
-    "After both secrets exist: add secrets: ['STRIPE_SECRET_KEY','STRIPE_WEBHOOK_SECRET'] to createPuzzlePaymentIntent + stripeWebhook in functions/src/ind"
-   ],
-   "estimates": [
-    {
-     "date": "2026-09-07",
-     "scope": "Overnight agent run: Keepsake-art jigsaw ordering end to end via Prodigi Print API (sandbox/fixture only, no pa",
-     "est_days": 1.12,
-     "done": "2026-09-08",
-     "actual_days": 0.75
     },
     {
-     "date": "2026-09-08",
-     "scope": "Round 2 agent: Payments scaffold (Stripe interface + fake/fixtures), image-resolution gate for 1000pc puz",
-     "est_days": 0.81,
-     "done": "2026-09-08",
-     "actual_days": 0.74
-    },
-    {
-     "date": "2026-09-08",
-     "scope": "Round 3 agent: Fix puzzle-order Playwright e2e + add server-side print upscale for 1000pc puzzles",
-     "est_days": 0.5,
-     "done": "2026-09-08",
-     "actual_days": 0.44
-    }
-   ],
-   "note": "",
-   "plan": "projects/oralhistory_timeline.md",
-   "git": {
-    "branch": "feat/prodigi-sandbox-live",
-    "last": "2026-10-09",
-    "commits": "155",
-    "dirty": 1,
-    "unpushed": null,
-    "remote": "sagearbor/oralhistory_timeline"
-   },
-   "new_commits": [
-    "5b2a7dd 2026-10-09 chore(ios): 'always' location purpose string (ITMS-90683, build 52) (#41)",
-    "0f97f7e 2026-10-09 chore(ios): 'always' location purpose string (ITMS-90683, build 52)",
-    "63b7ee2 2026-10-09 chore: build 52 (#40)",
-    "b40ccb0 2026-10-09 chore: build 52",
-    "3691a92 2026-10-09 feat(scripts): create the App Store/Play reviewer account in production (#39)",
-    "ed96b86 2026-10-09 feat(scripts): create the App Store/Play reviewer account in production",
-    "ac27c7d 2026-10-07 fix(order): ship without the QR when there's no recorded voice yet (#38)",
-    "67fe858 2026-10-07 fix(order): ship without the QR when there's no recorded voice yet",
-    "6cd8bc8 2026-10-07 test(e2e): launch-flow Playwright specs + run_all.sh; fix: pasted-transcript timelines lost their title (#37)",
-    "e4f5d3c 2026-10-07 Merge remote-tracking branch 'origin/main' into test/e2e-launch-flows",
-    "0891139 2026-10-07 test(e2e): launch-flow Playwright specs + run_all.sh; fix: pasted-transcript timelines lost their title",
-    "58d40c7 2026-10-07 feat(store): polish screenshots (undimmed timeline, product/deck/book/location frames, tile settling, no alpha) (#36)",
-    "a277401 2026-10-07 feat(store): polish screenshots (undimmed timeline, product/deck/book/location frames, tile settling, no alpha)",
-    "53757d3 2026-10-07 [stealth] Organisations (F3) + facility MVP (#6) + memorial partners (#8), labs-gated",
-    "da36ffc 2026-10-07 fix(web): stale app after deploy \u2014 no-cache app shell + clear Cache Storage on Update now (#34)"
-   ],
-   "wrapup": {
-    "file": "20260908-0250-puzzle-e2e-fix-print-upscale.yaml",
-    "timestamp": "\"2026-09-08T02:50:00-04:00\""
-   },
-   "prs": [],
-   "history": [
-    {
-     "date": "2026-09-06",
-     "percent": 75
-    },
-    {
-     "date": "2026-09-07",
-     "percent": 75
-    },
-    {
-     "date": "2026-09-08",
-     "percent": 84
-    },
-    {
-     "date": "2026-09-09",
-     "percent": 84
-    },
-    {
-     "date": "2026-09-10",
-     "percent": 84
-    },
-    {
-     "date": "2026-09-11",
-     "percent": 84
-    },
-    {
-     "date": "2026-09-12",
-     "percent": 84
-    },
-    {
-     "date": "2026-09-13",
-     "percent": 84
-    },
-    {
-     "date": "2026-09-15",
-     "percent": 84
-    },
-    {
-     "date": "2026-09-17",
-     "percent": 84
-    },
-    {
-     "date": "2026-09-18",
-     "percent": 84
-    },
-    {
-     "date": "2026-09-21",
-     "percent": 84
-    },
-    {
-     "date": "2026-10-03",
-     "percent": 84
-    },
-    {
-     "date": "2026-10-04",
-     "percent": 84
-    },
-    {
-     "date": "2026-10-05",
-     "percent": 84
-    },
-    {
-     "date": "2026-10-06",
-     "percent": 84
-    },
-    {
-     "date": "2026-10-07",
-     "percent": 84
-    },
-    {
-     "date": "2026-10-10",
-     "percent": 84
+     "date": "2026-10-17",
+     "percent": 90
     }
    ]
   },
@@ -2523,175 +2785,10 @@
     {
      "date": "2026-10-10",
      "percent": 100
-    }
-   ]
-  },
-  {
-   "name": "taskcaster-app",
-   "rank": null,
-   "hands_off": false,
-   "goal": "Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12)",
-   "target": "Web (live) + app stores",
-   "live": "https://taskmaster-app-3d480.web.app",
-   "percent": 94,
-   "eta_days": null,
-   "remaining": [
-    "Cloud montages lack burned-in countdown text: ship a freetype-enabled ffmpeg or move rendering to Cloud Run",
-    "Run and verify the mobile builds (camera, mic, video_player) on real devices",
-    "Get real players in; push notifications need a VAPID key",
-    "Store blockers unchanged: support email, keystore, feature graphic"
-   ],
-   "blocked_on_user": [
-    "Nothing is blocking. Optional: the VAPID private key is in Secret Manager as VAPID_PRIVATE_KEY (projects/488967944620/secrets/VAPID_PRIVATE_KEY, versi",
-    "iOS web push only works for a site the user has added to their Home Screen (Apple's rule, not ours). Android Chrome and desktop work from a normal tab",
-    "Unchanged store blockers from prior rounds: support email in the legal pages, upload keystore, Play feature graphic, paid Apple developer account."
-   ],
-   "estimates": [
-    {
-     "date": "2026-09-07",
-     "scope": "Overnight agent run: Store readiness: Android build fixed for fresh clones and proven on the emulator, live-web",
-     "est_days": 0.78,
-     "done": "2026-09-08",
-     "actual_days": 0.82
     },
     {
-     "date": "2026-09-08",
-     "scope": "Round 2 agent: Account deletion flow (Play/App Store blocker) + targetSdk/compileSdk 36 bump with 16KB pa",
-     "est_days": 0.95,
-     "done": "2026-09-08",
-     "actual_days": 0.91
-    },
-    {
-     "date": "2026-09-08",
-     "scope": "Round 4 agent: Store screenshots + app icons (Android/iOS) and iOS build/plist/Firebase validation \u2014 done",
-     "est_days": 0.69,
-     "done": "2026-09-09",
-     "actual_days": 0.62
-    },
-    {
-     "date": "2026-09-10",
-     "scope": "Round 5 agent: Round 5 gentle cleanup: play-sheet overflow, offline badge, iOS encryption key, iOS screen",
-     "est_days": 0.56,
-     "done": "2026-09-11",
-     "actual_days": 0.88
-    },
-    {
-     "date": "2026-09-11",
-     "scope": "Round 6 planner: Web app redeployed twice (first since 09-08): judging scoreboard race fixed, pre-auth lega",
-     "est_days": 0.56,
-     "done": "2026-09-12",
-     "actual_days": 0.21
-    },
-    {
-     "date": "2026-09-12",
-     "scope": "Round 7 product agent: Make TaskCaster addictively fun: async play loop, 10 killer starter tasks, two-tap first r",
-     "est_days": 1.35,
-     "done": "2026-09-12",
-     "actual_days": 0.62
-    },
-    {
-     "date": "2026-09-12",
-     "scope": "Round 8 video agent: In-app video as the DEFAULT submission (owner approved Firebase Storage, $100 ceiling): St",
-     "est_days": 1.94,
-     "done": "2026-09-13",
-     "actual_days": 1.62
-    },
-    {
-     "date": "2026-09-15",
-     "scope": "Wrap-up agent: Round 9: burned-in montage text, mobile walkthrough on an emulator, web push for grades",
-     "est_days": 0.44,
-     "done": "2026-09-15",
-     "actual_days": 0.49
-    }
-   ],
-   "note": "",
-   "plan": "projects/taskcaster-app.md",
-   "git": {
-    "branch": "main",
-    "last": "2026-09-15",
-    "commits": "279",
-    "dirty": 1,
-    "unpushed": 0,
-    "remote": "sagearbor/taskcaster-app"
-   },
-   "new_commits": [],
-   "wrapup": {
-    "file": "20260915-0400-round9-montage-text-mobile-webpush.yaml",
-    "timestamp": "\"2026-09-15T04:05:00-04:00\""
-   },
-   "prs": [],
-   "history": [
-    {
-     "date": "2026-09-06",
-     "percent": 70
-    },
-    {
-     "date": "2026-09-07",
-     "percent": 70
-    },
-    {
-     "date": "2026-09-08",
-     "percent": 82
-    },
-    {
-     "date": "2026-09-09",
-     "percent": 86
-    },
-    {
-     "date": "2026-09-10",
-     "percent": 86
-    },
-    {
-     "date": "2026-09-11",
-     "percent": 88
-    },
-    {
-     "date": "2026-09-12",
-     "percent": 91
-    },
-    {
-     "date": "2026-09-13",
-     "percent": 93
-    },
-    {
-     "date": "2026-09-15",
-     "percent": 94
-    },
-    {
-     "date": "2026-09-17",
-     "percent": 94
-    },
-    {
-     "date": "2026-09-18",
-     "percent": 94
-    },
-    {
-     "date": "2026-09-21",
-     "percent": 94
-    },
-    {
-     "date": "2026-10-03",
-     "percent": 94
-    },
-    {
-     "date": "2026-10-04",
-     "percent": 94
-    },
-    {
-     "date": "2026-10-05",
-     "percent": 94
-    },
-    {
-     "date": "2026-10-06",
-     "percent": 94
-    },
-    {
-     "date": "2026-10-07",
-     "percent": 94
-    },
-    {
-     "date": "2026-10-10",
-     "percent": 94
+     "date": "2026-10-17",
+     "percent": 100
     }
    ]
   }
