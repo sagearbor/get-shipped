@@ -1,4 +1,4 @@
-# PRIORITIES — generated from `state/projects.json` at 2026-10-17T21:26
+# PRIORITIES — generated from `state/projects.json` at 2026-10-18T02:50
 _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, estimates), then `scripts/sync.py --write`. Prose plans live in `projects/<repo>.md`._
 
 ## Ranked
@@ -30,24 +30,24 @@ _Edit `state/projects.json` (rank, hands_off, percent, eta_days, remaining, esti
    - [ ] Play production
    - needs user: Stripe: create account at https://dashboard.stripe.com/register, copy sk_test_ key, then: firebase functions:secrets:set STRIPE_SECRET_KEY; Stripe: create a webhook endpoint (Developers > Webhooks) at https://us-central1-oralhistory-timeline.cloudfunctions.net/stripeWebhook subscribed to p; After both secrets exist: add secrets: ['STRIPE_SECRET_KEY','STRIPE_WEBHOOK_SECRET'] to createPuzzlePaymentIntent + stripeWebhook in functions/src/ind
 
-4. **contextflow** — 85%, ETA ~9 agent-days
+4. **contextflow** — 88%, ETA ~9 agent-days
    - goal: Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing
    - shipped means: see `projects/contextflow.md`
-   - [ ] URGENT: purge confirmed-leaked docs via contextflow-backend/functions/scripts/purge-cached-page.js
+   - [ ] After secrets: deploy stripeWebhook/createOrgCheckoutSession/getOrg, run one test Checkout (card 4242) and confirm orgs/{domain}.seats
    - [ ] Submit v0.1.49 to Chrome Web Store (fixes don't protect installed clients until then)
-   - [ ] Wire the existing background/index.js privacy blacklist into the cache-write gate too (gap found: keep.google.com/messages.google.com were cached despite being on that list)
-   - [ ] Org-level content control (Phase 2, scoped): org registers domain+optional-path rules; only that org's own enrolled employees skip shared cache there
-   - [ ] Set STRIPE_ORG_SECRET (test) + price id; deploy stripeWebhook while watching
-   - needs user: Confirm go-ahead to run the purge script now (irreversible delete of leaked docs); CHROME WEB STORE UPLOAD of v0.1.49; Stripe test key + price id
+   - [ ] Server-side monthly page cap in llmProxy for org members (today only the extension enforces it)
+   - [ ] Wire the existing background/index.js privacy blacklist into the cache-write gate too (keep.google.com/messages.google.com were cached despite being on that list)
+   - [ ] Org-level content control (Phase 2, scoped)
+   - needs user: Set 2 Firebase secrets, then deploy (PR #105 body has the commands): STRIPE_ORG_SECRET = Stripe TEST-mode sk_test_ key; STRIPE_ORG_WEBHOOK_SECRET = whsec_ of test endpoint we_1SxBBNHgnce3iNWmx4T6Jdpo; Review + merge PR #105 (org plan: $120/seat/yr, 300 pages/seat/mo, 5-seat min); CHROME WEB STORE UPLOAD of v0.1.49 (then v0.1.50 with the seat cap)
 
-5. **taskcaster-app** — 94%
+5. **taskcaster-app** — 95%
    - goal: Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12)
    - shipped means: see `projects/taskcaster-app.md`
-   - [ ] Cloud montages lack burned-in countdown text: ship a freetype-enabled ffmpeg or move rendering to Cloud Run
-   - [ ] Run and verify the mobile builds (camera, mic, video_player) on real devices
-   - [ ] Get real players in; push notifications need a VAPID key
-   - [ ] Store blockers unchanged: support email, keystore, feature graphic
-   - needs user: Nothing is blocking. Optional: the VAPID private key is in Secret Manager as VAPID_PRIVATE_KEY (projects/488967944620/secrets/VAPID_PRIVATE_KEY, versi; iOS web push only works for a site the user has added to their Home Screen (Apple's rule, not ours). Android Chrome and desktop work from a normal tab; Unchanged store blockers from prior rounds: support email in the legal pages, upload keystore, Play feature graphic, paid Apple developer account.
+   - [ ] Android: create upload keystore + Play app record + first internal build (same version as iOS)
+   - [ ] App Store listing: description, keywords, screenshots (scripts/capture_store_screenshots_ios.sh exists), age rating, review contact
+   - [ ] Raise iOS deployment target 13.0 -> 15.0 before April 2027
+   - [ ] Cloud montage text + real-device verification of camera/mic/video_player
+   - needs user: Install TaskCaster Party from TestFlight on your iPhone (invite to sagearbor@gmail.com) and play one task with camera + mic; Review + merge PR #34, then firebase deploy --only hosting so the support email is live on the privacy page; App Store: App Privacy questionnaire is browser-only and needs your answers before review submission
 
 6. **career-compass** — 85%
    - goal: Claude Code plugin: job posting to gap analysis + CV

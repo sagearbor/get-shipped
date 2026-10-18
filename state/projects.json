@@ -37,20 +37,20 @@
       "goal": "Demo-ready for companies: annual training on long PDFs, with org results in the cloud and org billing",
       "target": "Chrome Web Store + Firebase backend + GitHub Pages micro-site",
       "live": "extension built; store listing unconfirmed; Stripe live",
-      "percent": 85,
+      "percent": 88,
       "eta_days": 9,
       "remaining": [
-        "URGENT: purge confirmed-leaked docs via contextflow-backend/functions/scripts/purge-cached-page.js",
+        "After secrets: deploy stripeWebhook/createOrgCheckoutSession/getOrg, run one test Checkout (card 4242) and confirm orgs/{domain}.seats",
         "Submit v0.1.49 to Chrome Web Store (fixes don't protect installed clients until then)",
-        "Wire the existing background/index.js privacy blacklist into the cache-write gate too (gap found: keep.google.com/messages.google.com were cached despite being on that list)",
-        "Org-level content control (Phase 2, scoped): org registers domain+optional-path rules; only that org's own enrolled employees skip shared cache there",
-        "Set STRIPE_ORG_SECRET (test) + price id; deploy stripeWebhook while watching",
+        "Server-side monthly page cap in llmProxy for org members (today only the extension enforces it)",
+        "Wire the existing background/index.js privacy blacklist into the cache-write gate too (keep.google.com/messages.google.com were cached despite being on that list)",
+        "Org-level content control (Phase 2, scoped)",
         "Owner runs __cfDiagnosePDF() on VPN"
       ],
       "blocked_on_user": [
-        "Confirm go-ahead to run the purge script now (irreversible delete of leaked docs)",
-        "CHROME WEB STORE UPLOAD of v0.1.49",
-        "Stripe test key + price id"
+        "Set 2 Firebase secrets, then deploy (PR #105 body has the commands): STRIPE_ORG_SECRET = Stripe TEST-mode sk_test_ key; STRIPE_ORG_WEBHOOK_SECRET = whsec_ of test endpoint we_1SxBBNHgnce3iNWmx4T6Jdpo",
+        "Review + merge PR #105 (org plan: $120/seat/yr, 300 pages/seat/mo, 5-seat min)",
+        "CHROME WEB STORE UPLOAD of v0.1.49 (then v0.1.50 with the seat cap)"
       ],
       "estimates": [
         {
@@ -108,6 +108,13 @@
           "est_days": 0.97,
           "done": "2026-10-03",
           "actual_days": 1.24
+        },
+        {
+          "date": "2026-10-18",
+          "scope": "Org billing test-mode readiness: Stripe test product/price, webhook dual-secret, 300-page seat cap, 5-seat min (estimate logged after work started, overnight session)",
+          "est_days": 0.25,
+          "done": "2026-10-18",
+          "actual_days": 0.2
         }
       ]
     },
@@ -474,18 +481,18 @@
       "goal": "Addictively fun, near-zero-friction Taskmaster-style play that works apart: async loop, auto-edit, reveal gating, crowd grading with ads as the model (owner direction 2026-09-12)",
       "target": "Web (live) + app stores",
       "live": "https://taskmaster-app-3d480.web.app",
-      "percent": 94,
+      "percent": 95,
       "eta_days": null,
       "remaining": [
-        "Cloud montages lack burned-in countdown text: ship a freetype-enabled ffmpeg or move rendering to Cloud Run",
-        "Run and verify the mobile builds (camera, mic, video_player) on real devices",
-        "Get real players in; push notifications need a VAPID key",
-        "Store blockers unchanged: support email, keystore, feature graphic"
+        "Android: create upload keystore + Play app record + first internal build (same version as iOS)",
+        "App Store listing: description, keywords, screenshots (scripts/capture_store_screenshots_ios.sh exists), age rating, review contact",
+        "Raise iOS deployment target 13.0 -> 15.0 before April 2027",
+        "Cloud montage text + real-device verification of camera/mic/video_player"
       ],
       "blocked_on_user": [
-        "Nothing is blocking. Optional: the VAPID private key is in Secret Manager as VAPID_PRIVATE_KEY (projects/488967944620/secrets/VAPID_PRIVATE_KEY, versi",
-        "iOS web push only works for a site the user has added to their Home Screen (Apple's rule, not ours). Android Chrome and desktop work from a normal tab",
-        "Unchanged store blockers from prior rounds: support email in the legal pages, upload keystore, Play feature graphic, paid Apple developer account."
+        "Install TaskCaster Party from TestFlight on your iPhone (invite to sagearbor@gmail.com) and play one task with camera + mic",
+        "Review + merge PR #34, then firebase deploy --only hosting so the support email is live on the privacy page",
+        "App Store: App Privacy questionnaire is browser-only and needs your answers before review submission"
       ],
       "estimates": [
         {
@@ -543,6 +550,13 @@
           "est_days": 0.44,
           "done": "2026-09-15",
           "actual_days": 0.49
+        },
+        {
+          "date": "2026-10-18",
+          "scope": "First iOS TestFlight build: bundle id + caps, ASC app record, signing/export setup, support email on legal pages, location purpose strings (estimate logged after work started, overnight session)",
+          "est_days": 0.3,
+          "done": "2026-10-18",
+          "actual_days": 0.25
         }
       ]
     },
