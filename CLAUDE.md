@@ -12,6 +12,8 @@ the repos that live beside it in `../` and getting them into production
   **generated** by `scripts/sync.py --write`. Never hand-edit.
 - `docs/index.html` — the GitHub Pages dashboard (reads `docs/data.json`).
   Live at https://sagearbor.github.io/get-shipped/
+- `PAYMENTS.md` — shared in-app subscription setup (Apple/Google/RevenueCat)
+  and which RevenueCat SDK each repo uses. Read before adding paid plans to any app.
 - `INVENTORY.md` — slow-moving profile of every sibling repo (purpose, stack,
   target, infra). Hand-written; update when a repo's nature changes.
 - `projects/<repo>.md` — per-project ship plan: goal, definition of shipped,
